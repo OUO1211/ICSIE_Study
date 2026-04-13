@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: cts2e-2ex55
+created: 2026-04-13T01:17:42+08:00
