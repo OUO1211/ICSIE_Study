@@ -14,7 +14,7 @@ status: finished
 
 ## 例子
 
-$$A = \begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 2 \end{bmatrix} \xrightarrow{r_{21}^{(-1)}} \begin{bmatrix} 1 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix} \implies \operatorname{rank}(A) = 2$$
+$$A = \begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 2 \end{bmatrix} \xrightarrow{r_{12}^{(-1)}} \begin{bmatrix} 1 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix} \implies \operatorname{rank}(A) = 2$$
 
 $$B = \begin{bmatrix} 1 & 0 & -2 & 3 \\ 2 & 2 & 0 & 4 \\ 2 & 0 & -4 & 6 \\ 1 & 1 & 1 & 1 \end{bmatrix} \xrightarrow{\text{列運算}} \begin{bmatrix} 1 & 0 & -2 & 3 \\ 0 & 1 & 2 & -1 \\ 0 & 0 & 1 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix} \implies \operatorname{rank}(B) = 3$$
 
