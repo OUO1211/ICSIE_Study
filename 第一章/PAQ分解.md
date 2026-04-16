@@ -30,7 +30,7 @@ $$A = \begin{bmatrix} 1 & 1 & 0 & -1 \\ 3 & 2 & 1 & 1 \\ 1 & 0 & 1 & 3 \end{bmat
 ## 性質
 
 - PAQ 分解等價於 $\operatorname{rank}(A) = r$
-- 可用來求[[第一章/秩 Rank|矩陣的秩]]
+- 可用來求[[秩Rank|矩陣的秩]]
 
 ## 相關連結
 

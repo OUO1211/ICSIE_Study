@@ -26,7 +26,7 @@ $$\text{REF: } \begin{bmatrix} 1 & 2 & 0 \\ 0 & 1 & 3 \\ 0 & 0 & 0 \end{bmatrix}
 
 ## 應用
 
-- 求[[秩 Rank|矩陣的秩]]
+- 求[[秩Rank|矩陣的秩]]
 - 解線性方程組（高斯-喬登消去法）
 - 判斷[[可逆矩陣|矩陣可逆]]性（$A$ 可逆 $\Leftrightarrow$ RREF 為 $I$）
 

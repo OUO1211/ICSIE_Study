@@ -6,16 +6,67 @@
       {
         "id": "95db70d54f588cb1",
         "type": "tabs",
+        "dimension": 54.17246175243393,
         "children": [
           {
             "id": "ebb12243350196e2",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "第二章/行列式定義.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "行列式定義"
+            },
+            "group": "f71b7e4732146989"
+          }
+        ]
+      },
+      {
+        "id": "397ad1e3fff9e72a",
+        "type": "tabs",
+        "dimension": 45.82753824756606,
+        "children": [
+          {
+            "id": "b7b90063f296d8f0",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "第二章/行列式定義.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
               "icon": "lucide-git-fork",
-              "title": "關聯圖檢視"
-            }
+              "title": "行列式定義 的關聯圖"
+            },
+            "group": "f71b7e4732146989"
           }
         ]
       }
@@ -188,23 +239,24 @@
   },
   "active": "ebb12243350196e2",
   "lastOpenFiles": [
-    "第二章/基本變數與自由變數.md",
+    "第二章/可逆矩陣等價條件.md",
+    "第二章/高斯-喬登消去法.md",
+    "第二章/克拉瑪法則.md",
+    "第二章/行列式進階性質.md",
+    "第一章/秩Rank.md",
     "秩Rank.md",
+    "第二章/基本變數與自由變數.md",
     "秩 Rank.md",
     "第二章/線性方程組與行列式.md",
     "第一章/零矩陣.md",
-    "第二章/行列式進階性質.md",
     "第二章/行列式的列行運算性質.md",
     "第二章/特殊矩陣的行列式.md",
     "第二章/古典伴隨矩陣.md",
-    "第二章/克拉瑪法則.md",
     "第二章/齊次方程組與零空間.md",
     "第二章/高斯消去法.md",
-    "第二章/高斯-喬登消去法.md",
     "第二章/行列式定義.md",
     "第二章/小行列式與餘因子.md",
     "第二章/奇異與非奇異矩陣.md",
-    "第二章/可逆矩陣等價條件.md",
     "第二章/Laplace展開法.md",
     "第二章/解空間與解的結構.md",
     "第二章/線性方程組定義.md",
@@ -215,7 +267,6 @@
     "第一章/LU分解.md",
     "第一章/PLU分解.md",
     "第一章/分塊矩陣的反矩陣.md",
-    "第一章/Hermitian矩陣.md",
     "第一章",
     "Chapter1_觀念列表.txt",
     "skill.txt",
