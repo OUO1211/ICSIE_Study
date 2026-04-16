@@ -6,7 +6,6 @@
       {
         "id": "81f2c970cf5e4636",
         "type": "tabs",
-        "dimension": 39.41311852704258,
         "children": [
           {
             "id": "ebd5c6ad3cfe89fa",
@@ -14,7 +13,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第一章/矩陣加法與相等.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -42,43 +41,42 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "秩Rank 的關聯圖"
+              "title": "矩陣加法與相等 的關聯圖"
             }
           },
           {
-            "id": "7e4eefd7abe1bb77",
+            "id": "bd8c4f6c088398e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第一章/矩陣加法與相等.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "秩Rank"
+              "title": "矩陣加法與相等"
             },
-            "group": "4bf00a684ff8cfc1"
+            "group": "7f1c8818615aea6e"
           }
         ],
         "currentTab": 1
       },
       {
-        "id": "1fc2661a135eca4f",
+        "id": "94b1181cb75ca48f",
         "type": "tabs",
-        "dimension": 60.58688147295742,
         "children": [
           {
-            "id": "6b27e7d7e8bc002f",
+            "id": "667188683388ce60",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第一章/矩陣加法與相等.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 3,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -97,14 +95,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.9999999999999997,
+                  "scale": 0.5087618855792584,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "秩Rank 的關聯圖"
+              "title": "矩陣加法與相等 的關聯圖"
             },
-            "group": "4bf00a684ff8cfc1"
+            "group": "7f1c8818615aea6e"
           }
         ]
       }
@@ -163,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -179,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第一章/矩陣加法與相等.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +188,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "秩Rank 的反向連結"
+              "title": "矩陣加法與相等 的反向連結"
             }
           },
           {
@@ -275,16 +274,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e4eefd7abe1bb77",
+  "active": "667188683388ce60",
   "lastOpenFiles": [
+    "第一章/矩陣.md",
+    "第一章/特殊矩陣類型.md",
+    "第一章/秩 Rank.md",
     "秩 Rank.md",
-    "第一章/秩Rank.md",
     "第一章/利用列運算求反矩陣.md",
     "第一章/基本列運算.md",
     "第一章/轉置矩陣.md",
     "第一章/對稱矩陣與斜對稱矩陣.md",
     "第一章/純量乘法.md",
-    "第一章/矩陣.md",
     "第一章/第一章 MOC.md",
     "第一章/矩陣加法與相等.md",
     "第一章/矩陣乘法.md",
@@ -293,13 +293,11 @@
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "Obsidian_Notes(success version)/線性代數 MOC.md",
     "Obsidian_Notes(success version) - 複製 (2)/線性代數 MOC.md",
-    "第一章/特殊矩陣類型.md",
     "第一章/列行展開與分解.md",
     "第一章/共軛轉置矩陣.md",
     "第一章/矩陣多項式.md",
     "第一章/跡數Trace.md",
     "第一章/基本行運算.md",
-    "第一章/秩 Rank.md",
     "第一章/分塊矩陣的反矩陣.md",
     "第一章/對角矩陣與單位矩陣.md",
     "CLAUDE.md",
