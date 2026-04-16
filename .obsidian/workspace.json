@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/LDU分解.md",
+                "file": "第一章/零矩陣.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LDU分解"
+              "title": "零矩陣"
             }
           }
         ]
@@ -33,7 +33,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/LDU分解.md",
+                "file": "第一章/零矩陣.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -56,12 +56,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.4019828977761002,
+                  "scale": 1.4019828977760993,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "LDU分解 的關聯圖"
+              "title": "零矩陣 的關聯圖"
             }
           }
         ]
@@ -236,10 +236,10 @@
   },
   "active": "1357ce5adcef1864",
   "lastOpenFiles": [
+    "第一章/LDU分解.md",
     "第一章/LU分解.md",
     "第一章/PLU分解.md",
     "第一章/分塊矩陣的反矩陣.md",
-    "第一章/LDU分解.md",
     "第一章/Hermitian矩陣.md",
     "第一章/轉置矩陣.md",
     "第一章/冪零矩陣.md",
