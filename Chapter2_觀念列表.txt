@@ -1,0 +1,79 @@
+第二章：線性方程組與行列式 (Pages 108–253)
+=============================================
+
+## 2.1 線性方程組基礎
+
+- 線性方程組 (system of linear equations) 定義：$Ax = b$ 的矩陣表示
+- 係數矩陣 (coefficient matrix)
+- 增廣矩陣 (augmented matrix)：$[A \mid b]$
+- 相容性 (consistent / inconsistent)：有解稱 consistent，無解稱 inconsistent
+- 解空間 (solution space)
+- 齊次方程組 (homogeneous)：$Ax = 0$
+- 非齊次方程組 (nonhomogeneous)：$Ax = b$，$b \neq 0$
+- 零空間 / 核空間 (null space / kernel)：$Ax = 0$ 的解空間
+- 零解 / 非零解 (trivial / nontrivial solution)
+- 等價線性系統 (equivalent linear systems)
+
+## 2.2 解法
+
+- 高斯消去法 (Gaussian Elimination)：化增廣矩陣為 REF
+- 高斯-喬登消去法 (Gauss-Jordan Elimination)：化增廣矩陣為 RREF
+- 基本變數 (basic variable) 與自由變數 (free variable)
+- 解的參數表示法（利用自由變數參數化）
+
+## 2.3 矩陣秩與解的個數
+
+- 秩 (rank) 與解的三種情形：
+  - rank(A) ≠ rank([A|b])  → 無解
+  - rank(A) = rank([A|b]) = n → 唯一解
+  - rank(A) = rank([A|b]) < n → 無限多解（n - rank(A) 個自由變數）
+- rank(A) = m 與任意 b 有解的關係
+- 奇異矩陣 (singular matrix)：$Ax = 0$ 有非零解
+- 非奇異矩陣 (nonsingular matrix)：$Ax = 0$ 只有零解
+- 可逆矩陣的等價條件（六條）：
+  1. A 可逆
+  2. Ax = 0 只有零解
+  3. rank(A) = n
+  4. A 可列運算成 $I_n$
+  5. A 可表為列基本矩陣之積
+  6. A 存在左（或右）反矩陣
+
+## 2.4 行列式定義與計算
+
+- 行列式 (determinant) 定義：$\det(A)$ 或 $|A|$
+  - 1 階：$\det([a]) = a$
+  - 2 階：$\det\begin{pmatrix}a&b\\c&d\end{pmatrix} = ad - bc$
+  - $n$ 階：透過餘因子遞迴定義
+- 小行列式 (minor)：$M_{ij}$，刪去第 $i$ 列、第 $j$ 行的 $(n-1)$ 階行列式
+- 餘因子 (cofactor)：$\text{cof}(a_{ij}) = (-1)^{i+j} \det(M_{ij})$
+- Laplace 展開法：按列或按行展開 $\det(A) = \sum_k a_{ik}\,\text{cof}(a_{ik})$
+
+## 2.5 行列式性質
+
+- 列/行運算對行列式的影響：
+  - 對調兩列（行）→ 正負號相反
+  - 某列（行）乘以 $k$ → 行列式乘以 $k$
+  - 某列（行）加上另一列（行）的倍數 → 行列式不變
+- $\det(kA) = k^n \det(A)$（$A$ 為 $n$ 階）
+- $\det(A^T) = \det(A)$
+- $\det(AB) = \det(A)\det(B)$（**乘法性質**）
+- $\det(A^{-1}) = 1/\det(A)$（若 $A$ 可逆）
+- $A$ 可逆 $\Leftrightarrow$ $\det(A) \neq 0$
+
+## 2.6 特殊行列式
+
+- 三角矩陣的行列式：等於對角項之積
+- 分塊矩陣的行列式：
+  - $\det\begin{pmatrix}A&O\\C&D\end{pmatrix} = \det(A)\det(D)$
+  - Schur complement 公式
+- Vandermonde 行列式：$\prod_{1 \leq i < j \leq n}(x_j - x_i)$
+- 行列式的幾何應用：三點共線條件
+
+## 2.7 行列式應用
+
+- 古典伴隨矩陣 (classical adjoint / adjugate)：$\text{adj}(A) = [\text{cof}(a_{ij})]^T$
+  - $A \cdot \text{adj}(A) = \det(A) \cdot I$
+  - $A^{-1} = \frac{1}{\det(A)} \text{adj}(A)$（$\det(A) \neq 0$ 時）
+- 克拉瑪法則 (Cramer's Rule)：
+  - $x_j = \frac{\det(A_j)}{\det(A)}$，$A_j$ 為以 $b$ 取代 $A$ 的第 $j$ 行
+  - 僅適用於 $A$ 可逆（方陣）的情形
