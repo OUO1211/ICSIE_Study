@@ -13,7 +13,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/第一章 MOC.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -41,7 +40,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "第一章 MOC 的關聯圖"
+              "title": "關聯圖檢視"
             }
           },
           {
@@ -57,8 +56,19 @@
               "icon": "lucide-file",
               "title": "第一章 MOC"
             }
+          },
+          {
+            "id": "7e4eefd7abe1bb77",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -115,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -132,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "第一章/第一章 MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +150,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "第一章 MOC 的反向連結"
+              "title": "反向連結"
             }
           },
           {
@@ -228,7 +236,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebd5c6ad3cfe89fa",
+  "active": "7e4eefd7abe1bb77",
   "lastOpenFiles": [
     "第一章/第一章 MOC.md",
     "第一章/矩陣加法與相等.md",
