@@ -1,0 +1,46 @@
+第一章：矩陣 (Pages 1–107)
+=============================================
+
+## 1.1 矩陣定義與基本運算
+- 矩陣 (Matrix) 定義：m×n 矩陣、元素 (Entry)
+- 零矩陣 (Zero Matrix)
+- 列矩陣 (Row Matrix)、行矩陣 (Column Matrix)、方陣 (Square Matrix)
+- 對角矩陣 (Diagonal Matrix)
+- 單位矩陣 (Identity Matrix)
+- 三角矩陣：上三角 (Upper Triangular)、下三角 (Lower Triangular)、嚴格三角
+- 矩陣加減法
+- 純量乘法 (Scalar Multiplication)
+- 矩陣乘法 (Matrix Multiplication) 定義與性質
+
+## 1.2 特殊矩陣與性質
+- 矩陣分塊 (Block Matrix)、列/行展開
+- 列/行分解 (Row/Column Decomposition)
+- 轉置矩陣 (Transpose)
+- 共軛轉置 (Conjugate Transpose / Hermitian Transpose)
+- 對稱矩陣 (Symmetric Matrix)
+- 斜對稱矩陣 (Skew-Symmetric Matrix)
+- Hermitian 矩陣
+- 轉置性質
+- 跡數 (Trace) 定義與性質
+
+## 1.3 可逆矩陣 (Invertible Matrices)
+- 可逆矩陣定義
+- 左反矩陣 (Left Inverse)、右反矩陣 (Right Inverse)
+- 反矩陣存在條件
+- 反矩陣性質
+- 分塊矩陣的反矩陣
+- 矩陣多項式 (Matrix Polynomial)
+- 冪零矩陣 (Nilpotent Matrix) 定義與性質
+
+## 1.4 基本列/行運算 (Elementary Operations)
+- 基本列運算 (Elementary Row Operations)：三種類型
+- 基本行運算 (Elementary Column Operations)
+- 列運算與可逆矩陣的關係
+- 利用列運算求反矩陣（高斯消去法應用）
+
+## 1.5 矩陣分解 (Matrix Decompositions)
+- LU 分解 (LU Decomposition)
+- LDU 分解
+- PLU 分解（含列置換）
+- PAQ 分解
+- 簡化列梯陣 (RREF, Reduced Row Echelon Form)
