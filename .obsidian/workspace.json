@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/三角矩陣.md",
+                "file": "Obsidian_Notes(success version) - 複製 (2)/線性代數 MOC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三角矩陣"
+              "title": "線性代數 MOC"
             },
             "group": "f2fb887a402cca1c"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/三角矩陣.md",
+                "file": "Obsidian_Notes(success version) - 複製 (2)/線性代數 MOC.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -58,11 +58,11 @@
                   "linkStrength": 1,
                   "linkDistance": 250,
                   "scale": 1,
-                  "close": false
+                  "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "三角矩陣 的關聯圖"
+              "title": "線性代數 MOC 的關聯圖"
             },
             "group": "f2fb887a402cca1c"
           }
@@ -235,8 +235,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1ea233f6ade56b4d",
+  "active": "6fada6c281ff279f",
   "lastOpenFiles": [
+    "第一章/特殊矩陣類型.md",
+    "第一章/列行展開與分解.md",
+    "第一章/共軛轉置矩陣.md",
+    "第一章/三角矩陣.md",
     "第一章/矩陣多項式.md",
     "第一章/跡數Trace.md",
     "第一章/第一章 MOC.md",
@@ -248,7 +252,6 @@
     "第一章/利用列運算求反矩陣.md",
     "第一章/分塊矩陣的反矩陣.md",
     "第一章/可逆矩陣.md",
-    "第一章/三角矩陣.md",
     "第一章/對角矩陣與單位矩陣.md",
     "CLAUDE.md",
     "第一章/零矩陣.md",
@@ -256,12 +259,9 @@
     "第一章/矩陣定義.md",
     "第一章/矩陣加法與相等.md",
     "第一章/矩陣分塊.md",
-    "第一章/特殊矩陣類型.md",
     "第一章/對稱矩陣與斜對稱矩陣.md",
     "第一章/基本列運算.md",
-    "第一章/列行展開與分解.md",
     "第一章/冪零矩陣.md",
-    "第一章/共軛轉置矩陣.md",
     "第一章/RREF簡化列梯陣.md",
     "第一章",
     "Chapter1_觀念列表.txt",
