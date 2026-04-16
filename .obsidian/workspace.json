@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "80dbd39b6588451a",
+    "type": "split",
+    "children": [
+      {
+        "id": "b23ad2459bb66351",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12d2dd18ad5678ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "final_check.txt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "final_check.txt"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7e642b6d7b7deaf1",
+    "type": "split",
+    "children": [
+      {
+        "id": "3688b71dce455717",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d898be2c5a1cbf8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "1d3e77a0d7fb2a6a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "eeed1db9ea0e0a63",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 346.50434494018555
+  },
+  "right": {
+    "id": "77bc44d4662489ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc32409c649e9558",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "506c672264383cd4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian_Notes/線代(上)_Page_3.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "線代(上)_Page_3 的反向連結"
+            }
+          },
+          {
+            "id": "8aa4484783069fa0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "91b0584badb603d2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bab78c7e6ec246bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "claude-sidebar:New Claude Tab": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian42-brat:BRAT": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "12d2dd18ad5678ca",
+  "lastOpenFiles": [
+    "~syncthing~final_check.txt.md.tmp",
+    "CLAUDE.md",
+    "final_check.txt.md",
+    "review_checklist.md",
+    "線代(上).pdf",
+    "testing.md",
+    "~syncthing~testing.md.tmp",
+    "未命名",
+    "Obsidian_Notes(success version)/線代(上)_Page_150.md",
+    "test.md.md",
+    "pdf_imgs/p276.png",
+    "Obsidian_Notes(success version)/線代(上)_Page_276.md",
+    "Obsidian_Notes(success version)/線性代數 MOC.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_174.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_2.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_12.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_5.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_13.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_10.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_6.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_4.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_3.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_1.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_330.md",
+    "Obsidian_Notes(success version) - 複製/線代(上)_Page_80.md",
+    "Obsidian_Notes(success version) - 複製/線代(上)_Page_506.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_509.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_420.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_283.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_476.md",
+    "pdf_imgs/p37.png",
+    "convert.py",
+    "convert.js",
+    "fixer.js",
+    "pdf_imgs/p1.png",
+    "fix_notes.py",
+    "test.py",
+    "fix_notes_v2.py",
+    "pdf_imgs/p2.png",
+    "pdf_imgs/p576.png",
+    "pdf_imgs/p575.png",
+    "pdf_imgs/p574.png",
+    "pdf_imgs/p573.png",
+    "pdf_imgs/p572.png",
+    "pdf_imgs/p571.png"
+  ]
+}
