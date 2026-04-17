@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第三章/四大子空間的基底.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常見向量空間"
+              "title": "四大子空間的基底"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -36,11 +36,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第三章/四大子空間的基底.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 3,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.3613103827491082,
+                  "scale": 1.2488301577828327,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "常見向量空間 的關聯圖"
+              "title": "四大子空間的基底 的關聯圖"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -238,14 +238,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7380ee1a0c9b5564",
+  "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
-    "第三章/向量空間定義.md",
     "第三章/基底與維度.md",
     "第三章/常見向量空間.md",
+    "第三章/向量空間定義.md",
+    "第三章/Wronskian.md",
+    "第一章/對角矩陣與單位矩陣.md",
+    "第一章/LDU分解.md",
+    "第一章/LU分解.md",
     "第三章/子空間.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "第三章/Wronskian.md",
     "Obsidian_Notes(success version)/線代(上)_Page_254.md",
     "第三章/直和.md",
     "第三章/座標與基底變換.md",
@@ -264,9 +267,6 @@
     "Obsidian_Notes(success version)/線代(上)_Page_251.md",
     "Obsidian_Notes(success version)/線代(上)_Page_248.md",
     "Obsidian_Notes(success version)/線代(上)_Page_247.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_259.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_269.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_294.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
