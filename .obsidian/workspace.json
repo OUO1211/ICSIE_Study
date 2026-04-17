@@ -6,7 +6,7 @@
       {
         "id": "e513ff515201ad8f",
         "type": "tabs",
-        "dimension": 29.024767801857585,
+        "dimension": 44.195046439628484,
         "children": [
           {
             "id": "ec7ba4e977c3fe51",
@@ -28,7 +28,7 @@
       {
         "id": "b391b0d845126f9f",
         "type": "tabs",
-        "dimension": 70.97523219814241,
+        "dimension": 55.804953560371516,
         "children": [
           {
             "id": "7380ee1a0c9b5564",
@@ -40,7 +40,7 @@
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 5,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -59,7 +59,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0182451276619375,
+                  "scale": 1.4843680000552983,
                   "close": true
                 }
               },
@@ -241,6 +241,7 @@
   "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
     "第一章/秩Rank.md",
+    "第三章/矩陣的秩.md",
     "線性代數_跨章節MOC.md",
     "第一章/可逆矩陣.md",
     "第三章/基底與維度.md",
@@ -258,7 +259,6 @@
     "第三章/座標與基底變換.md",
     "第三章/向量空間(MOC).md",
     "第三章/秩與線性系統.md",
-    "第三章/矩陣的秩.md",
     "第三章/和空間維度公式.md",
     "第三章/線性組合與生成空間.md",
     "第三章/線性獨立與相依.md",
