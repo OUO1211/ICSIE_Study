@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/行列式定義.md",
+                "file": "第二章/線性方程組定義.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "行列式定義"
+              "title": "線性方程組定義"
             },
             "group": "fb852782e5529839"
           }
@@ -34,9 +34,9 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第二章/行列式定義.md",
+                "file": "第二章/線性方程組定義.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
@@ -57,12 +57,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.4019828977761004,
+                  "scale": 1.9655560456566712,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "行列式定義 的關聯圖"
+              "title": "線性方程組定義 的關聯圖"
             },
             "group": "fb852782e5529839"
           }
@@ -238,6 +238,12 @@
   },
   "active": "ebb12243350196e2",
   "lastOpenFiles": [
+    "第二章/行列式定義.md",
+    "第一章/跡數Trace.md",
+    "第一章/矩陣.md",
+    "第一章/利用列運算求反矩陣.md",
+    "第二章/Laplace展開法.md",
+    "第一章/可逆矩陣.md",
     "第二章/小行列式與餘因子.md",
     "第一章/對稱矩陣與斜對稱矩陣.md",
     "第一章/對角矩陣與單位矩陣.md",
@@ -249,7 +255,6 @@
     "第二章/解空間與解的結構.md",
     "第二章/基本變數與自由變數.md",
     "第二章/高斯消去法.md",
-    "第二章/行列式定義.md",
     "第二章/可逆矩陣等價條件.md",
     "第二章/高斯-喬登消去法.md",
     "第二章/克拉瑪法則.md",
@@ -259,11 +264,6 @@
     "秩 Rank.md",
     "第二章/線性方程組與行列式.md",
     "第一章/零矩陣.md",
-    "第二章/行列式的列行運算性質.md",
-    "第二章/特殊矩陣的行列式.md",
-    "第二章/古典伴隨矩陣.md",
-    "第二章/奇異與非奇異矩陣.md",
-    "第二章/Laplace展開法.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
