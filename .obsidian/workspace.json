@@ -59,7 +59,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.4769875048563157,
+                  "scale": 1.385787554220144,
                   "close": true
                 }
               },
@@ -238,10 +238,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7380ee1a0c9b5564",
+  "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
-    "第一章/秩Rank.md",
+    "Sylvester定理.md",
     "第三章/矩陣的秩.md",
+    "第一章/秩Rank.md",
     "線性代數_跨章節MOC.md",
     "第一章/可逆矩陣.md",
     "第三章/基底與維度.md",
@@ -266,7 +267,6 @@
     "第三章/四大基本子空間.md",
     "第三章",
     "Obsidian_Notes(success version)/線代(上)_Page_253.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_252.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
