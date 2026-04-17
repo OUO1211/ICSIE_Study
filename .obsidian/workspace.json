@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/可逆矩陣.md",
+                "file": "第一章/秩Rank.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "可逆矩陣"
+              "title": "秩Rank"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -36,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/可逆矩陣.md",
+                "file": "第一章/秩Rank.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.9621841219741204,
+                  "scale": 0.7266969427885434,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "可逆矩陣 的關聯圖"
+              "title": "秩Rank 的關聯圖"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -240,6 +240,8 @@
   },
   "active": "7380ee1a0c9b5564",
   "lastOpenFiles": [
+    "線性代數_跨章節MOC.md",
+    "第一章/可逆矩陣.md",
     "第三章/基底與維度.md",
     "第三章/四大子空間的基底.md",
     "第三章/常見向量空間.md",
@@ -265,8 +267,6 @@
     "Obsidian_Notes(success version)/線代(上)_Page_253.md",
     "Obsidian_Notes(success version)/線代(上)_Page_252.md",
     "Obsidian_Notes(success version)/線代(上)_Page_251.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_248.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_247.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
