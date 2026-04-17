@@ -6,33 +6,35 @@
       {
         "id": "e513ff515201ad8f",
         "type": "tabs",
-        "dimension": 28.328173374613,
         "children": [
           {
             "id": "ec7ba4e977c3fe51",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "關聯圖檢視"
+              "type": "markdown",
+              "state": {
+                "file": "第三章/直和.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "直和"
             },
-            "group": "6d592a1c7f83d796"
+            "group": "636286cbcd94574b"
           }
         ]
       },
       {
-        "id": "b391b0d845126f9f",
+        "id": "7509d3b3896e991c",
         "type": "tabs",
-        "dimension": 71.671826625387,
         "children": [
           {
-            "id": "7380ee1a0c9b5564",
+            "id": "39dfdc4beee400c1",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/向量空間(MOC).md",
+                "file": "第三章/直和.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -55,14 +57,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0383221855228137,
+                  "scale": 0.9999999999999999,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "向量空間(MOC) 的關聯圖"
+              "title": "直和 的關聯圖"
             },
-            "group": "6d592a1c7f83d796"
+            "group": "636286cbcd94574b"
           }
         ]
       }
@@ -236,6 +238,9 @@
   "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
     "第三章/向量空間(MOC).md",
+    "第三章/直和.md",
+    "第三章/子空間的和.md",
+    "向量空間.md",
     "第三章/矩陣的秩.md",
     "線性映射(MOC).md",
     "第三章/秩與線性系統.md",
@@ -255,12 +260,9 @@
     "第三章/子空間.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet.md",
     "Obsidian_Notes(success version)/線代(上)_Page_254.md",
-    "第三章/直和.md",
     "第三章/座標與基底變換.md",
     "第三章/和空間維度公式.md",
     "第三章/線性組合與生成空間.md",
-    "第三章/線性獨立與相依.md",
-    "第三章/子空間的和.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
