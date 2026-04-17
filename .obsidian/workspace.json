@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/線性方程組定義.md",
+                "file": "第一章/秩Rank.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線性方程組定義"
+              "title": "秩Rank"
             },
             "group": "fb852782e5529839"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第二章/線性方程組定義.md",
+                "file": "第一章/秩Rank.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "線性方程組定義 的關聯圖"
+              "title": "秩Rank 的關聯圖"
             },
             "group": "fb852782e5529839"
           }
@@ -238,32 +238,32 @@
   },
   "active": "ebb12243350196e2",
   "lastOpenFiles": [
+    "第二章/齊次方程組與零空間.md",
+    "第二章/增廣矩陣與相容性.md",
+    "第二章/線性方程組定義.md",
+    "第二章/特殊矩陣的行列式.md",
+    "第一章/矩陣(MOC).md",
+    "第二章/線性方程組與行列式(MOC).md",
+    "第二章/Laplace展開法.md",
+    "第二章/古典伴隨矩陣.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_170.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_159.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_182.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_138.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_129.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_94.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_80.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_75.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_43.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_70.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_100.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_115.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_133.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_158.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_167.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_215.md",
     "第二章/行列式定義.md",
     "第一章/跡數Trace.md",
-    "第一章/矩陣.md",
-    "第一章/利用列運算求反矩陣.md",
-    "第二章/Laplace展開法.md",
-    "第一章/可逆矩陣.md",
-    "第二章/小行列式與餘因子.md",
-    "第一章/對稱矩陣與斜對稱矩陣.md",
-    "第一章/對角矩陣與單位矩陣.md",
-    "第一章/基本列運算.md",
-    "第一章/矩陣定義.md",
-    "第一章/三角矩陣.md",
-    "第二章/齊次方程組與零空間.md",
-    "向量空間.md",
-    "第二章/解空間與解的結構.md",
-    "第二章/基本變數與自由變數.md",
-    "第二章/高斯消去法.md",
-    "第二章/可逆矩陣等價條件.md",
-    "第二章/高斯-喬登消去法.md",
-    "第二章/克拉瑪法則.md",
-    "第二章/行列式進階性質.md",
-    "第一章/秩Rank.md",
-    "秩Rank.md",
-    "秩 Rank.md",
-    "第二章/線性方程組與行列式.md",
-    "第一章/零矩陣.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
