@@ -6,7 +6,7 @@
       {
         "id": "e513ff515201ad8f",
         "type": "tabs",
-        "dimension": 44.195046439628484,
+        "dimension": 28.328173374613,
         "children": [
           {
             "id": "ec7ba4e977c3fe51",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/矩陣的秩.md",
+                "file": "第三章/秩與線性系統.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "矩陣的秩"
+              "title": "秩與線性系統"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -28,7 +28,7 @@
       {
         "id": "b391b0d845126f9f",
         "type": "tabs",
-        "dimension": 55.804953560371516,
+        "dimension": 71.671826625387,
         "children": [
           {
             "id": "7380ee1a0c9b5564",
@@ -36,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/矩陣的秩.md",
+                "file": "第三章/秩與線性系統.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.385787554220144,
+                  "scale": 1.519298358506726,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "矩陣的秩 的關聯圖"
+              "title": "秩與線性系統 的關聯圖"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -240,8 +240,9 @@
   },
   "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
-    "Sylvester定理.md",
+    "第二章/增廣矩陣與相容性.md",
     "第三章/矩陣的秩.md",
+    "Sylvester定理.md",
     "第一章/秩Rank.md",
     "線性代數_跨章節MOC.md",
     "第一章/可逆矩陣.md",
@@ -266,7 +267,6 @@
     "第三章/子空間的和.md",
     "第三章/四大基本子空間.md",
     "第三章",
-    "Obsidian_Notes(success version)/線代(上)_Page_253.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
