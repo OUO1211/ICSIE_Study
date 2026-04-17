@@ -1,8 +1,13 @@
 ---
 subject: Linear Algebra
+chapter: 1
+section: 1.6
 tags: [矩陣, 定義, Chapter1, Chapter2]
 status: finished
 ---
+
+> **第一章 § 1.6｜操作定義**：以列運算計算 rank，用於判斷方程組解的個數。
+> 第三章的理論延伸見 [[矩陣的秩]]（§ 3-4）。
 
 ## 定義
 
