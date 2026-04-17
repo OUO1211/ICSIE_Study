@@ -8,33 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ebb12243350196e2",
+            "id": "d6adb956b96817d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第一章/矩陣多項式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "秩Rank"
+              "title": "矩陣多項式"
             },
-            "group": "fb852782e5529839"
+            "group": "2c15f6b82140c266"
           }
         ]
       },
       {
-        "id": "2ae723ba191a07ce",
+        "id": "69ad78104277a8da",
         "type": "tabs",
         "children": [
           {
-            "id": "c51d4f470d179968",
+            "id": "0a93ae29a03fae3a",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第一章/矩陣多項式.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -57,14 +57,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.9655560456566712,
+                  "scale": 1.1436983303087285,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "秩Rank 的關聯圖"
+              "title": "矩陣多項式 的關聯圖"
             },
-            "group": "fb852782e5529839"
+            "group": "2c15f6b82140c266"
           }
         ]
       }
@@ -236,13 +236,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebb12243350196e2",
+  "active": "d6adb956b96817d6",
   "lastOpenFiles": [
+    "第一章/可逆矩陣.md",
+    "第二章/可逆矩陣等價條件.md",
+    "第二章/奇異與非奇異矩陣.md",
+    "第一章/矩陣(MOC).md",
+    "第一章/三角矩陣.md",
+    "第二章/特殊矩陣的行列式.md",
+    "第一章/分塊矩陣的反矩陣.md",
+    "第一章/秩Rank.md",
     "第二章/齊次方程組與零空間.md",
     "第二章/增廣矩陣與相容性.md",
     "第二章/線性方程組定義.md",
-    "第二章/特殊矩陣的行列式.md",
-    "第一章/矩陣(MOC).md",
     "第二章/線性方程組與行列式(MOC).md",
     "第二章/Laplace展開法.md",
     "第二章/古典伴隨矩陣.md",
@@ -258,12 +264,6 @@
     "Obsidian_Notes(success version)/線代(上)_Page_70.md",
     "Obsidian_Notes(success version)/線代(上)_Page_100.md",
     "Obsidian_Notes(success version)/線代(上)_Page_115.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_133.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_158.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_167.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_215.md",
-    "第二章/行列式定義.md",
-    "第一章/跡數Trace.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
