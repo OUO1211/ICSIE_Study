@@ -6,7 +6,7 @@
       {
         "id": "e513ff515201ad8f",
         "type": "tabs",
-        "dimension": 44.81424148606811,
+        "dimension": 29.024767801857585,
         "children": [
           {
             "id": "ec7ba4e977c3fe51",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第三章/矩陣的秩.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "秩Rank"
+              "title": "矩陣的秩"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -28,7 +28,7 @@
       {
         "id": "b391b0d845126f9f",
         "type": "tabs",
-        "dimension": 55.185758513931894,
+        "dimension": 70.97523219814241,
         "children": [
           {
             "id": "7380ee1a0c9b5564",
@@ -36,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/秩Rank.md",
+                "file": "第三章/矩陣的秩.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7266969427885434,
+                  "scale": 1.0182451276619375,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "秩Rank 的關聯圖"
+              "title": "矩陣的秩 的關聯圖"
             },
             "group": "6d592a1c7f83d796"
           }
@@ -238,8 +238,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7380ee1a0c9b5564",
+  "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
+    "第一章/秩Rank.md",
     "線性代數_跨章節MOC.md",
     "第一章/可逆矩陣.md",
     "第三章/基底與維度.md",
@@ -266,7 +267,6 @@
     "第三章",
     "Obsidian_Notes(success version)/線代(上)_Page_253.md",
     "Obsidian_Notes(success version)/線代(上)_Page_252.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_251.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
