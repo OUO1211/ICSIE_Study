@@ -40,7 +40,7 @@
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -59,7 +59,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.4843680000552983,
+                  "scale": 1.4769875048563157,
                   "close": true
                 }
               },
@@ -238,7 +238,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ec7ba4e977c3fe51",
+  "active": "7380ee1a0c9b5564",
   "lastOpenFiles": [
     "第一章/秩Rank.md",
     "第三章/矩陣的秩.md",
