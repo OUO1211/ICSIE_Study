@@ -4,22 +4,69 @@
     "type": "split",
     "children": [
       {
-        "id": "95db70d54f588cb1",
+        "id": "e513ff515201ad8f",
         "type": "tabs",
+        "dimension": 44.81424148606811,
         "children": [
           {
-            "id": "d6adb956b96817d6",
+            "id": "ec7ba4e977c3fe51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian_Notes(success version)/線代(上)_Page_254.md",
+                "file": "第三章/常見向量空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線代(上)_Page_254"
-            }
+              "title": "常見向量空間"
+            },
+            "group": "6d592a1c7f83d796"
+          }
+        ]
+      },
+      {
+        "id": "b391b0d845126f9f",
+        "type": "tabs",
+        "dimension": 55.185758513931894,
+        "children": [
+          {
+            "id": "7380ee1a0c9b5564",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "第三章/常見向量空間.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.3613103827491082,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "常見向量空間 的關聯圖"
+            },
+            "group": "6d592a1c7f83d796"
           }
         ]
       }
@@ -191,21 +238,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6adb956b96817d6",
+  "active": "7380ee1a0c9b5564",
   "lastOpenFiles": [
+    "第三章/向量空間定義.md",
+    "第三章/基底與維度.md",
+    "第三章/常見向量空間.md",
+    "第三章/子空間.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "第三章/Wronskian.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_254.md",
+    "第三章/直和.md",
+    "第三章/座標與基底變換.md",
+    "第三章/向量空間(MOC).md",
     "第三章/秩與線性系統.md",
     "第三章/矩陣的秩.md",
     "第三章/四大子空間的基底.md",
     "第三章/和空間維度公式.md",
     "第三章/線性組合與生成空間.md",
     "第三章/線性獨立與相依.md",
-    "第三章/基底與維度.md",
-    "第三章/Wronskian.md",
-    "第三章/常見向量空間.md",
     "第三章/子空間的和.md",
-    "第三章/子空間.md",
     "第三章/四大基本子空間.md",
-    "第三章/向量空間定義.md",
     "第三章",
     "Obsidian_Notes(success version)/線代(上)_Page_253.md",
     "Obsidian_Notes(success version)/線代(上)_Page_252.md",
@@ -215,11 +267,6 @@
     "Obsidian_Notes(success version)/線代(上)_Page_259.md",
     "Obsidian_Notes(success version)/線代(上)_Page_269.md",
     "Obsidian_Notes(success version)/線代(上)_Page_294.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_250.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_230.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_130.md",
-    "第一章/PLU分解.md",
-    "第一章/LU分解.md",
     "第二章",
     "Chapter2_觀念列表.txt",
     "第一章",
