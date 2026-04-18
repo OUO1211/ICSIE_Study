@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/奇異與非奇異矩陣.md",
+                "file": "第三章/Wronskian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "奇異與非奇異矩陣"
+              "title": "Wronskian"
             },
             "group": "636286cbcd94574b"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第二章/奇異與非奇異矩陣.md",
+                "file": "第三章/Wronskian.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "奇異與非奇異矩陣 的關聯圖"
+              "title": "Wronskian 的關聯圖"
             },
             "group": "636286cbcd94574b"
           }
@@ -123,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -238,6 +237,12 @@
   },
   "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
+    "第三章/線性獨立與相依.md",
+    "第二章/增廣矩陣與相容性.md",
+    "第一章/秩Rank.md",
+    "第二章/齊次方程組與零空間.md",
+    "第二章/特殊矩陣的行列式.md",
+    "第二章/奇異與非奇異矩陣.md",
     "第一章/可逆矩陣.md",
     "第一章/三角矩陣.md",
     "第一章/對角矩陣與單位矩陣.md",
@@ -246,24 +251,18 @@
     "第三章/子空間的和.md",
     "第三章/向量空間(MOC).md",
     "第三章/子空間.md",
-    "第二章/齊次方程組與零空間.md",
     "第二章/解空間與解的結構.md",
     "第二章/小行列式與餘因子.md",
     "第二章/行列式定義.md",
-    "第二章/奇異與非奇異矩陣.md",
     "第三章/直和.md",
     "向量空間.md",
     "第三章/矩陣的秩.md",
     "線性映射(MOC).md",
     "第三章/秩與線性系統.md",
-    "第二章/增廣矩陣與相容性.md",
     "Sylvester定理.md",
-    "第一章/秩Rank.md",
     "線性代數_跨章節MOC.md",
     "第三章/基底與維度.md",
     "第三章/四大子空間的基底.md",
-    "第三章/常見向量空間.md",
-    "第三章/向量空間定義.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
