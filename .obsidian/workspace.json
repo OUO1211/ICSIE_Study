@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/四大基本子空間.md",
+                "file": "第二章/奇異與非奇異矩陣.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "四大基本子空間"
+              "title": "奇異與非奇異矩陣"
             },
             "group": "636286cbcd94574b"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/四大基本子空間.md",
+                "file": "第二章/奇異與非奇異矩陣.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -57,12 +57,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.4019828977760942,
+                  "scale": 0.9999999999999933,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "四大基本子空間 的關聯圖"
+              "title": "奇異與非奇異矩陣 的關聯圖"
             },
             "group": "636286cbcd94574b"
           }
@@ -238,9 +238,13 @@
   },
   "active": "ec7ba4e977c3fe51",
   "lastOpenFiles": [
+    "第一章/可逆矩陣.md",
+    "第一章/三角矩陣.md",
+    "第一章/對角矩陣與單位矩陣.md",
+    "第一章/矩陣(MOC).md",
+    "第三章/四大基本子空間.md",
     "第三章/子空間的和.md",
     "第三章/向量空間(MOC).md",
-    "第三章/四大基本子空間.md",
     "第三章/子空間.md",
     "第二章/齊次方程組與零空間.md",
     "第二章/解空間與解的結構.md",
@@ -256,14 +260,10 @@
     "Sylvester定理.md",
     "第一章/秩Rank.md",
     "線性代數_跨章節MOC.md",
-    "第一章/可逆矩陣.md",
     "第三章/基底與維度.md",
     "第三章/四大子空間的基底.md",
     "第三章/常見向量空間.md",
     "第三章/向量空間定義.md",
-    "第三章/Wronskian.md",
-    "第一章/對角矩陣與單位矩陣.md",
-    "第一章/LDU分解.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
