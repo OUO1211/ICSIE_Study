@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line: ker(A)",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -274,7 +275,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd596c1eb6afec25",
+  "active": "49fa8774a6eedee0",
   "lastOpenFiles": [
     "第三章/向量空間(MOC).md",
     "第三章/座標與基底變換.md",
