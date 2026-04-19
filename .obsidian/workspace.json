@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line: ker(a)",
+                "query": "line: ker(A)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
