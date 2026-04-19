@@ -13,6 +13,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "第三章/向量空間(MOC).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -40,8 +41,68 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "關聯圖檢視"
+              "title": "向量空間(MOC) 的關聯圖"
             }
+          },
+          {
+            "id": "49fa8774a6eedee0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "第三章/向量空間(MOC).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "向量空間(MOC)"
+            },
+            "group": "b67b39aeb10285b6"
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "60806bcbc0600aef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23374d95bb02886b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "第三章/向量空間(MOC).md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "向量空間(MOC) 的關聯圖"
+            },
+            "group": "b67b39aeb10285b6"
           }
         ]
       }
@@ -212,8 +273,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39dfdc4beee400c1",
+  "active": "49fa8774a6eedee0",
   "lastOpenFiles": [
+    "第三章/子空間.md",
+    "第二章/齊次方程組與零空間.md",
+    "第三章/向量空間定義.md",
+    "第三章/四大基本子空間.md",
     "Obsidian_Notes(success version)/線代(上)_Page_281.md",
     "Obsidian_Notes(success version)/線代(上)_Page_280.md",
     "Obsidian_Notes(success version)/線代(上)_Page_282.md",
@@ -229,17 +294,13 @@
     "第三章/線性獨立與相依.md",
     "第二章/增廣矩陣與相容性.md",
     "第一章/秩Rank.md",
-    "第二章/齊次方程組與零空間.md",
     "第二章/特殊矩陣的行列式.md",
     "第二章/奇異與非奇異矩陣.md",
     "第一章/對角矩陣與單位矩陣.md",
-    "第三章/四大基本子空間.md",
     "第三章/子空間的和.md",
     "第三章/向量空間(MOC).md",
-    "第三章/子空間.md",
     "第二章/解空間與解的結構.md",
     "第二章/小行列式與餘因子.md",
-    "第二章/行列式定義.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
