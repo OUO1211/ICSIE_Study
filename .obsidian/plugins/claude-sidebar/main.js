@@ -6863,6 +6863,34 @@ var TerminalView = class extends import_obsidian.ItemView {
       return true; // Let Obsidian handle it normally
     });
     this.app.keymap.pushScope(this.escapeScope);
+    // Ctrl+O: Claude Code "expand command preview". Only register the binding
+    // while focus is inside the sidebar — once Obsidian's Scope owns a key,
+    // returning true does not fall through to the built-in Quick Switcher
+    // (Ctrl+O on Linux/Windows), so leaving it registered globally breaks it.
+    this.ctrlOBinding = null;
+    this.ctrlOFocusIn = () => {
+      if (!this.ctrlOBinding) {
+        this.ctrlOBinding = this.escapeScope.register(['Ctrl'], 'o', () => {
+          if (this.proc && !this.proc.killed) {
+            this.proc.stdin?.write('\x0f');
+          }
+          return false;
+        });
+      }
+    };
+    this.ctrlOFocusOut = () => {
+      setTimeout(() => {
+        if (this.ctrlOBinding && !this.containerEl.contains(document.activeElement)) {
+          this.escapeScope.unregister(this.ctrlOBinding);
+          this.ctrlOBinding = null;
+        }
+      }, 0);
+    };
+    this.containerEl.addEventListener('focusin', this.ctrlOFocusIn);
+    this.containerEl.addEventListener('focusout', this.ctrlOFocusOut);
+    if (this.containerEl.contains(document.activeElement)) {
+      this.ctrlOFocusIn();
+    }
   }
   async onClose() {
     try {
@@ -7222,17 +7250,6 @@ var TerminalView = class extends import_obsidian.ItemView {
         }).catch(() => {});
       });
     }
-    // Shortcuts Claude Code handles inside the terminal — stop them from bubbling
-    // up to Obsidian's hotkey system when the terminal is focused.
-    // preventDefault is NOT called: xterm still needs to deliver the keystroke to the PTY.
-    this.terminalShortcutGuard = (ev) => {
-      if (!this.containerEl.contains(document.activeElement)) return;
-      // Ctrl+O (no other modifiers): Claude Code "expand command preview"
-      if (ev.key === 'o' && ev.ctrlKey && !ev.shiftKey && !ev.altKey && !ev.metaKey) {
-        ev.stopPropagation();
-      }
-    };
-    document.addEventListener('keydown', this.terminalShortcutGuard, true);
     this.term.attachCustomKeyEventHandler((ev) => {
       // Shift+Enter: send Alt+Enter for multi-line input
       // Must block both keydown and keypress events to prevent xterm from sending normal Enter
@@ -7583,17 +7600,25 @@ var TerminalView = class extends import_obsidian.ItemView {
       clearTimeout(this.fitTimeout);
       this.fitTimeout = null;
     }
+    if (this.ctrlOFocusIn) {
+      this.containerEl.removeEventListener('focusin', this.ctrlOFocusIn);
+      this.ctrlOFocusIn = null;
+    }
+    if (this.ctrlOFocusOut) {
+      this.containerEl.removeEventListener('focusout', this.ctrlOFocusOut);
+      this.ctrlOFocusOut = null;
+    }
     if (this.escapeScope) {
+      if (this.ctrlOBinding) {
+        this.escapeScope.unregister(this.ctrlOBinding);
+        this.ctrlOBinding = null;
+      }
       this.app.keymap.popScope(this.escapeScope);
       this.escapeScope = null;
     }
     if (this.imagePasteHandler) {
       document.removeEventListener("paste", this.imagePasteHandler, true);
       this.imagePasteHandler = null;
-    }
-    if (this.terminalShortcutGuard) {
-      document.removeEventListener('keydown', this.terminalShortcutGuard, true);
-      this.terminalShortcutGuard = null;
     }
     if (this.fileDragOverHandler && this.termHost) {
       this.termHost.removeEventListener('dragover', this.fileDragOverHandler);
