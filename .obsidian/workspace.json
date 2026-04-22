@@ -6,6 +6,7 @@
       {
         "id": "7509d3b3896e991c",
         "type": "tabs",
+        "dimension": 41.48446490218642,
         "children": [
           {
             "id": "39dfdc4beee400c1",
@@ -50,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/奇異與非奇異矩陣.md",
+                "file": "第二章/齊次方程組與零空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "奇異與非奇異矩陣"
+              "title": "齊次方程組與零空間"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -65,6 +66,7 @@
       {
         "id": "60806bcbc0600aef",
         "type": "tabs",
+        "dimension": 58.515535097813576,
         "children": [
           {
             "id": "23374d95bb02886b",
@@ -72,7 +74,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第二章/奇異與非奇異矩陣.md",
+                "file": "第二章/齊次方程組與零空間.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -100,7 +102,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "奇異與非奇異矩陣 的關聯圖"
+              "title": "齊次方程組與零空間 的關聯圖"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -276,6 +278,8 @@
   },
   "active": "49fa8774a6eedee0",
   "lastOpenFiles": [
+    "第二章/古典伴隨矩陣.md",
+    "第二章/奇異與非奇異矩陣.md",
     "第二章/可逆矩陣等價條件.md",
     "第一章/可逆矩陣.md",
     "第三章/四大基本子空間.md",
@@ -300,8 +304,6 @@
     "第一章/三角矩陣.md",
     "第三章/Wronskian.md",
     "第三章/線性獨立與相依.md",
-    "第二章/增廣矩陣與相容性.md",
-    "第一章/秩Rank.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
