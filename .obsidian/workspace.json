@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/奇異與非奇異矩陣.md",
+                "file": "第二章/可逆矩陣等價條件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "奇異與非奇異矩陣"
+              "title": "可逆矩陣等價條件"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -74,7 +74,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第二章/奇異與非奇異矩陣.md",
+                "file": "第二章/可逆矩陣等價條件.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -102,7 +102,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "奇異與非奇異矩陣 的關聯圖"
+              "title": "可逆矩陣等價條件 的關聯圖"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -278,11 +278,11 @@
   },
   "active": "49fa8774a6eedee0",
   "lastOpenFiles": [
+    "第一章/可逆矩陣.md",
+    "第二章/奇異與非奇異矩陣.md",
     "第二章/齊次方程組與零空間.md",
     "第二章/古典伴隨矩陣.md",
-    "第二章/奇異與非奇異矩陣.md",
     "第二章/可逆矩陣等價條件.md",
-    "第一章/可逆矩陣.md",
     "第三章/四大基本子空間.md",
     "第三章/子空間的和.md",
     "第三章/線性組合與生成空間.md",
