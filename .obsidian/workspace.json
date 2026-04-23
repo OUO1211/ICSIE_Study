@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "re",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,12 +157,12 @@
               "title": "書籤"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -274,7 +274,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f37a5bf20c4837c4",
+  "active": "cd596c1eb6afec25",
   "lastOpenFiles": [
     "第三章/向量空間(MOC).md",
     "第三章/秩與線性系統.md",
