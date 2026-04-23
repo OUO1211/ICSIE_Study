@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第一章/LU分解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常見向量空間"
+              "title": "LU分解"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -74,7 +74,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第一章/LU分解.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -102,7 +102,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "常見向量空間 的關聯圖"
+              "title": "LU分解 的關聯圖"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -278,6 +278,7 @@
   },
   "active": "49fa8774a6eedee0",
   "lastOpenFiles": [
+    "第三章/常見向量空間.md",
     "第三章/子空間的和.md",
     "第三章/和空間維度公式.md",
     "第三章/向量空間(MOC).md",
@@ -303,7 +304,6 @@
     "第一章/利用列運算求反矩陣.md",
     "第一章/共軛轉置矩陣.md",
     "第一章/分塊矩陣的反矩陣.md",
-    "第一章/三角矩陣.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
