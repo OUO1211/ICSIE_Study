@@ -14,7 +14,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Obsidian_Notes(success version)/線代(上)_Page_110.md",
+                "file": "第三章/子空間的和.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -42,7 +42,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "線代(上)_Page_110 的關聯圖"
+              "title": "子空間的和 的關聯圖"
             }
           },
           {
@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian_Notes(success version)/線代(上)_Page_110.md",
+                "file": "第三章/子空間的和.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線代(上)_Page_110"
+              "title": "子空間的和"
             }
           }
         ],
@@ -73,7 +73,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Obsidian_Notes(success version)/線代(上)_Page_110.md",
+                "file": "第三章/子空間的和.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -96,12 +96,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.1266659211330234,
+                  "scale": 1.1266659211330232,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "線代(上)_Page_110 的關聯圖"
+              "title": "子空間的和 的關聯圖"
             }
           }
         ]
@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reduced",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,13 +157,11 @@
               "title": "書籤"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -277,6 +275,7 @@
   },
   "active": "f37a5bf20c4837c4",
   "lastOpenFiles": [
+    "Obsidian_Notes(success version)/線代(上)_Page_110.md",
     "第三章/線性獨立與相依.md",
     "第三章/向量空間(MOC).md",
     "第三章/秩與線性系統.md",
@@ -302,7 +301,6 @@
     "Obsidian_Notes(success version)/線代(上)_Page_282.md",
     "第一章/矩陣(MOC).md",
     "第一章/特殊矩陣類型.md",
-    "第一章/利用列運算求反矩陣.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
