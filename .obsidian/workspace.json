@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/和空間維度公式.md",
+                "file": "第二章/齊次方程組與零空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "和空間維度公式"
+              "title": "齊次方程組與零空間"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -74,7 +74,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/和空間維度公式.md",
+                "file": "第二章/齊次方程組與零空間.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -102,7 +102,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "和空間維度公式 的關聯圖"
+              "title": "齊次方程組與零空間 的關聯圖"
             },
             "group": "b67b39aeb10285b6"
           }
@@ -163,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -278,11 +277,13 @@
   },
   "active": "49fa8774a6eedee0",
   "lastOpenFiles": [
+    "第三章/四大基本子空間.md",
+    "第三章/四大子空間的基底.md",
+    "第三章/和空間維度公式.md",
     "第三章/基底與維度.md",
     "第一章/LU分解.md",
     "第三章/常見向量空間.md",
     "第三章/子空間的和.md",
-    "第三章/和空間維度公式.md",
     "第三章/向量空間(MOC).md",
     "第三章/線性組合與生成空間.md",
     "第三章/線性獨立與相依.md",
@@ -291,11 +292,9 @@
     "第二章/奇異與非奇異矩陣.md",
     "第二章/齊次方程組與零空間.md",
     "第二章/古典伴隨矩陣.md",
-    "第三章/四大基本子空間.md",
     "第三章/子空間.md",
     "第一章/列行展開與分解.md",
     "第三章/秩與線性系統.md",
-    "第三章/四大子空間的基底.md",
     "第三章/座標與基底變換.md",
     "第三章/向量空間定義.md",
     "Obsidian_Notes(success version)/線代(上)_Page_281.md",
