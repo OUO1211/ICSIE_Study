@@ -14,7 +14,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第三章/線性組合與生成空間.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -42,7 +42,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "常見向量空間 的關聯圖"
+              "title": "線性組合與生成空間 的關聯圖"
             }
           },
           {
@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第三章/線性組合與生成空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常見向量空間"
+              "title": "線性組合與生成空間"
             }
           }
         ],
@@ -73,7 +73,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第三章/線性組合與生成空間.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -101,7 +101,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "常見向量空間 的關聯圖"
+              "title": "線性組合與生成空間 的關聯圖"
             }
           }
         ]
@@ -275,6 +275,7 @@
   },
   "active": "f37a5bf20c4837c4",
   "lastOpenFiles": [
+    "第三章/常見向量空間.md",
     "第三章/和空間維度公式.md",
     "第三章/向量空間定義.md",
     "第三章/四大基本子空間.md",
@@ -287,7 +288,6 @@
     "第三章/四大子空間的基底.md",
     "第三章/基底與維度.md",
     "第一章/LU分解.md",
-    "第三章/常見向量空間.md",
     "第三章/線性組合與生成空間.md",
     "第二章/可逆矩陣等價條件.md",
     "第一章/可逆矩陣.md",
