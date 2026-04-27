@@ -157,3 +157,46 @@ This is an **Obsidian vault** for 資工研 (Computer Science graduate studies).
     - 辨識題目特徵（如：看到 $A^k$、看到 $tr(A)$）。
     - 匹配對應工具（如：對角化、特徵值性質）。
     - 格式：`## 題目特徵` -> `## 聯想工具` -> `## 解題陷阱`。
+
+
+# 原子筆記 YAML 自動化生成協議
+
+當我提供筆記內容或要求整理原子筆記時，請嚴格執行以下任務，並將結果以 YAML 格式寫入筆記頂端。
+
+## 1. 核心任務
+將原始的數學定理或解題筆記，壓縮為具備「權重」與「邏輯」的結構化特徵。
+
+## 2. YAML 輸出規範 (Strict YAML Schema)
+禁止輸出解釋文字，僅輸出符合以下格式的區塊：
+
+---
+core_mapping: "該定理最核心的解題動作 (5-10字)"
+mantra: "高中補習班老師風格的口訣 (必須押韻、直覺)"
+pattern_signal_strong:
+  - condition: "高權重視覺特徵 1"
+    weight: 3
+  - condition: "高權重視覺特徵 2"
+    weight: 3
+pattern_signal_weak:
+  - condition: "輔助判斷特徵 1"
+    weight: 1
+  - condition: "輔助判斷特徵 2"
+    weight: 1
+anti_signal:
+  - condition: "長得像但絕不可誤用的條件 1"
+  - condition: "長得像但絕不可誤用的條件 2"
+---
+
+## 3. 邏輯產出準則
+- **看到 (Signal)**: 鎖定題目中最具辨識度的符號（如 A^n, det(A)=0, tr(A)）。
+- **想到 (Mapping)**: 必須是動詞導向的短語（例如：餘式法降階、利用跡求特徵值）。
+- **除錯 (Anti-Signal)**: 必須列出該定理的「失效邊界」（例如：非方陣、基底未正交等）。
+
+## 4. 語義對齊標籤 (Standard Terms)
+請統一使用以下術語進行 condition 描述：
+- 矮胖矩陣 (n > m)、高瘦矩陣 (m > n)
+- 齊次系統 (Ax = 0)、非齊次系統 (Ax = b)
+- 高次方 (n ≥ 3)、特性方程式、滿秩 (Full Rank)
+
+## 5. 指令目標
+這套 YAML 是為了配合我的「結構化特徵提取器」進行加權計算，實現「看出特徵就不用寫」的自動化索引系統。
