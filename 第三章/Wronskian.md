@@ -4,6 +4,21 @@ chapter: 3
 section: 3-2
 status: finished
 tags: [Wronskian, 函數空間, 線性獨立]
+core_mapping: "函數集某點的 Wronskian 行列式非零 ⟹ 線性獨立"
+mantra: "Wronskian 某點不為零，函數獨立成立"
+pattern_signal_strong:
+  - condition: "函數空間（如 e^x, sin x, cos x）中判斷線性獨立"
+    weight: 3
+  - condition: "出現由函數及其導數組成的行列式矩陣"
+    weight: 3
+pattern_signal_weak:
+  - condition: "題目列出已知 Wronskian 值的常見函數集"
+    weight: 1
+  - condition: "題目要驗證微分方程解的獨立性"
+    weight: 1
+anti_signal:
+  - condition: "逆命題不成立：W=0 不代表函數集線性相依（有反例）"
+  - condition: "需在整個區間上找到某一點 W≠0，不是要 W 在所有點都非零"
 ---
 
 # Wronskian（朗斯基行列式）
