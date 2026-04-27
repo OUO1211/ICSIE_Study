@@ -48,17 +48,14 @@
             "id": "f37a5bf20c4837c4",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "未命名.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 172.05000000000035,
-                  "zoom": 0
-                }
+                "file": "第二章/特殊矩陣的行列式.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "特殊矩陣的行列式"
             }
           }
         ],
@@ -94,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "塊狀",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -233,6 +230,9 @@
   },
   "active": "f37a5bf20c4837c4",
   "lastOpenFiles": [
+    "第一章/矩陣分塊.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_220.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_57.md",
     "未命名.canvas",
     "第一章/三角矩陣.md",
     "第三章/線性組合與生成空間.md",
@@ -257,8 +257,6 @@
     "第一章/列行展開與分解.md",
     "第三章/座標與基底變換.md",
     "Obsidian_Notes(success version)/線代(上)_Page_281.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_280.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_282.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
