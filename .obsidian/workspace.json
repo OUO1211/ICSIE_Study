@@ -14,7 +14,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/LU分解.md",
+                "file": "CLAUDE.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -42,7 +42,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "LU分解 的關聯圖"
+              "title": "CLAUDE 的關聯圖"
             }
           },
           {
@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/LU分解.md",
+                "file": "CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LU分解"
+              "title": "CLAUDE"
             }
           }
         ],
@@ -73,7 +73,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/LU分解.md",
+                "file": "CLAUDE.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -101,7 +101,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "LU分解 的關聯圖"
+              "title": "CLAUDE 的關聯圖"
             }
           }
         ]
@@ -275,6 +275,7 @@
   },
   "active": "2aa96e2a3423b70f",
   "lastOpenFiles": [
+    "第一章/LU分解.md",
     "第一章/Hermitian矩陣.md",
     "第一章/LDU分解.md",
     "第一章/共軛轉置矩陣.md",
@@ -300,7 +301,6 @@
     "第二章/分塊三角矩陣的行列式.md",
     "第二章/Schur補矩陣.md",
     "第二章/Laplace展開法.md",
-    "第二章/特殊矩陣的行列式.md",
     "未命名.canvas",
     "第三章",
     "第二章",
