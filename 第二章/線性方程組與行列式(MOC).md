@@ -26,7 +26,10 @@ status: finished
         ├─→ 小行列式與餘因子 → Laplace 展開法
         ├─→ 行列式的列行運算性質
         ├─→ 行列式進階性質（乘法、轉置、可逆）
-        ├─→ 特殊矩陣的行列式（三角、分塊、Vandermonde）
+        ├─→ 特殊矩陣的行列式（三角、Vandermonde）
+        │     ├─→ 分塊三角矩陣的行列式
+        │     ├─→ Schur 補矩陣
+        │     └─→ 塊狀矩陣行列式進階
         └─→ 應用
               ├─→ 古典伴隨矩陣（adj(A)，求反矩陣）
               └─→ 克拉瑪法則（Cramer's Rule）
@@ -92,7 +95,10 @@ status: finished
 
 ## 2.7 特殊行列式
 
-- [[特殊矩陣的行列式]] — 三角矩陣、分塊三角矩陣、Schur complement、Vandermonde、三點共線條件
+- [[特殊矩陣的行列式]] — 三角矩陣、Vandermonde、三點共線條件
+- [[分塊三角矩陣的行列式]] — $\det\begin{bmatrix}A&*\\O&B\end{bmatrix}=\det(A)\det(B)$；多分塊對角推廣
+- [[Schur補矩陣]] — $\det\begin{bmatrix}A&B\\C&D\end{bmatrix}=\det(A)\det(D-CA^{-1}B)$；矩陣行列式引理
+- [[塊狀矩陣行列式進階]] — $\det\begin{bmatrix}A&B\\B&A\end{bmatrix}=\det(A+B)\det(A-B)$；Sylvester 恆等式
 
 ---
 
