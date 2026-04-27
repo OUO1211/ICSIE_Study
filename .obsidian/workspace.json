@@ -13,7 +13,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/線性組合與生成空間.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -41,25 +40,52 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "線性組合與生成空間 的關聯圖"
-            }
-          },
-          {
-            "id": "f37a5bf20c4837c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "第一章/對角矩陣與單位矩陣.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "對角矩陣與單位矩陣"
+              "title": "關聯圖檢視"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "a21590505d88502f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d8c245908e26737",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,8 +254,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f37a5bf20c4837c4",
+  "active": "39dfdc4beee400c1",
   "lastOpenFiles": [
+    "第一章/跡數Trace.md",
+    "第一章/對角矩陣與單位矩陣.md",
     "第一章/矩陣加法與相等.md",
     "第一章/列行展開與分解.md",
     "第一章/利用列運算求反矩陣.md",
@@ -255,8 +283,6 @@
     "第三章/秩與線性系統.md",
     "第二章/齊次方程組與零空間.md",
     "第三章/四大子空間的基底.md",
-    "第三章/基底與維度.md",
-    "第一章/LU分解.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
