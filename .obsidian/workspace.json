@@ -14,7 +14,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/三角矩陣.md",
+                "file": "第一章/利用列運算求反矩陣.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -42,7 +42,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "三角矩陣 的關聯圖"
+              "title": "利用列運算求反矩陣 的關聯圖"
             }
           },
           {
@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/三角矩陣.md",
+                "file": "第一章/利用列運算求反矩陣.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三角矩陣"
+              "title": "利用列運算求反矩陣"
             }
           }
         ],
@@ -73,7 +73,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第一章/三角矩陣.md",
+                "file": "第一章/利用列運算求反矩陣.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -101,7 +101,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "三角矩陣 的關聯圖"
+              "title": "利用列運算求反矩陣 的關聯圖"
             }
           }
         ]
@@ -275,14 +275,20 @@
   },
   "active": "2aa96e2a3423b70f",
   "lastOpenFiles": [
+    "第一章/列行展開與分解.md",
+    "第一章/可逆矩陣.md",
     "第一章/分塊矩陣的反矩陣.md",
-    "CLAUDE.md",
+    "第一章/Hermitian矩陣.md",
+    "第一章/對角矩陣與單位矩陣.md",
+    "第一章/基本行運算.md",
+    "第一章/矩陣乘法.md",
+    "第一章/特殊矩陣類型.md",
+    "第一章/共軛轉置矩陣.md",
     "第一章/三角矩陣.md",
+    "CLAUDE.md",
     "Sylvester定理.md",
     "第一章/跡數Trace.md",
-    "第一章/對角矩陣與單位矩陣.md",
     "第一章/矩陣加法與相等.md",
-    "第一章/列行展開與分解.md",
     "第一章/利用列運算求反矩陣.md",
     "第二章/分塊三角矩陣的行列式.md",
     "第二章/Schur補矩陣.md",
@@ -296,12 +302,6 @@
     "第三章/線性組合與生成空間.md",
     "第三章/常見向量空間.md",
     "第三章/和空間維度公式.md",
-    "第三章/向量空間定義.md",
-    "第三章/四大基本子空間.md",
-    "第三章/子空間的和.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_110.md",
-    "第三章/線性獨立與相依.md",
-    "第三章/向量空間(MOC).md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
