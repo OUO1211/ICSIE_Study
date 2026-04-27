@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [矩陣, 分解, Chapter1]
 status: finished
+core_mapping: "列+行運算化標準形 [Ir O; O O]，直接讀出 rank"
+mantra: "PAQ 化標準形，左右夾出秩"
+pattern_signal_strong:
+  - condition: "題目要求求矩陣標準形或找 P、Q 使 PAQ=[Ir O;O O]"
+    weight: 3
+  - condition: "題目要用列/行運算同時化簡求 rank"
+    weight: 3
+pattern_signal_weak:
+  - condition: "題目僅求秩（rank），可只做列運算到 REF）"
+    weight: 1
+  - condition: "出現非方陣（PAQ 分解對 m×n 矩陣均適用）"
+    weight: 1
+anti_signal:
+  - condition: "P 和 Q 必須可逆（列/行基本矩陣的乘積），不可任意取"
+  - condition: "PAQ 分解非唯一，P 和 Q 的選取方式有多種"
 ---
 
 ## 定義

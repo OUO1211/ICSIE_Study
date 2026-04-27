@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [矩陣, 分解, Chapter1]
 status: finished
+core_mapping: "高斯消去記錄乘子得 L，消去結果為 U"
+mantra: "消去存乘子，下三角記 L"
+pattern_signal_strong:
+  - condition: "題目要求 LU 分解"
+    weight: 3
+  - condition: "各領導主子行列式全非零（保證 LU 存在且唯一）"
+    weight: 3
+pattern_signal_weak:
+  - condition: "題目解 Ax=b 分兩步（前代 Ly=b，後代 Ux=y）"
+    weight: 1
+  - condition: "出現高斯消去步驟（本質即記錄 L）"
+    weight: 1
+anti_signal:
+  - condition: "有零主元時 LU 分解不存在，需改用 PLU"
+  - condition: "LU 分解中 L 對角項必須為 1（標準規範），否則為 LDU"
 ---
 
 ## 定義

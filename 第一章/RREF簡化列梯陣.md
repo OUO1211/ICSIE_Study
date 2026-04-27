@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [矩陣, 定義, Chapter1]
 status: finished
+core_mapping: "pivot 化為 1 且所在行清零，非零列數等於 rank"
+mantra: "梯形 pivot 要為 1，上下清空成 RREF"
+pattern_signal_strong:
+  - condition: "題目要求化為 RREF（簡化列梯陣）"
+    weight: 3
+  - condition: "題目問矩陣的 rank（數 RREF 非零列數）"
+    weight: 3
+pattern_signal_weak:
+  - condition: "題目判斷矩陣是否可逆（RREF 是否為 I）"
+    weight: 1
+  - condition: "題目要找 pivot 列（基底行）與自由行"
+    weight: 1
+anti_signal:
+  - condition: "REF 不等於 RREF（REF 中 pivot 不必為 1）"
+  - condition: "RREF 唯一，但到達 RREF 的過程（列運算順序）不唯一"
 ---
 
 ## 定義
