@@ -161,7 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 213.5
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -273,7 +273,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f37a5bf20c4837c4",
+  "active": "23374d95bb02886b",
   "lastOpenFiles": [
     "第三章/常見向量空間.md",
     "第三章/和空間維度公式.md",
