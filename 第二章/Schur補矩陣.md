@@ -4,6 +4,21 @@ chapter: 2
 section: 2.5
 status: finished
 tags: [行列式, 分塊矩陣, Schur, Chapter2]
+core_mapping: "A 可逆時 det([A B;C D]) = det(A)·det(D-CA^{-1}B)"
+mantra: "Schur 補消左下，行列式分兩塊"
+pattern_signal_strong:
+  - condition: "一般分塊矩陣（兩個非對角塊均非零）求行列式"
+    weight: 3
+  - condition: "出現 Schur 補 S = D - CA^{-1}B 的形式"
+    weight: 3
+pattern_signal_weak:
+  - condition: "題目要用矩陣行列式引理 det(A+uv^T)"
+    weight: 1
+  - condition: "題目要求 det(I+uv^T) = 1 + v^Tu"
+    weight: 1
+anti_signal:
+  - condition: "A（或 D）奇異時，對應的 Schur 補公式不可使用"
+  - condition: "選哪塊做 Schur 補取決於哪塊可逆且較易求逆"
 ---
 
 # Schur 補矩陣（Schur Complement）
