@@ -50,12 +50,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/特殊矩陣的行列式.md",
+                "file": "第二章/分塊三角矩陣的行列式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "特殊矩陣的行列式"
+              "title": "分塊三角矩陣的行列式"
             }
           }
         ],
@@ -228,8 +228,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34ac4dc78d41eb0d",
+  "active": "f37a5bf20c4837c4",
   "lastOpenFiles": [
+    "第二章/Schur補矩陣.md",
+    "第二章/Laplace展開法.md",
+    "第二章/特殊矩陣的行列式.md",
+    "第二章/塊狀矩陣行列式進階.md",
+    "第二章/分塊三角矩陣的行列式.md",
     "第一章/矩陣分塊.md",
     "Obsidian_Notes(success version)/線代(上)_Page_220.md",
     "Obsidian_Notes(success version)/線代(上)_Page_57.md",
@@ -252,11 +257,6 @@
     "第二章/可逆矩陣等價條件.md",
     "第一章/可逆矩陣.md",
     "第二章/奇異與非奇異矩陣.md",
-    "第二章/古典伴隨矩陣.md",
-    "第三章/子空間.md",
-    "第一章/列行展開與分解.md",
-    "第三章/座標與基底變換.md",
-    "Obsidian_Notes(success version)/線代(上)_Page_281.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
