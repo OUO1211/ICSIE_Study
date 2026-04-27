@@ -50,12 +50,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/分塊三角矩陣的行列式.md",
+                "file": "第一章/對角矩陣與單位矩陣.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "分塊三角矩陣的行列式"
+              "title": "對角矩陣與單位矩陣"
             }
           }
         ],
@@ -230,11 +230,14 @@
   },
   "active": "f37a5bf20c4837c4",
   "lastOpenFiles": [
+    "第一章/矩陣加法與相等.md",
+    "第一章/列行展開與分解.md",
+    "第一章/利用列運算求反矩陣.md",
+    "第二章/分塊三角矩陣的行列式.md",
     "第二章/Schur補矩陣.md",
     "第二章/Laplace展開法.md",
     "第二章/特殊矩陣的行列式.md",
     "第二章/塊狀矩陣行列式進階.md",
-    "第二章/分塊三角矩陣的行列式.md",
     "第一章/矩陣分塊.md",
     "Obsidian_Notes(success version)/線代(上)_Page_220.md",
     "Obsidian_Notes(success version)/線代(上)_Page_57.md",
@@ -254,9 +257,6 @@
     "第三章/四大子空間的基底.md",
     "第三章/基底與維度.md",
     "第一章/LU分解.md",
-    "第二章/可逆矩陣等價條件.md",
-    "第一章/可逆矩陣.md",
-    "第二章/奇異與非奇異矩陣.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
