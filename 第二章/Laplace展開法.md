@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [行列式, 方法, Chapter2]
 status: finished
+core_mapping: "選零最多的列/行展開，乘餘因子降一階"
+mantra: "選零多的列行展，乘餘因子往下降"
+pattern_signal_strong:
+  - condition: "n×n 行列式需要計算，選擇某列/行有較多零"
+    weight: 3
+  - condition: "題目明確要求「按第 k 列（行）展開」"
+    weight: 3
+pattern_signal_weak:
+  - condition: "只有 1 個非零元素的列/行（計算最省力）"
+    weight: 1
+  - condition: "題目要計算 3×3 或更大的行列式"
+    weight: 1
+anti_signal:
+  - condition: "跨列（行）展開結果為 0，非行列式值，勿誤用"
+  - condition: "必須選整行或整列展開，不能只取部分元素"
 ---
 
 ## 定義
