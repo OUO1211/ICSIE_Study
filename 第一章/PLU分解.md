@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [矩陣, 分解, Chapter1]
 status: finished
+core_mapping: "有零主元先做列置換 P，再對 PA 做 LU 分解"
+mantra: "主元是零先換列，PLU 不怕零"
+pattern_signal_strong:
+  - condition: "矩陣某主對角元（pivot）為 0，無法直接 LU"
+    weight: 3
+  - condition: "高斯消去中遇到零主元需列置換"
+    weight: 3
+pattern_signal_weak:
+  - condition: "出現置換矩陣 P（正交矩陣，P^{-1}=P^T）"
+    weight: 1
+  - condition: "題目要解 Ax=b，分兩步 Ly=Pb 再 Ux=y"
+    weight: 1
+anti_signal:
+  - condition: "所有主元非零時直接 LU 分解，不需 PLU"
+  - condition: "P 為置換矩陣（非一般可逆矩陣），不可任意取"
 ---
 
 ## 定義

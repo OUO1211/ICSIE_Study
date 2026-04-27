@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [矩陣, 分解, Chapter1]
 status: finished
+core_mapping: "LU 分解後提取對角矩陣 D，使 L 和 U 對角項均為 1"
+mantra: "LU 再分 D，對角提出來"
+pattern_signal_strong:
+  - condition: "題目明確要求 LDU 分解"
+    weight: 3
+  - condition: "題目要求 L 和 U 對角項均為 1"
+    weight: 3
+pattern_signal_weak:
+  - condition: "各領導主子行列式全非零（保證 LDU 存在唯一）"
+    weight: 1
+  - condition: "出現對稱矩陣（對稱矩陣有 LDL^T 分解）"
+    weight: 1
+anti_signal:
+  - condition: "L 或 U 對角項非全 1 時不符合標準 LDU 形式"
+  - condition: "有零主元時需先做 PLU，無法直接 LDU"
 ---
 
 ## 定義

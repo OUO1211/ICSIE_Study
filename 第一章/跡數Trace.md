@@ -2,6 +2,21 @@
 subject: Linear Algebra
 tags: [矩陣, 定義, Chapter1]
 status: finished
+core_mapping: "求對角項之和，利用 tr(AB)=tr(BA) 交換循環"
+mantra: "跡數加對角，AB 換位跡不變"
+pattern_signal_strong:
+  - condition: "題目出現 tr(A) 或要計算對角項之和"
+    weight: 3
+  - condition: "題目涉及 AB-BA=I 的矛盾證明"
+    weight: 3
+pattern_signal_weak:
+  - condition: "出現 tr(A^T)=tr(A) 或 tr(A^H)=tr(A) 的共軛"
+    weight: 1
+  - condition: "出現 tr(αA+βB) 的線性組合"
+    weight: 1
+anti_signal:
+  - condition: "tr(AB) ≠ tr(A)tr(B)（乘積跡數不等於跡數乘積）"
+  - condition: "tr(A^n) ≠ (tr(A))^n（高次跡數不等於跡數的冪次）"
 ---
 
 ## 定義
