@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"01696c931032ca5c","x":-40,"y":100,"width":400,"height":400,"type":"file","file":"第一章/三角矩陣.md"},
+		{"id":"8f3f0331ce2d1014","x":-480,"y":0,"width":400,"height":400,"type":"file","file":"第一章/可逆矩陣.md"}
+	],
+	"edges":[]
+}
