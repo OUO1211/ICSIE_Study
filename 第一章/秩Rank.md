@@ -4,6 +4,21 @@ chapter: 1
 section: 1.6
 tags: [矩陣, 定義, Chapter1, Chapter2]
 status: finished
+core_mapping: "化 REF 數非零列數=rank，比較 rank([A|b]) 判斷解的存在性"
+mantra: "秩等 pivot 數，rank 決定解幾個"
+pattern_signal_strong:
+  - condition: "出現 rank(A) 與 rank([A|b]) 的比較"
+    weight: 3
+  - condition: "題目問線性方程組解的個數（無解/唯一解/無限多解）"
+    weight: 3
+pattern_signal_weak:
+  - condition: "出現 rank(A)=rank(A^T)（列秩=行秩）"
+    weight: 1
+  - condition: "出現 rank(AB)≤min(rank(A),rank(B))"
+    weight: 1
+anti_signal:
+  - condition: "rank(A)<n 只代表「若有解則無限多解」，不保證有解"
+  - condition: "rank(A)=m 只保證對所有 b 至少一解，不保證唯一"
 ---
 
 > **第一章 § 1.6｜操作定義**：以列運算計算 rank，用於判斷方程組解的個數。
