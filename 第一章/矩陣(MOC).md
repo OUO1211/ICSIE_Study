@@ -1,9 +1,3 @@
----
-subject: Linear Algebra
-tags: [MOC, Chapter1, 矩陣]
-status: finished
----
-
 # 第一章 MOC：矩陣 (Matrices)
 
 > 本 MOC 串聯第一章所有原子筆記，按觀念推導順序排列。

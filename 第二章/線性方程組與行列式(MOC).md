@@ -1,9 +1,3 @@
----
-subject: Linear Algebra
-tags: [MOC, Chapter2]
-status: finished
----
-
 # 第二章 MOC：線性方程組與行列式
 
 > 本 MOC 串聯第二章所有原子筆記，按觀念推導順序排列。
