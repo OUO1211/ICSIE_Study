@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第二章/行列式定義.md",
+                "file": "CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "行列式定義"
+              "title": "CLAUDE"
             }
           }
         ],
@@ -73,7 +73,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第二章/行列式定義.md",
+                "file": "CLAUDE.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -101,7 +101,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "行列式定義 的關聯圖"
+              "title": "CLAUDE 的關聯圖"
             }
           }
         ]
@@ -275,6 +275,7 @@
   },
   "active": "2aa96e2a3423b70f",
   "lastOpenFiles": [
+    "第二章/行列式定義.md",
     "第三章/常見向量空間.md",
     "第三章/線性獨立與相依.md",
     "第三章/線性組合與生成空間.md",
@@ -300,7 +301,6 @@
     "第二章/特殊矩陣的行列式.md",
     "第一章/純量乘法.md",
     "第一章/可逆矩陣.md",
-    "第二章/高斯消去法.md",
     "未命名.canvas",
     "第三章",
     "第二章",
