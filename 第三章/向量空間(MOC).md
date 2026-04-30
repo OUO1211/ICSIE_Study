@@ -1,11 +1,3 @@
----
-subject: Linear Algebra
-chapter: 3
-type: MOC
-status: finished
-tags: [MOC, 向量空間, 第三章]
----
-
 # 第三章：向量空間（Map of Content）
 
 ## 章節概覽
