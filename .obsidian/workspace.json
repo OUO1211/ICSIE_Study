@@ -6,7 +6,6 @@
       {
         "id": "7509d3b3896e991c",
         "type": "tabs",
-        "dimension": 67.31875719217491,
         "children": [
           {
             "id": "39dfdc4beee400c1",
@@ -61,50 +60,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "a21590505d88502f",
-        "type": "tabs",
-        "dimension": 32.681242807825086,
-        "children": [
-          {
-            "id": "9d8c245908e26737",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "反射參照表.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "反射參照表 的關聯圖"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
