@@ -185,4 +185,3 @@ This is an **Obsidian vault** for 資工研 (Computer Science graduate studies).
 - "請讀取 [[線性獨立]] 與 [[齊次方程組]] 筆記，按照協議更新反射參照表。"
 - "針對這一章節的原子筆記，噴出所有能幫助我快速擷取特徵的 Mapping。"
 
-

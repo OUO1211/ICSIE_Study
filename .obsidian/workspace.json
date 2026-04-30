@@ -161,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5,
-    "collapsed": true
+    "width": 213.5
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -276,8 +275,10 @@
   },
   "active": "2aa96e2a3423b70f",
   "lastOpenFiles": [
-    "第二章/齊次方程組與零空間.md",
+    "review_checklist.md",
     "CLAUDE.md",
+    "final_check.txt.md",
+    "第二章/齊次方程組與零空間.md",
     "第一章/特殊矩陣類型.md",
     "第一章/三角矩陣.md",
     "第二章/小行列式與餘因子.md",
@@ -300,8 +301,6 @@
     "第一章/矩陣分塊.md",
     "第三章/秩與線性系統.md",
     "第二章/奇異與非奇異矩陣.md",
-    "第二章/行列式的列行運算性質.md",
-    "第二章/古典伴隨矩陣.md",
     "未命名.canvas",
     "第三章",
     "第二章",
