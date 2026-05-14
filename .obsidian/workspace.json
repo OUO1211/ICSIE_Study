@@ -13,7 +13,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/秩與線性系統.md",
+                "file": "第三章/常見向量空間.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -41,7 +41,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "秩與線性系統 的關聯圖"
+              "title": "常見向量空間 的關聯圖"
             }
           },
           {
@@ -50,12 +50,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/秩與線性系統.md",
+                "file": "第三章/常見向量空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "秩與線性系統"
+              "title": "常見向量空間"
             }
           }
         ],
@@ -230,6 +230,8 @@
   },
   "active": "0c4edb15960fcad3",
   "lastOpenFiles": [
+    "第三章/基底與維度.md",
+    "第三章/秩與線性系統.md",
     "第三章/向量空間定義.md",
     "第三章/四大子空間的基底.md",
     "第三章/四大基本子空間.md",
@@ -254,8 +256,6 @@
     "第二章/克拉瑪法則.md",
     "第三章/直和.md",
     "第三章/矩陣的秩.md",
-    "第三章/子空間的和.md",
-    "第三章/座標與基底變換.md",
     "未命名.canvas",
     "第三章",
     "第二章",
