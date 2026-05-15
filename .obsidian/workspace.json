@@ -157,8 +157,7 @@
               "title": "書籤"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -274,14 +273,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9845a666d1c6f1ab",
+  "active": "0c4edb15960fcad3",
   "lastOpenFiles": [
+    "第三章/常見向量空間.md",
+    "第三章/基底與維度.md",
     "第三章/向量空間(MOC).md",
     "第三章/四大子空間的基底.md",
     "反射參照表.md",
     "第三章/子空間的和.md",
-    "第三章/常見向量空間.md",
-    "第三章/基底與維度.md",
     "第三章/秩與線性系統.md",
     "第三章/向量空間定義.md",
     "第三章/四大基本子空間.md",
