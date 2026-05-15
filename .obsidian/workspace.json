@@ -96,7 +96,7 @@
                   "linkStrength": 1,
                   "linkDistance": 250,
                   "scale": 1,
-                  "close": false
+                  "close": true
                 }
               },
               "icon": "lucide-git-fork",
@@ -274,7 +274,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0c4edb15960fcad3",
+  "active": "9845a666d1c6f1ab",
   "lastOpenFiles": [
     "第三章/向量空間(MOC).md",
     "第三章/四大子空間的基底.md",
