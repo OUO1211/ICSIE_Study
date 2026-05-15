@@ -50,16 +50,61 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/常見向量空間.md",
+                "file": "第三章/基底與維度.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常見向量空間"
-            }
+              "title": "基底與維度"
+            },
+            "group": "1263f54311645840"
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "c5e725be6cd7ed19",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9845a666d1c6f1ab",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "第三章/基底與維度.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "基底與維度 的關聯圖"
+            },
+            "group": "1263f54311645840"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "塊狀",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,7 +157,8 @@
               "title": "書籤"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -230,13 +276,15 @@
   },
   "active": "0c4edb15960fcad3",
   "lastOpenFiles": [
+    "第三章/向量空間(MOC).md",
+    "第三章/四大子空間的基底.md",
+    "反射參照表.md",
+    "第三章/子空間的和.md",
+    "第三章/常見向量空間.md",
     "第三章/基底與維度.md",
     "第三章/秩與線性系統.md",
     "第三章/向量空間定義.md",
-    "第三章/四大子空間的基底.md",
     "第三章/四大基本子空間.md",
-    "第三章/向量空間(MOC).md",
-    "反射參照表.md",
     "CLAUDE.md",
     "第一章/反射參照表_第一章.md",
     "Obsidian_Notes(success version)/BMO/Profiles/BMO.md",
@@ -247,7 +295,6 @@
     "第一章/三角矩陣.md",
     "第二章/小行列式與餘因子.md",
     "第二章/行列式定義.md",
-    "第三章/常見向量空間.md",
     "第三章/線性獨立與相依.md",
     "第三章/線性組合與生成空間.md",
     "第三章/Wronskian.md",
@@ -255,7 +302,6 @@
     "第二章/塊狀矩陣行列式進階.md",
     "第二章/克拉瑪法則.md",
     "第三章/直和.md",
-    "第三章/矩陣的秩.md",
     "未命名.canvas",
     "第三章",
     "第二章",
