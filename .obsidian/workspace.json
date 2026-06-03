@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "反射參照表.md",
+                "file": "第一章/矩陣多項式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "反射參照表"
+              "title": "矩陣多項式"
             },
             "group": "2952d35ad85045aa"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "反射參照表.md",
+                "file": "第一章/矩陣多項式.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -58,11 +58,11 @@
                   "linkStrength": 1,
                   "linkDistance": 250,
                   "scale": 0.9999999999999999,
-                  "close": false
+                  "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "反射參照表 的關聯圖"
+              "title": "矩陣多項式 的關聯圖"
             },
             "group": "2952d35ad85045aa"
           }
@@ -237,10 +237,10 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
-    "2026-06-03.md",
-    "反射參照表.md",
-    "未命名 1.canvas",
     "第一章/基本行運算.md",
+    "反射參照表.md",
+    "2026-06-03.md",
+    "未命名 1.canvas",
     "未命名.canvas",
     "第一章/矩陣多項式.md",
     "第一章/矩陣加法與相等.md",
