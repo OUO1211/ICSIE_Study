@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/基底三大定理.md",
+                "file": "第三章/基底維度性質.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "基底三大定理"
+              "title": "基底維度性質"
             },
             "group": "2952d35ad85045aa"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/基底三大定理.md",
+                "file": "第三章/基底維度性質.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "基底三大定理 的關聯圖"
+              "title": "基底維度性質 的關聯圖"
             },
             "group": "2952d35ad85045aa"
           }
@@ -237,8 +237,8 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
-    "第三章/基底刻度尺.md",
     "第三章/基底三大定理.md",
+    "第三章/基底刻度尺.md",
     "第三章/基底維度性質.md",
     "第三章/線性獨立與相依.md",
     "第二章/Laplace展開法.md",
