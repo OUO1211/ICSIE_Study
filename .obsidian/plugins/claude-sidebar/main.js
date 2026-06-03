@@ -6755,6 +6755,14 @@ var CLI_BACKENDS = {
     resumeFlag: "--continue",
     resumeIsSubcommand: false,
   },
+  cursor: {
+    label: "Cursor Agent",
+    binary: "cursor-agent",
+    pathHints: ["~/.local/bin"],
+    yoloFlag: "--yolo",
+    resumeFlag: "--continue",
+    resumeIsSubcommand: false,
+  },
   pi: {
     label: "Pi",
     binary: "pi",
@@ -6863,20 +6871,23 @@ var TerminalView = class extends import_obsidian.ItemView {
       // Defensive: on Windows, Obsidian's layout dispatch can crash silently
       // during startup (recomputeChildrenDimensions errors), leaving xterm at
       // stale dimensions without firing ResizeObserver or onLayoutChange.
-      // Schedule fixed-interval fits + PTY resizes so the terminal recovers
-      // even when no event listener fires.
-      [250, 750, 1500, 3000].forEach((delay) => {
-        setTimeout(() => {
-          if (this._isDisposed) return;
-          const dim = this.fitAddon?.proposeDimensions();
-          if (dim && dim.cols > 0 && dim.rows > 0) {
-            this.fit();
-            if (this.proc && !this.proc.killed) {
-              this.proc.stdin?.write(`\x1b]RESIZE;${dim.cols};${dim.rows}\x07`);
+      // Gated to win32 because on macOS/Linux these unconditional fits feed
+      // the ResizeObserver loop when multiple terminal leaves restore on
+      // launch (issue #80).
+      if (process.platform === "win32") {
+        [250, 750, 1500, 3000].forEach((delay) => {
+          setTimeout(() => {
+            if (this._isDisposed) return;
+            const dim = this.fitAddon?.proposeDimensions();
+            if (dim && dim.cols > 0 && dim.rows > 0) {
+              this.fit();
+              if (this.proc && !this.proc.killed) {
+                this.proc.stdin?.write(`\x1b]RESIZE;${dim.cols};${dim.rows}\x07`);
+              }
             }
-          }
-        }, delay);
-      });
+          }, delay);
+        });
+      }
       this.setupEscapeHandler();
     } catch (err) {
       console.error("[Claude Sidebar] Failed to initialize terminal:", err);
@@ -7357,7 +7368,10 @@ var TerminalView = class extends import_obsidian.ItemView {
       }
     });
     this.ensureFitWithRetry();
-    this.resizeObserver = new ResizeObserver(() => this.debouncedFit());
+    this.resizeObserver = new ResizeObserver(() => {
+      if (this._fitInProgress) return;
+      this.debouncedFit();
+    });
     this.resizeObserver.observe(this.termHost);
     // Track user scroll intent so auto-scroll doesn't fight the user
     this.userScrolledAt = 0;
@@ -7372,6 +7386,8 @@ var TerminalView = class extends import_obsidian.ItemView {
   }
   fit() {
     if (!this.term || !this.fitAddon) return;
+    if (this._fitInProgress) return;
+    this._fitInProgress = true;
     try {
       const userScrolled = Date.now() - (this.userScrolledAt || 0) < 5000;
       const wasAtBottom = !userScrolled && this.term.buffer.active.baseY === this.term.buffer.active.viewportY;
@@ -7387,12 +7403,21 @@ var TerminalView = class extends import_obsidian.ItemView {
         this.term.scrollToLine(savedViewportY);
       }
     } catch (e) {}
+    // Release on the frame after next so any ResizeObserver callbacks
+    // caused by this fit() are swallowed instead of re-entering.
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      this._fitInProgress = false;
+    }));
   }
   debouncedFit() {
     if (this.fitTimeout) clearTimeout(this.fitTimeout);
     this.fitTimeout = setTimeout(() => {
-      this.fit();
       this.fitTimeout = null;
+      if (!this.term || !this.fitAddon) return;
+      const dim = this.fitAddon.proposeDimensions();
+      if (!dim || dim.cols <= 0 || dim.rows <= 0) return;
+      if (dim.cols === this.term.cols && dim.rows === this.term.rows) return;
+      this.fit();
     }, 100);
   }
   async waitForHostReady() {
