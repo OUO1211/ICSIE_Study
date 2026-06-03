@@ -3,7 +3,12 @@
     "allow": [
       "Bash(curl:*)",
       "Bash(ls:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(where pdftotext *)",
+      "Bash(where mutool *)",
+      "Bash(python -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(Remove-Item -Recurse -Force \"c:\\\\Users\\\\USER\\\\Documents\\\\ICSIE_Study\\\\.tmp_pdf_imgs\")"
     ]
   }
 }
