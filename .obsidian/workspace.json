@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/線性組合與生成空間.md",
+                "file": "第三章/子空間的和.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線性組合與生成空間"
+              "title": "子空間的和"
             },
             "group": "2952d35ad85045aa"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/線性組合與生成空間.md",
+                "file": "第三章/子空間的和.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "線性組合與生成空間 的關聯圖"
+              "title": "子空間的和 的關聯圖"
             },
             "group": "2952d35ad85045aa"
           }
@@ -123,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5,
-    "collapsed": true
+    "width": 213.5
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -238,6 +237,7 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "第三章/線性組合與生成空間.md",
     "第三章/基底三大定理.md",
     "第三章/基底維度性質.md",
     "第三章/座標與基底變換.md",
@@ -265,7 +265,6 @@
     "2026-06-03.md",
     "未命名 1.canvas",
     "未命名.canvas",
-    "第一章/矩陣加法與相等.md",
     "第三章",
     "第二章",
     "Chapter2_觀念列表.txt",
