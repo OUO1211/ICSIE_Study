@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/四大子空間的基底.md",
+                "file": "第三章/四大基本子空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "四大子空間的基底"
+              "title": "四大基本子空間"
             },
             "group": "2952d35ad85045aa"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/四大子空間的基底.md",
+                "file": "第三章/四大基本子空間.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "四大子空間的基底 的關聯圖"
+              "title": "四大基本子空間 的關聯圖"
             },
             "group": "2952d35ad85045aa"
           }
@@ -124,7 +124,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 213.5,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -238,6 +239,7 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "第三章/四大子空間的基底.md",
     "第三章/子空間.md",
     "第三章/直和.md",
     "第三章/子空間的和.md",
@@ -263,7 +265,6 @@
     "第一章/純量乘法.md",
     "第一章/矩陣定義.md",
     "第一章/矩陣多項式.md",
-    "反射參照表.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "第三章",
