@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/直和.md",
+                "file": "第三章/四大子空間的基底.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "直和"
+              "title": "四大子空間的基底"
             },
             "group": "2952d35ad85045aa"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "第三章/直和.md",
+                "file": "第三章/四大子空間的基底.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "直和 的關聯圖"
+              "title": "四大子空間的基底 的關聯圖"
             },
             "group": "2952d35ad85045aa"
           }
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "可逆",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "title": "書籤"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -237,8 +238,9 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
-    "第三章/子空間的和.md",
     "第三章/子空間.md",
+    "第三章/直和.md",
+    "第三章/子空間的和.md",
     "第三章/線性組合與生成空間.md",
     "第三章/基底三大定理.md",
     "第三章/基底維度性質.md",
@@ -262,7 +264,6 @@
     "第一章/矩陣定義.md",
     "第一章/矩陣多項式.md",
     "反射參照表.md",
-    "2026-06-03.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "第三章",
