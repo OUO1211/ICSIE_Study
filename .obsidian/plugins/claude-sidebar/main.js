@@ -7227,6 +7227,33 @@ var TerminalView = class extends import_obsidian.ItemView {
     this.term.open(this.termHost);
     this.term.parser?.registerCsiHandler({ final: "I" }, () => true);
     this.term.parser?.registerCsiHandler({ final: "O" }, () => true);
+    // Make vault-relative file paths in the output clickable (open the note in Obsidian).
+    // xterm calls provideLinks lazily, per-line, only when the mouse hovers that row — no
+    // cost during output. We only link a path that resolves to a real file in the vault,
+    // so arbitrary path-looking text (URLs, code refs, version numbers) stays plain.
+    this.term.registerLinkProvider?.({
+      provideLinks: (y, callback) => {
+        const line = this.term?.buffer.active.getLine(y - 1);
+        if (!line) return callback(void 0);
+        const text = line.translateToString(true);
+        const links = [];
+        const re = /(?:[\w.\-]+\/)*[\w.\-]+\.\w+/g;
+        let m;
+        while ((m = re.exec(text)) !== null) {
+          const candidate = m[0];
+          const file = this.resolveVaultPath(candidate);
+          if (!file) continue;
+          const start = m.index + 1; // 1-based start column
+          const end = m.index + candidate.length; // 1-based, inclusive last cell
+          links.push({
+            text: candidate,
+            range: { start: { x: start, y }, end: { x: end, y } },
+            activate: () => this.openVaultFile(file)
+          });
+        }
+        callback(links.length ? links : void 0);
+      }
+    });
     // Handle image paste - use capture phase to intercept before xterm's textarea
     this.imagePasteHandler = async (e) => {
       // Only handle if terminal has focus
@@ -7302,6 +7329,52 @@ var TerminalView = class extends import_obsidian.ItemView {
         }).catch(() => {});
       });
     }
+    const isMac = process.platform === 'darwin';
+    // Keys the terminal must keep regardless of Obsidian bindings.
+    const terminalNeedsKey = (ev) => {
+      // Control codes are terminal input (Ctrl+C interrupt, Ctrl+A, etc.),
+      // unless Cmd is also held (then it's an app shortcut, not a control code).
+      if (ev.ctrlKey && !ev.metaKey) return true;
+      // Plain typing / navigation with no app modifier.
+      if (!ev.metaKey && !ev.ctrlKey && !ev.altKey) {
+        const nav = new Set(['Enter', 'Tab', 'Backspace', 'Delete', 'Escape',
+          'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+          'Home', 'End', 'PageUp', 'PageDown', ' ']);
+        if (nav.has(ev.key)) return true;
+        if (ev.key && ev.key.length === 1) return true; // printable character
+      }
+      return false;
+    };
+    // True if the event matches a hotkey the user/Obsidian has registered.
+    // Uses Obsidian's internal hotkeyManager (undocumented API — defensive).
+    const matchesObsidianHotkey = (ev) => {
+      const hm = this.app && this.app.hotkeyManager;
+      if (!hm) return false;
+      let baked = hm.bakedHotkeys;
+      if (!baked && typeof hm.bake === 'function') { hm.bake(); baked = hm.bakedHotkeys; }
+      if (!Array.isArray(baked)) return false;
+      const evKey = (ev.key || '').toLowerCase();
+      for (const hk of baked) {
+        if (!hk || !hk.key) continue;
+        if (hk.key.toLowerCase() !== evKey) continue;
+        let mods = hk.modifiers;
+        if (typeof mods === 'string') mods = mods ? mods.split(',') : [];
+        if (!Array.isArray(mods)) mods = [];
+        let needMeta = false, needCtrl = false, needShift = false, needAlt = false;
+        for (const m of mods) {
+          if (m === 'Mod') { if (isMac) needMeta = true; else needCtrl = true; }
+          else if (m === 'Meta') needMeta = true;
+          else if (m === 'Ctrl') needCtrl = true;
+          else if (m === 'Shift') needShift = true;
+          else if (m === 'Alt') needAlt = true;
+        }
+        if (needMeta === !!ev.metaKey && needCtrl === !!ev.ctrlKey &&
+            needShift === !!ev.shiftKey && needAlt === !!ev.altKey) {
+          return true;
+        }
+      }
+      return false;
+    };
     this.term.attachCustomKeyEventHandler((ev) => {
       // Shift+Enter: send Alt+Enter for multi-line input
       // Must block both keydown and keypress events to prevent xterm from sending normal Enter
@@ -7355,6 +7428,13 @@ var TerminalView = class extends import_obsidian.ItemView {
             return false;
           }
         }
+        // Pass app-level shortcuts to Obsidian instead of letting xterm swallow
+        // them: any key Obsidian has registered as a hotkey (covers custom
+        // bindings and every command hotkey), unless the terminal genuinely
+        // needs that key (control codes, typing, navigation).
+        if (!terminalNeedsKey(ev) && matchesObsidianHotkey(ev)) {
+          return false;
+        }
       }
       return true;
     });
@@ -7383,6 +7463,34 @@ var TerminalView = class extends import_obsidian.ItemView {
     this.themeObserver.observe(document.body, { attributes: true, attributeFilter: ["class"] });
     // Watch for Obsidian layout changes (sidebar resize, etc.)
     this.registerEvent(this.app.workspace.onLayoutChange(() => this.debouncedFit()));
+  }
+  // Resolve a candidate string to a real vault file, or null. Absolute/home paths and
+  // URLs are skipped. Falls back to basename linkpath resolution (e.g. a bare note name).
+  resolveVaultPath(candidate) {
+    if (!candidate) return null;
+    if (candidate.startsWith("/") || candidate.startsWith("~") || candidate.includes("://")) return null;
+    const direct = this.app.vault.getAbstractFileByPath(candidate);
+    if (direct instanceof import_obsidian.TFile) return direct;
+    const dest = this.app.metadataCache.getFirstLinkpathDest(candidate, "");
+    if (dest instanceof import_obsidian.TFile) return dest;
+    return null;
+  }
+  // Open (or focus, if already open) a vault file in a markdown leaf — never replaces the
+  // terminal leaf. Mirrors the leaf-selection logic in toggleFocus().
+  async openVaultFile(file) {
+    const mdLeaves = this.app.workspace.getLeavesOfType("markdown");
+    const already = mdLeaves.find((l) => l.view?.file?.path === file.path);
+    if (already) {
+      this.app.workspace.setActiveLeaf(already, { focus: true });
+      return;
+    }
+    const target = mdLeaves.filter((l) => !l.pinned)[0] || mdLeaves[0];
+    if (target) {
+      await target.openFile(file);
+      this.app.workspace.setActiveLeaf(target, { focus: true });
+    } else {
+      await this.app.workspace.getLeaf(true).openFile(file);
+    }
   }
   fit() {
     if (!this.term || !this.fitAddon) return;
@@ -7549,6 +7657,19 @@ var TerminalView = class extends import_obsidian.ItemView {
           shellEnv.PATH = `${hint}:${shellEnv.PATH}`;
         }
       }
+    }
+
+    // User-defined environment variables (KEY=VALUE per line). Lets users set
+    // things like CLAUDE_CONFIG_DIR to keep multiple Claude accounts separate.
+    const envVarsRaw = this.plugin.pluginData.claudeEnvVars || "";
+    for (const line of envVarsRaw.split("\n")) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith("#")) continue;
+      const eq = trimmed.indexOf("=");
+      if (eq <= 0) continue;
+      const key = trimmed.slice(0, eq).trim();
+      const val = trimmed.slice(eq + 1).trim();
+      if (key) shellEnv[key] = val;
     }
 
     this.proc = (0, import_child_process.spawn)(cmd, args, {
@@ -7802,6 +7923,26 @@ var ClaudeSidebarSettingsTab = class extends import_obsidian.PluginSettingTab {
           }
           await this.plugin.saveData(this.plugin.pluginData);
         }));
+    const envSetting = new import_obsidian.Setting(containerEl)
+      .setName("Environment variables")
+      .setDesc("One KEY=VALUE per line, passed to every session.")
+      .addTextArea(text => {
+        const grow = () => {
+          text.inputEl.style.height = "auto";
+          text.inputEl.style.height = text.inputEl.scrollHeight + "px";
+        };
+        text
+          .setPlaceholder("CLAUDE_CONFIG_DIR=/Users/you/.claude-work")
+          .setValue(this.plugin.pluginData.claudeEnvVars || "")
+          .onChange(async (value) => {
+            this.plugin.pluginData.claudeEnvVars = value;
+            grow();
+            await this.plugin.saveData(this.plugin.pluginData);
+          });
+        text.inputEl.rows = 2;
+        setTimeout(grow, 0);
+      });
+    envSetting.settingEl.addClass("claude-sidebar-env-setting");
   }
 };
 var VaultTerminalPlugin = class extends import_obsidian.Plugin {
