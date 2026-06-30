@@ -11,14 +11,12 @@
             "id": "4e23dd585893d949",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "第三章/秩與線性系統.md",
-                "mode": "source",
-                "source": false
+                "file": "pdf_imgs/p196.png"
               },
-              "icon": "lucide-file",
-              "title": "秩與線性系統"
+              "icon": "lucide-image",
+              "title": "p196"
             }
           }
         ]
@@ -192,6 +190,18 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "pdf_imgs/p190.png",
+    "pdf_imgs/p185.png",
+    "pdf_imgs/p176.png",
+    "pdf_imgs/p181.png",
+    "pdf_imgs/p186.png",
+    "pdf_imgs/p151.png",
+    "pdf_imgs/p251.png",
+    "pdf_imgs/p248.png",
+    "pdf_imgs/p246.png",
+    "pdf_imgs/p243.png",
+    "pdf_imgs/p241.png",
+    "第三章/秩與線性系統.md",
     "第三章/矩陣的秩.md",
     "第三章/座標與基底變換.md",
     "第三章/直和.md",
@@ -216,8 +226,6 @@
     "第二章/行列式定義.md",
     "第二章/古典伴隨矩陣.md",
     "第二章/小行列式與餘因子.md",
-    "第一章/轉置矩陣.md",
-    "第一章/冪零矩陣.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "第三章",
@@ -228,16 +236,6 @@
     "skill.txt",
     "success.txt",
     "Obsidian_Notes(success version).zip",
-    "pdf_imgs/p98.png",
-    "pdf_imgs/p97.png",
-    "pdf_imgs/p95.png",
-    "pdf_imgs/p94.png",
-    "pdf_imgs/p88.png",
-    "pdf_imgs/p87.png",
-    "pdf_imgs/p80.png",
-    "pdf_imgs/p78.png",
-    "pdf_imgs/p75.png",
-    "pdf_imgs/p74.png",
     "pdf_imgs",
     "Obsidian_Notes(success version) - 複製 (2)/BMO/Profiles"
   ]
