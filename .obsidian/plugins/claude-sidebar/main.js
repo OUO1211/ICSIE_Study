@@ -7232,6 +7232,7 @@ var TerminalView = class extends import_obsidian.ItemView {
       return;
     this.term = new import_xterm.Terminal({
       cursorBlink: true,
+      copyOnSelect: true,
       fontSize: 13,
       fontFamily: "Menlo, Monaco, 'Cascadia Mono', 'Cascadia Code', Consolas, 'Courier New', 'Microsoft YaHei', 'SimHei', 'PingFang SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', monospace",
       theme: this.getThemeColors(),
@@ -7253,19 +7254,42 @@ var TerminalView = class extends import_obsidian.ItemView {
         if (!line) return callback(void 0);
         const text = line.translateToString(true);
         const links = [];
-        const re = /(?:[\w.\-]+\/)*[\w.\-]+\.\w+/g;
-        let m;
-        while ((m = re.exec(text)) !== null) {
-          const candidate = m[0];
+        const seen = new Set(); // start columns already linked, so the two scans don't double-link
+        const pushLink = (candidate, startIdx0) => {
           const file = this.resolveVaultPath(candidate);
-          if (!file) continue;
-          const start = m.index + 1; // 1-based start column
-          const end = m.index + candidate.length; // 1-based, inclusive last cell
+          if (!file) return false;
+          const start = startIdx0 + 1;              // 1-based start column
+          const end = startIdx0 + candidate.length; // 1-based, inclusive last cell
+          if (seen.has(start)) return true;
+          seen.add(start);
           links.push({
             text: candidate,
             range: { start: { x: start, y }, end: { x: end, y } },
             activate: () => this.openVaultFile(file)
           });
+          return true;
+        };
+        // 1) Backtick-wrapped paths — explicit delimiters, so spaces inside are unambiguous.
+        const reBacktick = /`([^`\r\n]*?\.\w+)`/g;
+        let b;
+        while ((b = reBacktick.exec(text)) !== null) {
+          pushLink(b[1], b.index + 1); // inner content starts one column after the opening backtick
+        }
+        // 2) Unquoted paths. Allow spaces inside segments, then strip leading prose
+        //    words until the remainder resolves to a real file (bounded by word count).
+        const rePlain = /(?:[\w.\- ]+\/)*[\w.\- ]+\.\w+/g;
+        let m;
+        while ((m = rePlain.exec(text)) !== null) {
+          let candidate = m[0];
+          let offset = m.index;
+          if (seen.has(offset + 1)) continue; // already linked by the backtick pass
+          while (candidate) {
+            if (pushLink(candidate, offset)) break;
+            const sp = candidate.indexOf(" ");
+            if (sp === -1) break;
+            offset += sp + 1;
+            candidate = candidate.slice(sp + 1);
+          }
         }
         callback(links.length ? links : void 0);
       }
@@ -7335,15 +7359,63 @@ var TerminalView = class extends import_obsidian.ItemView {
     };
     this.termHost.addEventListener('dragover', this.fileDragOverHandler);
     this.termHost.addEventListener('drop', this.fileDropHandler);
-    // Windows right-click paste: Windows terminal convention is right-click = paste
-    if (process.platform === 'win32') {
-      this.termHost.addEventListener('contextmenu', (e) => {
-        e.preventDefault();
+    // macOS Ctrl+click arrives as a button-0 mousedown WITH ctrlKey (not a real
+    // right-click). xterm treats that as the start of a selection drag: it clears the
+    // current selection (so the menu's Copy would be empty) and, because the matching
+    // mouseup is swallowed by the menu, leaves the terminal stuck mid-drag (the cursor
+    // keeps extending a highlight). Intercept it in the capture phase before xterm's
+    // selection service sees it: stash the live selection for the menu, and stop the
+    // event so no drag starts. The separate contextmenu event still fires, so the menu
+    // opens. Real right-clicks (button 2) don't have this problem; we just stash for them.
+    this.termPreContextHandler = (e) => {
+      const isCtrlClick = process.platform === "darwin" && e.button === 0 && e.ctrlKey;
+      if (!(e.button === 2 || isCtrlClick)) return;
+      this._ctxSelection = this.term?.getSelection() || "";
+      if (isCtrlClick) {
         e.stopPropagation();
-        navigator.clipboard.readText().then((text) => {
-          if (text) this.term.paste(text);
-        }).catch(() => {});
+        e.stopImmediatePropagation();
+      }
+    };
+    this.termHost.addEventListener("mousedown", this.termPreContextHandler, true);
+    // Right-click context menu: Copy (when text is selected) / Paste. Cross-platform —
+    // replaces the old Windows-only right-click-paste so Mac and Linux get a menu too.
+    // Electron clipboard with a navigator.clipboard fallback.
+    this.termContextMenuHandler = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const sel = this._ctxSelection || this.term?.getSelection() || "";
+      this._ctxSelection = "";
+      const menu = new import_obsidian.Menu();
+      menu.addItem((i) => i.setTitle("Copy").setIcon("copy").setDisabled(!sel).onClick(() => {
+        try { require("electron").clipboard.writeText(sel); }
+        catch (_) { navigator.clipboard?.writeText(sel).catch(() => {}); }
+      }));
+      menu.addItem((i) => i.setTitle("Paste").setIcon("clipboard-paste").onClick(async () => {
+        let text = "";
+        try { text = require("electron").clipboard.readText() || ""; }
+        catch (_) { text = (await navigator.clipboard?.readText?.().catch(() => "")) || ""; }
+        if (text) this.term?.paste(text);
+      }));
+      menu.showAtMouseEvent(e);
+    };
+    this.termHost.addEventListener("contextmenu", this.termContextMenuHandler);
+    // Linux primary-selection clipboard (X11 convention): selecting text copies it to the
+    // PRIMARY buffer and middle-click pastes from PRIMARY — a separate clipboard from
+    // Ctrl+C/Ctrl+V. Only Electron's 'selection' clipboard exposes it, and only on Linux.
+    // (Requested by @DZPM on PR #71.) Untested on Linux; isolated and fails silently.
+    if (process.platform === "linux") {
+      this.termPrimarySelectionSub = this.term.onSelectionChange(() => {
+        const sel = this.term?.getSelection();
+        if (sel) { try { require("electron").clipboard.writeText(sel, "selection"); } catch (_) {} }
       });
+      this.termMiddleClickHandler = (e) => {
+        if (e.button !== 1) return; // middle button only
+        e.preventDefault();
+        let text = "";
+        try { text = require("electron").clipboard.readText("selection") || ""; } catch (_) {}
+        if (text) this.term?.paste(text);
+      };
+      this.termHost.addEventListener("auxclick", this.termMiddleClickHandler);
     }
     const isMac = process.platform === 'darwin';
     // Keys the terminal must keep regardless of Obsidian bindings.
@@ -7768,6 +7840,7 @@ var TerminalView = class extends import_obsidian.ItemView {
         if (this.proc && !this.proc.killed) {
           let winCmd = backend.binary;
           if (yoloMode && backend.yoloFlag) winCmd += ' ' + backend.yoloFlag;
+          if (additionalFlags) winCmd += ' ' + additionalFlags;
           this.proc.stdin?.write(winCmd + '\r');
         }
       }, 1000);
@@ -7845,6 +7918,22 @@ var TerminalView = class extends import_obsidian.ItemView {
     if (this.fileDropHandler && this.termHost) {
       this.termHost.removeEventListener('drop', this.fileDropHandler);
       this.fileDropHandler = null;
+    }
+    if (this.termPreContextHandler && this.termHost) {
+      this.termHost.removeEventListener("mousedown", this.termPreContextHandler, true);
+      this.termPreContextHandler = null;
+    }
+    if (this.termContextMenuHandler && this.termHost) {
+      this.termHost.removeEventListener("contextmenu", this.termContextMenuHandler);
+      this.termContextMenuHandler = null;
+    }
+    if (this.termMiddleClickHandler && this.termHost) {
+      this.termHost.removeEventListener("auxclick", this.termMiddleClickHandler);
+      this.termMiddleClickHandler = null;
+    }
+    if (this.termPrimarySelectionSub) {
+      this.termPrimarySelectionSub.dispose?.();
+      this.termPrimarySelectionSub = null;
     }
     this.term?.dispose();
     this.term = null;

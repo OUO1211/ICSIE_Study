@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第一章/列行展開與分解.md",
+                "file": "第三章/子空間.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "列行展開與分解"
+              "title": "子空間"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "第一章/列行展開與分解.md",
     "第一章/基本行運算.md",
     "第三章/四大子空間的基底.md",
     "第一章/矩陣(MOC).md",
@@ -218,7 +219,6 @@
     "第一章/零矩陣.md",
     "第一章/基本列運算.md",
     "第一章/純量乘法.md",
-    "第一章/矩陣定義.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "第三章",
