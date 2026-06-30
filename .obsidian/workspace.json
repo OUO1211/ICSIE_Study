@@ -11,12 +11,14 @@
             "id": "4e23dd585893d949",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "pdf_imgs/p196.png"
+                "file": "第三章/秩與線性系統.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "p196"
+              "icon": "lucide-file",
+              "title": "秩與線性系統"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 213.5,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -190,17 +193,17 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "pdf_imgs/p141.png",
+    "pdf_imgs/p138.png",
+    "pdf_imgs/p133.png",
+    "pdf_imgs/p130.png",
+    "pdf_imgs/p129.png",
+    "pdf_imgs/p115.png",
+    "pdf_imgs/p110.png",
+    "pdf_imgs/p102.png",
+    "pdf_imgs/p196.png",
     "pdf_imgs/p190.png",
     "pdf_imgs/p185.png",
-    "pdf_imgs/p176.png",
-    "pdf_imgs/p181.png",
-    "pdf_imgs/p186.png",
-    "pdf_imgs/p151.png",
-    "pdf_imgs/p251.png",
-    "pdf_imgs/p248.png",
-    "pdf_imgs/p246.png",
-    "pdf_imgs/p243.png",
-    "pdf_imgs/p241.png",
     "第三章/秩與線性系統.md",
     "第三章/矩陣的秩.md",
     "第三章/座標與基底變換.md",
