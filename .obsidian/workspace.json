@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第三章/線性獨立與相依.md",
+                "file": "第三章/四大子空間的基底.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線性獨立與相依"
+              "title": "四大子空間的基底"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 213.5,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -192,12 +193,12 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "第三章/線性獨立與相依.md",
     "第三章/四大基本子空間.md",
     "第三章/向量空間定義.md",
     "第三章/向量空間(MOC).md",
     "第三章/基底與維度.md",
     "第三章/Wronskian.md",
-    "第三章/線性獨立與相依.md",
     "第三章/基底維度性質.md",
     "第三章/基底三大定理.md",
     "第三章/秩與線性系統.md",
