@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian_Notes(success version)/線代(上)_Page_307.md",
+                "file": "第三章/座標與基底變換.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線代(上)_Page_307"
+              "title": "座標與基底變換"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "行獨立",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "書籤"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -191,12 +190,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e23dd585893d949",
+  "active": "34ac4dc78d41eb0d",
   "lastOpenFiles": [
-    "Obsidian_Notes(success version)/線代(上)_Page_149.md",
-    "第三章/和空間維度公式.md",
-    "第三章/向量空間定義.md",
     "第三章/直和.md",
+    "第三章/向量空間定義.md",
+    "第三章/和空間維度公式.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_149.md",
+    "Obsidian_Notes(success version)/線代(上)_Page_307.md",
     "第三章/座標與基底變換.md",
     "第三章/線性獨立與相依.md",
     "第三章/常見向量空間.md",
@@ -228,7 +228,6 @@
     "第三章/基底刻度尺.md",
     "第二章/Laplace展開法.md",
     "第二章/Schur補矩陣.md",
-    "第一章/利用列運算求反矩陣.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "第三章",
