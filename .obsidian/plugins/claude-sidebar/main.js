@@ -6840,6 +6840,24 @@ var TerminalView = class extends import_obsidian.ItemView {
     return state;
   }
   async onOpen() {
+    // Workspace-restore on startup: the sidebar layout isn't settled yet, and
+    // building xterm now trips Obsidian's `recomputeChildrenDimensions` error in
+    // updateLayout, which tears the view back down (close -> unload throws
+    // "reading 'e'") and can abort app load on Linux. Defer the real init until
+    // onLayoutReady so a persisted terminal reopens on startup without crashing.
+    if (!this.plugin.layoutReady && !this._deferredOpen) {
+      this._deferredOpen = true;
+      this.app.workspace.onLayoutReady(() => {
+        setTimeout(() => {
+          try {
+            this.onOpen();
+          } catch (err) {
+            console.error("[Claude Sidebar] Deferred terminal init failed:", err);
+          }
+        }, 50);
+      });
+      return;
+    }
     try {
       // If terminal is still alive from a prior onOpen, just reattach and focus.
       // Obsidian calls onOpen() each time the view becomes visible; without this
@@ -7485,6 +7503,35 @@ var TerminalView = class extends import_obsidian.ItemView {
             return false;
           }
           return true;
+        }
+        // Ctrl+Shift+C / Ctrl+Shift+V: standard Linux terminal copy/paste (GNOME Terminal,
+        // KDE Konsole, most VTE terminals). Plain Ctrl+C/Ctrl+V stay reserved for control
+        // codes (Ctrl+C = SIGINT), so Linux adds Shift to disambiguate. Additive and harmless
+        // elsewhere: macOS uses Cmd+C/V and Windows Ctrl+C/V, both handled below. Uses the
+        // Electron clipboard like the right-click menu and the #89 Ctrl+C fix (the async
+        // Clipboard API can reject silently in the renderer). ev.code so the Shift-uppercased
+        // key letter is irrelevant.
+        if (ev.code === 'KeyC' && ev.ctrlKey && ev.shiftKey && !ev.altKey && !ev.metaKey) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          const selection = this.term.getSelection();
+          if (selection) {
+            try { require("electron").clipboard.writeText(selection); }
+            catch (_) { navigator.clipboard?.writeText(selection).catch(() => {}); }
+          }
+          return false;
+        }
+        if (ev.code === 'KeyV' && ev.ctrlKey && ev.shiftKey && !ev.altKey && !ev.metaKey) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          let text = "";
+          try { text = require("electron").clipboard.readText() || ""; } catch (_) {}
+          if (text) {
+            this.term.paste(text);
+          } else {
+            navigator.clipboard?.readText?.().then((t) => { if (t) this.term.paste(t); }).catch(() => {});
+          }
+          return false;
         }
         // Windows Ctrl+V: paste from clipboard (Obsidian intercepts this before xterm sees it)
         if (ev.key === 'v' && ev.ctrlKey && !ev.shiftKey && !ev.altKey && !ev.metaKey) {
