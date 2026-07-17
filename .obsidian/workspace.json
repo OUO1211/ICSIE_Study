@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2875c28e259e8225",
+        "id": "fd3a24edcd4ecad1",
         "type": "tabs",
         "children": [
           {
-            "id": "4e23dd585893d949",
+            "id": "081ab4aca71e39e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Algebra (下)/第7章/268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
             }
           }
         ]
@@ -78,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 213.5,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -190,8 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e23dd585893d949",
+  "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第1章/三角矩陣.md",
+    "Linear Algebra (下)/第7章/268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds.md",
     "Linear Algebra (下)/第7章/266線性代數（下）向量的夾角若非零向量 $_boldsymbol{u}, _boldsymbol{v}$ 的夾角为 $_theta _in[0, _pi]$ ，則 $_cos _theta=_fra.md",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理冪零（nilpotent）與指標（index）（1）對線性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用191Fitting Lemma考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則存在一正整数 $k$ 使得 $V=_operatorname{ker.md",
@@ -216,8 +215,6 @@
     "Linear Algebra (下)/第5章/第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論5相似方陣保持的性質若方陣 $A$ 與 $B$ 相似，則（1） $_operatorname{tr}(A)=_operatorname{tr}(B)$ ．【很重要】（2） $_o.md",
     "Linear Algebra (下)/第5章/140線性代數（下）對角化應用一求轉移矩陣（transition matrix）與穩定態向量（steady－state vector）（1）考慮一些狀態所形成的序列，其中，任一狀態的產生可能與之前的狀.md",
-    "Linear Algebra (下)/第5章/124線性代數（下）5－5 可對角化矩陣的應用對角矩陣性質整理設 $C=_operatorname{diag}_left(c_1, c_2, _ldots, c_n_right), D=_operat.md",
-    "Linear Algebra (下)/第5章/96線性代數（下）做對角化的步驟（1）對 $V$ 上的算子 $T$ ，依序求出特徵式、特徵根、特徵空間，取各特徵空間上的基底，$_beta_1, _ldots, _beta_k$ ，則取基底 $_be.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
