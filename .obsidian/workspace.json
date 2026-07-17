@@ -11,14 +11,10 @@
             "id": "4e23dd585893d949",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大"
+              "title": "新分頁"
             }
           }
         ]
@@ -192,6 +188,10 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）.md",
+    "Discrete Math (上)/24 離散數學（上）關於 $p _rightarrow q$（1）$p _rightarrow q$ 的反命題（inverse）為 $_sim p _rightarrow _sim q$ 。（2）$p.md",
+    "Discrete Math (上)/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命題 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
     "Linear Algebra (下)/第5章/140線性代數（下）對角化應用一求轉移矩陣（transition matrix）與穩定態向量（steady－state vector）（1）考慮一些狀態所形成的序列，其中，任一狀態的產生可能與之前的狀.md",
@@ -215,10 +215,6 @@
     "Linear Algebra (下)/第8章/第 8 章 內積算子及其應用535其他應用一條件數（condition number）定義可逆矩陣 $A$ 的條件数為 $_operatorname{cond}(A)=_A_ _times_le.md",
     "Linear Algebra (下)/第8章/522線性代數（下）Rayleigh 法則（Rayleigh principle）考虑 Hermitian 矩陣 $A _in C^{n _times n}$ ，且 $_lambda_1 _leq _l.md",
     "Linear Algebra (下)/第8章/476線性代數（下）正定的性質考慮正定矩陣 $A _in C^{n _times n}$ ，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對應的特徵向量必正交．（3）$A$ 為正半定矩陣．（.md",
-    "Linear Algebra (下)/第8章/446線性代數（下）么正與正交的性質一關於特徵根令 $A _in C^{n _times n}$ 為么正矩陣，則（1）$A$ 為正規．（2）$A$ 的相異特徵根所對應的特徵向量必正交．（3）$A$ 的.md",
-    "Linear Algebra (下)/第8章/430線性代數（下）斜 Hermitian 矩陣的性質令 $A _in C^{n _times n}$ 為斜 Hermitian 矩陣，則（1）$A$ 為正規矩陣．（2）$A$ 的相異特徵根所對的特徵.md",
-    "Linear Algebra (下)/第8章/424線性代數（下）Hermitian 矩陣的性質令 $A _in C^{n _times n}$ 為 Hermitian 矩陣，則（1）$A$ 為正規矩陣．【96成大電通】（2）$A$ 的相異特徵根.md",
-    "Linear Algebra (下)/第8章/422線性代數（下）自伴算子（self－adjoint）與斜自伴算子（skew self－adjoint）考虑 $V$ 上的線性算子 $T$ ，若 $T^_=T$ ，則稱 $T$ 為自伴算子．若 $T.md",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.bb948891942a",
