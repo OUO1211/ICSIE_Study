@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
+                "file": "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{"
+              "title": "第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子"
             }
           }
         ]
@@ -192,6 +192,7 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md",
     "Discrete Math (上)/第2章/第 2 章 集合論149排容原理的應用三：映成（onto）函數考虑集合 $A 、 B$ ，其中 $_A_=m,_B_=n$ ，且 $m _geq n$ ，則 $A$ 至 $B$ 的映成函数個数為 $_.md",
     "Discrete Math (上)/第2章/第2章 集合論111推廣Let $A=_left_{A_1, _ldots, A_n_right_}$ be an arbitrary collection of sets，The generaliz.md",
@@ -217,7 +218,6 @@
     "Discrete Math (上)/第7章/第 7 章 遞迴關係式727含偶0的字串例题 2由数字 $_{0,1,2,3_}$ 所組成長度 $n$ 的字串中，含有偶数個 $_mathbf{0}$ 者有多少？【＊＊＊資エ】解 令所求為 $a_n$.md",
     "Discrete Math (上)/第7章/第 7 章 遞迴關係式 745與矩陣有關例題 6$D_n=_operatorname{det}_left(_left[_begin{array}{llllll}b & b & & & & _ b &.md",
     "Discrete Math (上)/第7章/第 7 章 透迴關係式 681求解遞迴關係式－特徵多項式（聯立方程組）例題 12求解遞迴式：$_left_{_begin{array}{l}a_{n+1}=-2 a_n-4 b_n _ b_{n+1.md",
-    "Discrete Math (上)/第7章/第 7 章 透迴關係式 673求解遞迴關係式－特徵多項式（非齊次，$f(n)$ 為指數函數）例題求解下列遞迴式：（1）$_left_{_begin{array}{l}a_0=a_1=1, _ a_n.md",
     "Discrete Math (上)/第7章",
     "Discrete Math (上)/第6章",
     "Discrete Math (上)/第5章",
