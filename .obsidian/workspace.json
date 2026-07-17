@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
+                "file": "Linear Algebra (下)/第7章/268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_"
+              "title": "268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds"
             }
           }
         ]
@@ -190,9 +190,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34ac4dc78d41eb0d",
+  "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Linear Algebra (下)/第7章/266線性代數（下）向量的夾角若非零向量 $_boldsymbol{u}, _boldsymbol{v}$ 的夾角为 $_theta _in[0, _pi]$ ，則 $_cos _theta=_fra.md",
+    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理冪零（nilpotent）與指標（index）（1）對線性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md",
+    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用191Fitting Lemma考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則存在一正整数 $k$ 使得 $V=_operatorname{ker.md",
+    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用189核集鏈定理（Kernel chain theorem）考慮 $n$ 維向量空間 $V$ 上的線性算子 $T$ ，則（1）$_{_mathbf{0}_} _.md",
+    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha.md",
     "Linear Algebra (下)/第6章/222線性代數（下）6－4 極小多項式方陣的極小多項式（minimal polynomial）考慮方陣 $A$ ，若多項式 $f(x)$ ，滿足：（i）$f(x)$ 的最高次方係数为 1 ，（ii）$.md",
+    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
     "Linear Algebra (下)/第6章/214線性代數（下）6－3 喬丹型的應用喬丹型代入多項式（1）考虑多項式 $f(x)$ 與下移型 Jordan block $J_k(_lambda)=_left[_begin{array}{cccc.md",
     "Linear Algebra (下)/第6章/210線性代數（下）相似與喬丹型若 $J_A$ 為 $A$ 的 Jordan form，$J_B$ 為 $B$ 的 Jordan form，則$A$ 與 $B$ 相似 $_Leftrightarrow.md",
     "Linear Algebra (下)/第6章/198線性代數（下）喬丹區塊（Jordan block）與喬丹型（Jordan form）令 $_lambda$ 為算子 $T$ 的特徵根，則稱 $J_k(_lambda)=_left[_begin{.md",
@@ -212,12 +218,6 @@
     "Linear Algebra (下)/第5章/140線性代數（下）對角化應用一求轉移矩陣（transition matrix）與穩定態向量（steady－state vector）（1）考慮一些狀態所形成的序列，其中，任一狀態的產生可能與之前的狀.md",
     "Linear Algebra (下)/第5章/124線性代數（下）5－5 可對角化矩陣的應用對角矩陣性質整理設 $C=_operatorname{diag}_left(c_1, c_2, _ldots, c_n_right), D=_operat.md",
     "Linear Algebra (下)/第5章/96線性代數（下）做對角化的步驟（1）對 $V$ 上的算子 $T$ ，依序求出特徵式、特徵根、特徵空間，取各特徵空間上的基底，$_beta_1, _ldots, _beta_k$ ，則取基底 $_be.md",
-    "Linear Algebra (下)/第5章/78線性代數（下）可對角化的充要條件設 $T _in L(V, V), _operatorname{dim}(V)=n, _lambda_1, _lambda_2, _ldots, _lambda_r.md",
-    "Discrete Math (上)/第3章/226離散數學（上）3－3 鴿籠原理（The Pigeonhole Principle）若有 $m$ 隻鸽子要放入 $n$ 個鴿籠中，且 $m_n$則至少有一籠放了至少二隻鴿子。【重要】Note又稱.md",
-    "Discrete Math (上)/第3章/第 3 圆兩203地板函數（Floor function、最大整數函數、下高斯函數）$f(x)=_lfloor x_rfloor_ R _rightarrow Z$ 定義成 $f(x)=n$ ，其中.md",
-    "Discrete Math (上)/第3章/286離散數學（上）調和數（Harmonic number）$H(n)=1+_frac{1}{2}+_frac{1}{3}+_ldots+_frac{1}{n}$（1）Show that for al.md",
-    "Discrete Math (上)/第3章/258離散數學（上）與因數、倍數相關例題 15從整數 1 到 200 中任挑 101 個数，則其中必有 2 数是互質的。【82 交大資科】【96 清大資應】【99 中山電機】解 把1到200分成 $_.md",
-    "Discrete Math (上)/第3章/230離散數學（上）鴿簐原理之一般化將 $m$ 件物品置於 $n$ 個抽㨢中，一定有某些抽屉中有大於等於 $_left_lceil_frac{m}{n}_right_rceil$ 件；也一定有某些抽屉.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
