@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
+                "file": "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_"
+              "title": "第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B"
             }
           }
         ]
@@ -192,6 +192,14 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第2章/148壁新臺聖（上）题序箵的性責（1）$_left_{_begin{array}{l}D_n=(n-1)_left(D_{n-1}+D_{n-2}_right), _quad _forall n _g.md",
+    "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
+    "Discrete Math (上)/第2章/118 離散數學（上）冪集合的性質考慮全集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
+    "Discrete Math (上)/第2章/102離散數學（上）集合的運算一卡式積（Cartesian product）考慮集合 $A 、 B$ ，稱 $A _times B=_{(a, b)_ a _in A, b _in B_}$ 為 $A.md",
+    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
+    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
+    "Discrete Math (上)/第5章/第 5 章 組合計數 4175－1 排列乘法原理（The rule of product）與加法原理（The rule of sum）如果一事件發生的方法有 $m$ 種，另一事件發生的方法有 $n$.md.tmp.8260.2e4cc35e7ff0",
+    "Discrete Math (上)/第7章/第 7 章 遞迴關係式 6417－1 遞迴關係式與求解法本節先介紹遞迴關係式的表達，再了解各種常見遞迴關係式的解法：歸納法、直接代入法、特徵多項式法與生成函數法。對一些比較特殊的，下一小節再介紹轉換法.md",
     "Discrete Math (上)/第3章/200離散數學（上）性質考慮函數 $f_ A _rightarrow B$ ，且 $A_1, A_2$ 为 $A$ 的兩子集，則（1）若 $A_1 _subseteq A_2$ ，則 $f_left(.md",
     "Discrete Math (上)/第3章/第 3 章 函數197合成與可逆的重要性質考虑 $f_ A _rightarrow B, _quad g_ B _rightarrow C$ 兩函数，（1）若 $f _circ g$ 為一對一，則 $.md",
     "Discrete Math (上)/第3章/第3章 函數187合成函數（composite function）設 $f_ A _rightarrow B _vee g_ B _rightarrow C$ ，為兩函数，則$f$ 和 $g$ 的合成函.md",
@@ -205,7 +213,6 @@
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.862465b5071f",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.5d3598d0d26e",
     "Discrete Math (上)/第2章/96離散數學（上）集合的運算全集（universal set）$U_$ 代表收集所有元素的集合。考虑 $U$ 中的兩子集 $A 、 B$ ，（1）$A _cap B=_{x _in U _mid x.md",
-    "Discrete Math (上)/第2章/118 離散數學（上）冪集合的性質考慮全集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為全集合 $U$ 的子.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md.tmp.8260.f1421b5cac27",
     "Discrete Math (上)/第2章/第2章 集合論115對稱差的性質考虑全集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
@@ -220,14 +227,7 @@
     "Linear Algebra (下)/第5章/第 5 章 對角化理論155對角化應用一解線性微分方程組考慮缐性方程組：$$_left_{_begin{array}{c}y_1^{_prime}(t)=a_{11} y_1(t)+a_{12} y_.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論23特徵根的重要性質整理考虑可逆矩陣 $P$ 使 $B=P^{-1} A P$（亦即 $A$ 與 $B$ 相似），則（1）$A, B$ 有相同的特徵根（包含重根個数）．（2）$v.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論5相似方陣保持的性質若方陣 $A$ 與 $B$ 相似，則（1） $_operatorname{tr}(A)=_operatorname{tr}(B)$ ．【很重要】（2） $_o.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A.md",
-    "Linear Algebra (下)/第5章/114線性代數（下）5－4 投影算子與特徵根投影算子與投影矩陣若向量空間 $V$ 上線性算子 $T$ 滿足 $T^2=T$ ，則稱 $T$ 為 $V$ 上的一投影算子（或冪等（idempotent）算.md",
-    "Linear Algebra (下)/第5章/110線性代數（下）同步對角化（simultaneously diagonalizable）（1）考虑 $V$ 上的算子 $T, U$ ，若存在 $V$ 的基底 $_beta$ 使得 $[T]_be.md",
-    "Linear Algebra (下)/第5章/78線性代數（下）可對角化的充要條件設 $T _in L(V, V), _operatorname{dim}(V)=n, _lambda_1, _lambda_2, _ldots, _lambda_r.md",
     "Discrete Math (上)/第7章",
-    "Discrete Math (上)/第6章",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
