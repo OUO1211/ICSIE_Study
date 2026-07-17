@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
+                "file": "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B"
+              "title": "第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{"
             }
           }
         ]
@@ -192,11 +192,11 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
-    "Discrete Math (上)/第2章/第2章 集合論157排容原理的應用四：車多項式（Rook polynomial）此可視為將排容原理視覺化成為表格，而採用多項式的係数搭配完成計算。步骤如下：（1）將題目的條件在 $m _times n.md",
-    "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
-    "Discrete Math (上)/第2章/第2章 集合論111推廣Let $A=_left_{A_1, _ldots, A_n_right_}$ be an arbitrary collection of sets，The generaliz.md",
-    "Discrete Math (上)/第2章/第 2 章 集合論149排容原理的應用三：映成（onto）函數考虑集合 $A 、 B$ ，其中 $_A_=m,_B_=n$ ，且 $m _geq n$ ，則 $A$ 至 $B$ 的映成函数個数為 $_.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md",
+    "Discrete Math (上)/第2章/第 2 章 集合論149排容原理的應用三：映成（onto）函數考虑集合 $A 、 B$ ，其中 $_A_=m,_B_=n$ ，且 $m _geq n$ ，則 $A$ 至 $B$ 的映成函数個数為 $_.md",
+    "Discrete Math (上)/第2章/第2章 集合論111推廣Let $A=_left_{A_1, _ldots, A_n_right_}$ be an arbitrary collection of sets，The generaliz.md",
+    "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
+    "Discrete Math (上)/第2章/第2章 集合論157排容原理的應用四：車多項式（Rook polynomial）此可視為將排容原理視覺化成為表格，而採用多項式的係数搭配完成計算。步骤如下：（1）將題目的條件在 $m _times n.md",
     "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
     "Discrete Math (上)/第2章/第 2 章 㘳合埝135排容原理的應用一 ：Euler＇s phi function$_phi(n)=_{m _mid 1 _leq m _leq n, _operatorname{gcd}(m,.md",
     "Discrete Math (上)/第2章/118 離散數學（上）幕集合的性質考慮宇集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
