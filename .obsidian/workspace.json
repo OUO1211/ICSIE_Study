@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md",
+                "file": "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子"
+              "title": "第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha"
             }
           }
         ]
@@ -192,8 +192,24 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
-    "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
+    "Linear Algebra (下)/第6章/222線性代數（下）6－4 極小多項式方陣的極小多項式（minimal polynomial）考慮方陣 $A$ ，若多項式 $f(x)$ ，滿足：（i）$f(x)$ 的最高次方係数为 1 ，（ii）$.md",
+    "Linear Algebra (下)/第6章/214線性代數（下）6－3 喬丹型的應用喬丹型代入多項式（1）考虑多項式 $f(x)$ 與下移型 Jordan block $J_k(_lambda)=_left[_begin{array}{cccc.md",
+    "Linear Algebra (下)/第6章/210線性代數（下）相似與喬丹型若 $J_A$ 為 $A$ 的 Jordan form，$J_B$ 為 $B$ 的 Jordan form，則$A$ 與 $B$ 相似 $_Leftrightarrow.md",
+    "Linear Algebra (下)/第6章/190線性代數（下）像集鏈定理（Image chain theorem）考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則（1）$_{_boldsymbol{0}_} _subseteq _.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論675－3 對角化的定義、判別與做法可對角化（diagonalizable）的定義（1）考虑向量空間 $V$ 上的缐性算子 $T$ ，若存在 $V$ 的基底 $_beta$ 使得.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論155對角化應用一解線性微分方程組考慮缐性方程組：$$_left_{_begin{array}{c}y_1^{_prime}(t)=a_{11} y_1(t)+a_{12} y_.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論23特徵根的重要性質整理考虑可逆矩陣 $P$ 使 $B=P^{-1} A P$（亦即 $A$ 與 $B$ 相似），則（1）$A, B$ 有相同的特徵根（包含重根個数）．（2）$v.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論5相似方陣保持的性質若方陣 $A$ 與 $B$ 相似，則（1） $_operatorname{tr}(A)=_operatorname{tr}(B)$ ．【很重要】（2） $_o.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A.md",
+    "Linear Algebra (下)/第5章/114線性代數（下）5－4 投影算子與特徵根投影算子與投影矩陣若向量空間 $V$ 上線性算子 $T$ 滿足 $T^2=T$ ，則稱 $T$ 為 $V$ 上的一投影算子（或冪等（idempotent）算.md",
+    "Linear Algebra (下)/第5章/110線性代數（下）同步對角化（simultaneously diagonalizable）（1）考虑 $V$ 上的算子 $T, U$ ，若存在 $V$ 的基底 $_beta$ 使得 $[T]_be.md",
+    "Linear Algebra (下)/第5章/78線性代數（下）可對角化的充要條件設 $T _in L(V, V), _operatorname{dim}(V)=n, _lambda_1, _lambda_2, _ldots, _lambda_r.md",
+    "Linear Algebra (下)/第5章/76線性代數（下）代數重數（algebraic multiplicity）與幾何重數（geometric multiplicity）設 $T _in L(V, V), _lambda$ 為 $T$ 的.md",
+    "Linear Algebra (下)/第5章/40線性代數（下）用特徵根求 trace 與行列式例題（16_％）If $_lambda_i, i=1,2,3$ are the eigenvalues of $A=_left[_begin{arra.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md",
+    "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
     "Discrete Math (上)/第2章/第 2 章 集合論149排容原理的應用三：映成（onto）函數考虑集合 $A 、 B$ ，其中 $_A_=m,_B_=n$ ，且 $m _geq n$ ，則 $A$ 至 $B$ 的映成函数個数為 $_.md",
     "Discrete Math (上)/第2章/第2章 集合論111推廣Let $A=_left_{A_1, _ldots, A_n_right_}$ be an arbitrary collection of sets，The generaliz.md",
     "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
@@ -202,22 +218,6 @@
     "Discrete Math (上)/第2章/第 2 章 㘳合埝135排容原理的應用一 ：Euler＇s phi function$_phi(n)=_{m _mid 1 _leq m _leq n, _operatorname{gcd}(m,.md",
     "Discrete Math (上)/第2章/118 離散數學（上）幕集合的性質考慮宇集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
     "Discrete Math (上)/第2章/102離散數學（上）集合的運算一卡式積（Cartesian product）考慮集合 $A 、 B$ ，稱 $A _times B=_{(a, b)_ a _in A, b _in B_}$ 為 $A.md",
-    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
-    "Discrete Math (上)/第2章/96離散數學（上）集合的運算宇集（universal set）$U_$ 代表收集所有元素的集合。考虑 $U$ 中的雨子集 $A 、 B$ ，（1）$A _cap B=_{x _in U _mid x.md",
-    "Discrete Math (上)/第1章/第1章 通輯45完全算子集（Functionally complete set）如果一個運輯符號集 $S$ ，满足了任何運輯式都可以用 $S$ 中的符號呈現，則 $S$ 被稱作是一個完全算子集。Not.md",
-    "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md",
-    "Discrete Math (上)/第1章/第1章 通輯27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _vee.md",
-    "Discrete Math (上)/第1章/38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）.md",
-    "Discrete Math (上)/第1章/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命题 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
-    "Discrete Math (上)/第1章/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命題 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
-    "Discrete Math (上)/第1章/第1章 通輯75述詞邏輯的推論規則（rules of inference）全稱個例化（universal instantiation／specification）：$_underline{_foral.md",
-    "Discrete Math (上)/第1章/第 1 章 羁輯 27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _v.md",
-    "Linear Algebra (下)/第五章/4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数.md",
-    "Discrete Math (上)/第7章/第7章 㟶迴關係式715求解遞迴關係式－轉換法（特殊題型）以 $b_n=a_n^2$ 代入例題7求解遞迴式：$a_n^2-2 a_{n-1}^2=1$ ，for $n _geq 1$ ，where $.md",
-    "Discrete Math (上)/第7章/第 7 章 遷迴關係式 6417－1 遞迴關係式與求解法本節先介紹遞迴關係式的表達，再了解各種常見遞迴關係式的解法：䢜納法、直接代入法、特徵多項式法與生成函數法。對一些比較特殊的，下一小節再介紹轉換法.md",
-    "Discrete Math (上)/第7章/第 7 章 遞迴關係式727含偶0的字串例题 2由数字 $_{0,1,2,3_}$ 所組成長度 $n$ 的字串中，含有偶数個 $_mathbf{0}$ 者有多少？【＊＊＊資エ】解 令所求為 $a_n$.md",
-    "Discrete Math (上)/第7章/第 7 章 遞迴關係式 745與矩陣有關例題 6$D_n=_operatorname{det}_left(_left[_begin{array}{llllll}b & b & & & & _ b &.md",
-    "Discrete Math (上)/第7章/第 7 章 透迴關係式 681求解遞迴關係式－特徵多項式（聯立方程組）例題 12求解遞迴式：$_left_{_begin{array}{l}a_{n+1}=-2 a_n-4 b_n _ b_{n+1.md",
     "Discrete Math (上)/第7章",
     "Discrete Math (上)/第6章",
     "Discrete Math (上)/第5章",
