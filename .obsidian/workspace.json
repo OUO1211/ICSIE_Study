@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第3章/272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何.md",
+                "file": "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何"
+              "title": "第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大"
             }
           }
         ]
@@ -190,8 +190,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34ac4dc78d41eb0d",
+  "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
+    "Linear Algebra (下)/第5章/140線性代數（下）對角化應用一求轉移矩陣（transition matrix）與穩定態向量（steady－state vector）（1）考慮一些狀態所形成的序列，其中，任一狀態的產生可能與之前的狀.md",
+    "Linear Algebra (下)/第5章/124線性代數（下）5－5 可對角化矩陣的應用對角矩陣性質整理設 $C=_operatorname{diag}_left(c_1, c_2, _ldots, c_n_right), D=_operat.md",
+    "Linear Algebra (下)/第5章/78線性代數（下）可對角化的充要條件設 $T _in L(V, V), _operatorname{dim}(V)=n, _lambda_1, _lambda_2, _ldots, _lambda_r.md",
+    "Linear Algebra (下)/第5章/76線性代數（下）代數重數（algebraic multiplicity）與幾何重數（geometric multiplicity）設 $T _in L(V, V), _lambda$ 為 $T$ 的.md",
+    "Linear Algebra (下)/第5章/110線性代數（下）同步對角化（simultaneously diagonalizable）（1）考虑 $V$ 上的算子 $T, U$ ，若存在 $V$ 的基底 $_beta$ 使得 $[T]_be.md",
+    "Linear Algebra (下)/第5章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
+    "Linear Algebra (下)/第5章/4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数.md",
+    "Discrete Math (上)/第3章/272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何.md",
+    "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431斜對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md",
+    "Linear Algebra (下)/第8章/第 8 章 內積算子及其應用495正定矩陣的分解設 $A _in C^{n _times n}$ ，則（1）$A$ 為正定矩陣⇔存在可逆矩陣 $B _in C^{n _times n}$ ，使 $A=.md",
+    "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理冪零（nilpotent）與指標（index）（1）對線性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用4338－2 么正與正交么正（unitary）算子、么正矩陣、正交（orthogonal）算子、正交矩陣考虑佈於 $F$ 上的向量空間 $V$ 上的線性算子 $T$ ，若.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用425對稱矩陣的性質令 $A$ 為 $n$ 階實對稱矩陣，則（1）$A$ 為正規矩陣．（2）$A$ 的相異特徵根所對的特徵向量必正交．【很重要】（3）$A$ 的特徵根都是.md",
@@ -206,19 +219,7 @@
     "Linear Algebra (下)/第8章/430線性代數（下）斜 Hermitian 矩陣的性質令 $A _in C^{n _times n}$ 為斜 Hermitian 矩陣，則（1）$A$ 為正規矩陣．（2）$A$ 的相異特徵根所對的特徵.md",
     "Linear Algebra (下)/第8章/424線性代數（下）Hermitian 矩陣的性質令 $A _in C^{n _times n}$ 為 Hermitian 矩陣，則（1）$A$ 為正規矩陣．【96成大電通】（2）$A$ 的相異特徵根.md",
     "Linear Algebra (下)/第8章/422線性代數（下）自伴算子（self－adjoint）與斜自伴算子（skew self－adjoint）考虑 $V$ 上的線性算子 $T$ ，若 $T^_=T$ ，則稱 $T$ 為自伴算子．若 $T.md",
-    "Linear Algebra (下)/第7章/第 7 章 內積空間 2857－2 Gram－Schmidt 正交化過程Gram－Schmidt 正交化過程考虑內積向量空間 $V$ 上的線性獨立集 $S=_left_{_boldsymbol{v}_.md",
-    "Linear Algebra (下)/第7章/398線性代數（下）7－5 外積考虑 $R^3$ 上的兩向量 $_boldsymbol{u}=_left(u_1, u_2, u_3_right), _boldsymbol{v}=_left(v_1,.md",
-    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用191Fitting Lemma考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則存在一正整数 $k$ 使得 $V=_operatorname{ker.md",
-    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對線性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md",
-    "Linear Algebra (下)/第6章/198線性代數（下）喬丹區塊（Jordan block）與喬丹型（Jordan form）令 $_lambda$ 為算子 $T$ 的特徵根，則稱 $J_k(_lambda)=_left[_begin{.md",
-    "Linear Algebra (下)/第6章/192線性代數（下）循環子空間（cyclic subspace）考虑向量空間 $V$ 上的線性算子 $T, _boldsymbol{v}$ 為 $V$ 上任一向量， $W=_operatorname{.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論675－3 對角化的定義、判別與做法可對角化（diagonalizable）的定義（1）考虑向量空間 $V$ 上的線性算子 $T$ ，若存在 $V$ 的基底 $_beta$ 使得.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論35特徵多項式（characteristic polynomial）定義方陣 $A$ 的特徵多項式 $c h a r_A(x)=_operatorname{det}(A-x I).md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論155對角化應用一解線性微分方程組考慮線性方程組：$$_left_{_begin{array}{c}y_1^{_prime}(t)=a_{11} y_1(t)+a_{12} y_.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論121完全投影集（complete set of projections）（1）考虑 $V$ 上的投影算子 $T_1, _ldots, T_k$ ，若滿足（i）$T_i T_j=.md",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
-    "Discrete Math (上)/第3章/200離散數學（上）性質考慮函數 $f_ A _rightarrow B$ ，且 $A_1, A_2$ 为 $A$ 的兩子集，則（1）若 $A_1 _subseteq A_2$ ，則 $f_left(.md",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.bb948891942a",
     "Discrete Math (上)/第5章/第 5 章 組合計數 4175－1 排列乘法原理（The rule of product）與加法原理（The rule of sum）如果一事件發生的方法有 $m$ 種，另一事件發生的方法有 $n$.md.tmp.8260.2e4cc35e7ff0",
@@ -227,7 +228,6 @@
     "Discrete Math (上)/第2章/第 2 童 集合调141排容原理的應用二：亂序（錯置、Derangement）排列数字 $1,2, _ldots, n$ ，使對任意 $k, k$ 不在第 $k$ 位，則此排列稱为是一種練席排列，其方.md.tmp.8260.a902dbf060cf",
     "Discrete Math (上)/第2章/106離散數學（上）集合的運算性質考虑全集合 $U$ 上的子集合 $A, B, C$ ：1．冪等律（idempotent）（1）$A _cup A=A$（2）$A _cap A=A$2．结合律（ass.md.tmp.8260.c6124f35c984",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.862465b5071f",
-    "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.5d3598d0d26e",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
