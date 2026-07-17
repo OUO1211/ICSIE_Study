@@ -24,7 +24,8 @@
       "Bash(mv \"Linear Algebra \\(上\\)/第二章\" \"Linear Algebra \\(上\\)/第2章\")",
       "Bash(mv \"Linear Algebra \\(上\\)/第三章\" \"Linear Algebra \\(上\\)/第3章\")",
       "Bash(mv \"Linear Algebra \\(下\\)/第五章\" \"Linear Algebra \\(下\\)/第5章\")",
-      "Bash(mv \"Linear Algebra \\(下\\)/第六章\" \"Linear Algebra \\(下\\)/第6章\")"
+      "Bash(mv \"Linear Algebra \\(下\\)/第六章\" \"Linear Algebra \\(下\\)/第6章\")",
+      "Bash(git mv *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\USER\\Documents\\ICSIE_Study\\Linear Algebra (下)"

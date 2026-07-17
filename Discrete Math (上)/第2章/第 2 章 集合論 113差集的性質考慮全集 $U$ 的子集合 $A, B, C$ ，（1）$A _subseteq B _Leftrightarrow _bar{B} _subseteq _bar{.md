@@ -4,7 +4,7 @@
 
 差集的性質
 
-考慮宇集 $U$ 的子集合 $A, B, C$ ，
+考慮全集 $U$ 的子集合 $A, B, C$ ，
 
 （1）$A \subseteq B \Leftrightarrow \bar{B} \subseteq \bar{A}$ ．
 

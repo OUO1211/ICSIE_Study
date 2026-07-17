@@ -192,6 +192,8 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md.tmp.8260.5a7afc0b334c",
+    "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮全集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
     "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha.md",
     "Linear Algebra (下)/第6章/222線性代數（下）6－4 極小多項式方陣的極小多項式（minimal polynomial）考慮方陣 $A$ ，若多項式 $f(x)$ ，滿足：（i）$f(x)$ 的最高次方係数为 1 ，（ii）$.md",
     "Linear Algebra (下)/第6章/214線性代數（下）6－3 喬丹型的應用喬丹型代入多項式（1）考虑多項式 $f(x)$ 與下移型 Jordan block $J_k(_lambda)=_left[_begin{array}{cccc.md",
@@ -216,8 +218,6 @@
     "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
     "Discrete Math (上)/第2章/第2章 集合論157排容原理的應用四：車多項式（Rook polynomial）此可視為將排容原理視覺化成為表格，而採用多項式的係数搭配完成計算。步骤如下：（1）將題目的條件在 $m _times n.md",
     "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
-    "Discrete Math (上)/第2章/第 2 章 㘳合埝135排容原理的應用一 ：Euler＇s phi function$_phi(n)=_{m _mid 1 _leq m _leq n, _operatorname{gcd}(m,.md",
-    "Discrete Math (上)/第2章/118 離散數學（上）幕集合的性質考慮宇集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
     "Discrete Math (上)/第7章",
     "Discrete Math (上)/第6章",
     "Discrete Math (上)/第5章",

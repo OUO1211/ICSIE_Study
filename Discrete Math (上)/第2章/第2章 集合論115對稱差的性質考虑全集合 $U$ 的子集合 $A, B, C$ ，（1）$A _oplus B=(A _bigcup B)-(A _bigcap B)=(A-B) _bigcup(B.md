@@ -1,4 +1,4 @@
-第2掌 集合楠
+第2章 集合論
 
 115
 
@@ -6,7 +6,7 @@
 
 對稱差的性質
 
-考虑字集合 $U$ 的子集合 $A, B, C$ ，
+考虑全集合 $U$ 的子集合 $A, B, C$ ，
 
 （1）$A \oplus B=(A \bigcup B)-(A \bigcap B)=(A-B) \bigcup(B-A)$ ．
 
@@ -22,19 +22,19 @@
 
 （4）$A \oplus \varnothing=A, A \oplus A=\varnothing$ ．
 
-【 89 成夫资工】【90台科責工】
+【 89 成大資工】【90台科資工】
 
 （5）$(A \oplus B) \oplus C=A \oplus(B \oplus C)$ ．
 
 （結合性）
 
-【99台大電柍】
+【99台大電機】
 
-（6）$A \cap(B \oplus C)=(A \cap B) \oplus(A \cap C),(B \oplus C) \cap A=(B \cap A) \oplus(C \cap A)$ 。（ $\cap$ 粠 分有分能性）
+（6）$A \cap(B \oplus C)=(A \cap B) \oplus(A \cap C),(B \oplus C) \cap A=(B \cap A) \oplus(C \cap A)$ 。（$\cap$ 對 $\oplus$ 具分配性）
 
 
 
-【104台䂜電機】【110政大资料】
+【104台大電機】【110政大資科】
 
 解（1），（2），（3）從定義明顯可得。
 
