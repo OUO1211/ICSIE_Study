@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
+                "file": "Discrete Math (上)/第3章/272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_"
+              "title": "272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何"
             }
           }
         ]
@@ -192,6 +192,10 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第3章/200離散數學（上）性質考慮函數 $f_ A _rightarrow B$ ，且 $A_1, A_2$ 为 $A$ 的兩子集，則（1）若 $A_1 _subseteq A_2$ ，則 $f_left(.md",
+    "Discrete Math (上)/第3章/208離散數學（上）偶函數與奇函數（even function and odd function）考虑定義在實数的函数 $f_ R _rightarrow R$ ，若 $_forall x _in R.md",
+    "Discrete Math (上)/第3章/210離散數學（上）可數集（countable set）、不可數集（uncountable set）（1）若集合 $A _sim N=_{1,2, _ldots_}$ ，則 $A$ 為可列舉的（den.md",
+    "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
     "Discrete Math (上)/第3章/226離散數學（上）3－3 鴿籠原理（The Pigeonhole Principle）若有 $m$ 隻鸽子要放入 $n$ 個鴿籠中，且 $m_n$則至少有一籠放了至少二隻鴿子。【重要】Note又稱.md",
     "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
     "Discrete Math (上)/第3章/272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何.md",
@@ -203,11 +207,7 @@
     "Discrete Math (上)/第3章/第3章 函數263與圖形的應用例題19（10_％）Assume that for any two people $x$ and $y, x$ is a friend of $y$ if and onl.md",
     "Discrete Math (上)/第3章/第3章 函數249取子集問題－第二型$S=_{1,2, _ldots, n_}, A$ 為 $S$ 之任意子集合，計算 $A$ 中元素的和。則取 $A$ 的方法多於和的可能狀況時，必可取出 2 種不同.md",
     "Discrete Math (上)/第3章/第3章 函數201$$_Rightarrow y _in f_left(A_1_right) _cap f_left(A_2_right),$$故得 $f_left(A_1 _cap A_2_righ.md",
-    "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
-    "Discrete Math (上)/第3章/210離散數學（上）可數集（countable set）、不可數集（uncountable set）（1）若集合 $A _sim N=_{1,2, _ldots_}$ ，則 $A$ 為可列舉的（den.md",
     "Discrete Math (上)/第3章/230離散數學（上）鴿簐原理之一般化將 $m$ 件物品置於 $n$ 個抽㨢中，一定有某些抽屉中有大於等於 $_left_lceil_frac{m}{n}_right_rceil$ 件；也一定有某些抽屉.md",
-    "Discrete Math (上)/第3章/208離散數學（上）偶函數與奇函數（even function and odd function）考虑定義在實数的函数 $f_ R _rightarrow R$ ，若 $_forall x _in R.md",
-    "Discrete Math (上)/第3章/200離散數學（上）性質考慮函數 $f_ A _rightarrow B$ ，且 $A_1, A_2$ 为 $A$ 的兩子集，則（1）若 $A_1 _subseteq A_2$ ，則 $f_left(.md",
     "Discrete Math (上)/第1章/第1章 邏輯491－3 命題函數與論域相較於之前的語句邏輯（也稱命題邏輯，propositional logic），本節介紹效力更強的邏輯系統：述詞邏輯（predicate logic），也稱一階.md",
     "Discrete Math (上)/第2章/第2章 集合論157排容原理的應用四：車多項式（Rook polynomial）此可視為將排容原理視覺化成為表格，而採用多項式的係数搭配完成計算。步骤如下：（1）將題目的條件在 $m _times n.md",
     "Discrete Math (上)/第2章/第2章 集合論115對稱差的性質考虑全集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
