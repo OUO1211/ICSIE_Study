@@ -24,7 +24,7 @@ $\underline{A \text { 為對稱矩陣 } \Leftrightarrow A \text { 可正交對�
 設 $v_1, \ldots, v_{k-1}$ 都是 $T$ 的特徵向量，欲證明 $v_k$ 亦為 $T$ 的特徵向量：
 令 $A=\left[\begin{array}{ll}B & C \\ O & E\end{array}\right]$ ，則 $A^H=\left[\begin{array}{cc}B^H & O \\ C^H & E^H\end{array}\right]$ ，其中，$B:(k-1) \times(k-1)$ 的對角矩陣，
 又因 $A$ 為上三角矩陣，故 $(A)_{i k}=0, \forall i>k$ ，
-又 $A^H=\left([T]_\beta\right)^H=\left[T^*\right]_\beta$ ，且 $T$ ：normal， $\boldsymbol{v}_1, \ldots, \boldsymbol{v}_{k-1}$ 都是 $T^*$ 的特徴向量，
+又 $A^H=\left([T]_\beta\right)^H=\left[T^*\right]_\beta$ ，且 $T$ ：normal， $\boldsymbol{v}_1, \ldots, \boldsymbol{v}_{k-1}$ 都是 $T^*$ 的特徵向量，
 故 $C^H=O$ ，而得 $\left(A^H\right)_{i k}=0, \forall i<k$ ，得 $(A)_{i k}=0, \forall i<k$ ，故 $\boldsymbol{v}_k$ 為 $T$ 的特徵向量，
 故由歸納法得證 $\boldsymbol{v}_1, \ldots, \boldsymbol{v}_n$ 均為 $T$ 的特徵向量，故 $T$ 可么正對角化．
 （2）$(\Rightarrow) \because A$ 為正規，$\therefore A^H A=A A^H$ ，故 $\forall i=1 \sim n,\left(A^H A\right)_{i i}=\left(A A^H\right)_{i i}$ ，

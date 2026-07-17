@@ -56,7 +56,7 @@ $$
 
 （2）考慮 $n$ 階方陣 $A$ ，可逆方陣 $P$ ，則
 
-$P^{-1} A P=D$ 為對角方陣 $\Leftrightarrow P$ 的行向量都是 $A$ 的特徴向量．
+$P^{-1} A P=D$ 為對角方陣 $\Leftrightarrow P$ 的行向量都是 $A$ 的特徵向量．
 
 
 

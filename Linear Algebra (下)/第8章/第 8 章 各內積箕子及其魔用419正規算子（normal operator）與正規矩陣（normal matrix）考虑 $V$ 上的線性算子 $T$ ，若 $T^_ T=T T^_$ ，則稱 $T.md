@@ -33,7 +33,7 @@ $$
 $$
 \therefore 0=\|(T-\lambda I)(\boldsymbol{v})\|=\left\|(T-\lambda I)^*(\boldsymbol{v})\right\|=\left\|\left(T^*-\bar{\lambda} I\right)(\boldsymbol{v})\right\|=\left\|T^*(\boldsymbol{v})-\bar{\lambda} \boldsymbol{v}\right\|,
 $$
-$\therefore T^*(\boldsymbol{v})=\bar{\lambda} \boldsymbol{v}$ ，即 $\boldsymbol{v}$ 為 $T$ 相對於 $\bar{\lambda}$ 的特徴向量。
+$\therefore T^*(\boldsymbol{v})=\bar{\lambda} \boldsymbol{v}$ ，即 $\boldsymbol{v}$ 為 $T$ 相對於 $\bar{\lambda}$ 的特徵向量。
 （4）若 $\lambda_1, \lambda_2$ 為正規算子 $T$ 的相異特徵根且 $\boldsymbol{v}_1, \boldsymbol{v}_2$ 為其對應特徵向量，則 $\boldsymbol{v}_1 \perp \boldsymbol{v}_2$ 。
 【證明】
 

@@ -54,7 +54,7 @@ Note
 
 【證明】
 
-設可逆矩陣 $P$ 使 $A=P D P^{-1}$ ，其中 $D=\operatorname{diag}\left(\lambda_1, \ldots, \lambda_n\right), \lambda_i$ 為 $A$ 的特徴根，
+設可逆矩陣 $P$ 使 $A=P D P^{-1}$ ，其中 $D=\operatorname{diag}\left(\lambda_1, \ldots, \lambda_n\right), \lambda_i$ 為 $A$ 的特徵根，
 
 則 $\operatorname{det}\left(e^A\right)=\operatorname{det}\left(P e^D P^{-1}\right)=\operatorname{det}\left(e^D\right)=\operatorname{det}\left(\operatorname{diag}\left(e^{\lambda_1}, \ldots, e^{\lambda_n}\right)\right)=e^{\lambda_1+\ldots+\lambda_n} \neq 0$ ，故 $e^A$ 可逆。
 

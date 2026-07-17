@@ -17,7 +17,7 @@ Note
 （b）$A^H A=\left(U \Sigma V^H\right)^H\left(U \Sigma V^H\right)=V \Sigma^H \Sigma V^H, \therefore\left(A^H A\right) V=V\left(\Sigma^H \Sigma\right)$ ，
 $V$ 的行向量 $v_1, v_2, \ldots, v_n$ 為 $A^H A$ 的特徵向量（稱 $A$ 的右奇異向量），且形成單範正交集．
 （c）$A A^H=\left(U \Sigma V^H\right)\left(U \Sigma V^H\right)^H=U \Sigma \Sigma^H U^H, \therefore\left(A A^H\right) U=U\left(\Sigma \Sigma^H\right)$ ，
-$U$ 的行向量 $\boldsymbol{u}_1, \boldsymbol{u}_2, \ldots, \boldsymbol{u}_m$ 為 $A A^H$ 的特徴向量（稱 $A$ 的左奇異向量），且形成單範正交集．
+$U$ 的行向量 $\boldsymbol{u}_1, \boldsymbol{u}_2, \ldots, \boldsymbol{u}_m$ 為 $A A^H$ 的特徵向量（稱 $A$ 的左奇異向量），且形成單範正交集．
 （d）若 $\operatorname{rank}(A)=r$ ，則 $\operatorname{rank}\left(A^H A\right)=r$ ，得 $A^H A$ 有 $r$ 個非零特徵根，設為 $\lambda_1, \ldots, \lambda_r$ ，
 則由 $A=U \Sigma V^H, \therefore A V=U \Sigma$ ，得 $A \boldsymbol{v}_i=\left\{\begin{array}{l}\sigma_i \boldsymbol{u}_i, \text { for } 1 \leq i \leq r \\ \mathbf{0}, \text { for } r+1 \leq i \leq n\end{array}\right.$ ，
 又由 $A^H=V \Sigma^H U^H, \therefore A^H U=V \Sigma^H$ 得 $A^H \boldsymbol{u}_i=\left\{\begin{array}{l}\sigma_i \boldsymbol{v}_i, \text { for } 1 \leq i \leq r \\ \mathbf{0}, \text { for } r+1 \leq i \leq m\end{array}\right.$ ；且

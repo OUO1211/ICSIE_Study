@@ -16,5 +16,5 @@ $\because \boldsymbol{u}_2, \ldots, \boldsymbol{u}_{10}$ 為獨立的向量， 0
 又 $\boldsymbol{u} \boldsymbol{u}^T$ 為 $10 \times 10,10$ 個特徵根，而已經有 $\boldsymbol{u}^T \boldsymbol{u}$ 為一特徵根了，所以 0 的重根數 $=9$ ，
 因為 0 的特徵空間有 $\boldsymbol{u}_2 \sim \boldsymbol{u}_{10}$ 這九個獨立的特徵向量，故
 0 的代數重數 $\geq 0$ 的幾何重數 $=\operatorname{dim}(V(0)) \geq 9$ ，
-即特徴根就是 $\left\{\boldsymbol{u}^T \boldsymbol{u}, 0,0,0,0,0,0,0,0,0\right\}$ ，
+即特徵根就是 $\left\{\boldsymbol{u}^T \boldsymbol{u}, 0,0,0,0,0,0,0,0,0\right\}$ ，
 又 $\operatorname{det}\left(\boldsymbol{u} \boldsymbol{u}^T\right)=\boldsymbol{u} \boldsymbol{u}^T$ 的所有特徵根的乘積 $=0$ 。

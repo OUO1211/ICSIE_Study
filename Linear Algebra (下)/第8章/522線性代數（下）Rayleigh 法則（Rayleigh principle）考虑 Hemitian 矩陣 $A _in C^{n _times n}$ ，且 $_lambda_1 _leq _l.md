@@ -2,7 +2,7 @@
 線性代數（下）
 
 Rayleigh 法則（Rayleigh principle）
-考虑 Hemitian 矩陣 $A \in C^{n \times n}$ ，且 $\lambda_1 \leq \lambda_2 \leq \ldots \leq \lambda_n$ 為 $A$ 的特微根，則
+考虑 Hemitian 矩陣 $A \in C^{n \times n}$ ，且 $\lambda_1 \leq \lambda_2 \leq \ldots \leq \lambda_n$ 為 $A$ 的特徵根，則
 （1）$\lambda_1 \leq \rho(\boldsymbol{x}) \leq \lambda_n$ ．
 （2） $\max _{x \neq 0} \rho(\boldsymbol{x})=\lambda_n$ ．
 （3） $\min _{x \neq 0} \rho(\boldsymbol{x})=\lambda_1$ ．
@@ -29,7 +29,7 @@ $$
 \end{aligned}
 $$
 （2）取 $\boldsymbol{x}_n$ 為 $A$ 相對於 $\lambda_n$ 的特徵向量，則由前一頁討論可得 $\rho\left(\boldsymbol{x}_n\right)=\lambda_n$ ，即 $\max _{x \neq 0} \rho(\boldsymbol{x})=\lambda_n$ ．
-（3）取 $\boldsymbol{x}_1$ 為 $A$ 相對於 $\lambda_1$ 的特徴向量，則由前一頁討論可得 $\rho\left(\boldsymbol{x}_1\right)=\lambda_1$ ，即 $\min _{x \neq 0} \rho(\boldsymbol{x})=\lambda_1$ ．
+（3）取 $\boldsymbol{x}_1$ 為 $A$ 相對於 $\lambda_1$ 的特徵向量，則由前一頁討論可得 $\rho\left(\boldsymbol{x}_1\right)=\lambda_1$ ，即 $\min _{x \neq 0} \rho(\boldsymbol{x})=\lambda_1$ ．
 
 Note
 （1）$A$ 為實對稱矩陣時，上述結果亦成立。

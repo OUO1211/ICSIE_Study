@@ -40,7 +40,7 @@ $$
 
 另解：
 
-$\operatorname{trace}(A)=23=$ 特徴根之和， $\operatorname{det}(A)=16=$ 特徵根之積。
+$\operatorname{trace}(A)=23=$ 特徵根之和， $\operatorname{det}(A)=16=$ 特徵根之積。
 
 
 

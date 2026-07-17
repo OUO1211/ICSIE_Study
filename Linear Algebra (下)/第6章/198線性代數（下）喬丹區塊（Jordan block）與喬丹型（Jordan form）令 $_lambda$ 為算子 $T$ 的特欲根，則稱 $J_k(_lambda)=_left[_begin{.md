@@ -2,7 +2,7 @@
 線性代數（下）
 
 喬丹區塊（Jordan block）與喬丹型（Jordan form）
-令 $\lambda$ 為算子 $T$ 的特欲根，則稱 $J_k(\lambda)=\left[\begin{array}{ccccc}\lambda & & & & \\ 1 & \lambda & & O & \\ & 1 & \lambda & & \\ & & \ddots & \ddots & \\ O & & & 1 & \lambda\end{array}\right]_{k \times k}$ 为 $k$ 階的喬丹區塊。
+令 $\lambda$ 為算子 $T$ 的特徵根，則稱 $J_k(\lambda)=\left[\begin{array}{ccccc}\lambda & & & & \\ 1 & \lambda & & O & \\ & 1 & \lambda & & \\ & & \ddots & \ddots & \\ O & & & 1 & \lambda\end{array}\right]_{k \times k}$ 为 $k$ 階的喬丹區塊。
 Note
 （1）又稱作 Jordan 基本矩陣（Jordan fundamental matrix）．
 （2）上述定義方式為下移型的 Jordan 基本矩陣，而其轉置稱上移型 Jordan 基本矩陣。例如：

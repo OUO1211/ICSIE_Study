@@ -8,7 +8,7 @@
 （1）對純量 $\lambda$ ，若存在非零向量 $\boldsymbol{v}$ ，使得 $A \boldsymbol{v}=\lambda \boldsymbol{v}$ ，則稱 $\boldsymbol{v}$ 為 $A$ 相對於 $\lambda$ 的一個特徵向量。
 （2）對非零向量 $\boldsymbol{v}$ ，若存在純量 $\lambda$ ，使得 $A \boldsymbol{v}=\lambda \boldsymbol{v}$ ，則稱 $\lambda$ 為 $A$ 相對於 $\boldsymbol{v}$ 的一個特徵根．
 例如：
-（1）$\because\left[\begin{array}{cccc}0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 2 & 1 & 1 & 1 \\ -5 & 2 & 5 & -1\end{array}\right]\left[\begin{array}{l}1 \\ 1 \\ 3 \\ 3\end{array}\right]=\left[\begin{array}{l}3 \\ 3 \\ 9 \\ 9\end{array}\right]=3\left[\begin{array}{l}1 \\ 1 \\ 3 \\ 3\end{array}\right]$ ，故 $\left[\begin{array}{l}1 \\ 1 \\ 3 \\ 3\end{array}\right]$ 為特徵向量，對應的特徴根為 3 ．
+（1）$\because\left[\begin{array}{cccc}0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 2 & 1 & 1 & 1 \\ -5 & 2 & 5 & -1\end{array}\right]\left[\begin{array}{l}1 \\ 1 \\ 3 \\ 3\end{array}\right]=\left[\begin{array}{l}3 \\ 3 \\ 9 \\ 9\end{array}\right]=3\left[\begin{array}{l}1 \\ 1 \\ 3 \\ 3\end{array}\right]$ ，故 $\left[\begin{array}{l}1 \\ 1 \\ 3 \\ 3\end{array}\right]$ 為特徵向量，對應的特徵根為 3 ．
 （2）$A=\left[\begin{array}{lll}0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0\end{array}\right]$ ，則 $A\left[\begin{array}{l}1 \\ 0 \\ 0\end{array}\right]=\left[\begin{array}{l}0 \\ 0 \\ 0\end{array}\right]=0 \cdot\left[\begin{array}{l}1 \\ 0 \\ 0\end{array}\right]$ ，即 0 為對應於 $\left[\begin{array}{l}1 \\ 0 \\ 0\end{array}\right]$ 的特徵根．
 【93 中興資科】
 

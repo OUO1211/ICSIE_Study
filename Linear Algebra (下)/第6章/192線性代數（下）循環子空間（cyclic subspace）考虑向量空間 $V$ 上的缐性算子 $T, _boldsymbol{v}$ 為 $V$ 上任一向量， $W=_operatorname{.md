@@ -17,7 +17,7 @@ O & & 1 & 0
 \end{array}\right] .
 $$
 （4）考慮向量空間 $V$ 上的線性算子 $T, \boldsymbol{v}$ 為非零向量，$W=C_{\boldsymbol{v}}(T)$ 為由 $\boldsymbol{v}$ 生成的 $T$－循環子空間，若 $\operatorname{dim}(W)=k$ ，則 $\beta=\left\{\boldsymbol{v}, T(\boldsymbol{v}), T^2(\boldsymbol{v}), \ldots, T^{k-1}(\boldsymbol{v})\right\}$ 為 $W$ 的一組基底。【108政大應數】
-（5）設 $T^k(\boldsymbol{v})=-a_0 \boldsymbol{v}-a_1 T(\boldsymbol{v})-a_2 T^2(\boldsymbol{v})-\ldots-a_{k-1} T^{k-1}(\boldsymbol{v})$ ，則 $\left[T_W\right]_\beta=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & -a_0 \\ 1 & 0 & \cdots & 0 & -a_1 \\ 0 & 1 & \cdots & 0 & -a_2 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & -a_{k-1}\end{array}\right]$稱具有特徴式 $(-1)^k\left(a_0+a_1 x+\ldots+a_{k-1} x^{k-1}+x^k\right)$ 的友矩陣（companion matrix）．
+（5）設 $T^k(\boldsymbol{v})=-a_0 \boldsymbol{v}-a_1 T(\boldsymbol{v})-a_2 T^2(\boldsymbol{v})-\ldots-a_{k-1} T^{k-1}(\boldsymbol{v})$ ，則 $\left[T_W\right]_\beta=\left[\begin{array}{ccccc}0 & 0 & \cdots & 0 & -a_0 \\ 1 & 0 & \cdots & 0 & -a_1 \\ 0 & 1 & \cdots & 0 & -a_2 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & 1 & -a_{k-1}\end{array}\right]$稱具有特徵式 $(-1)^k\left(a_0+a_1 x+\ldots+a_{k-1} x^{k-1}+x^k\right)$ 的友矩陣（companion matrix）．
 
 【107台大資工】
 

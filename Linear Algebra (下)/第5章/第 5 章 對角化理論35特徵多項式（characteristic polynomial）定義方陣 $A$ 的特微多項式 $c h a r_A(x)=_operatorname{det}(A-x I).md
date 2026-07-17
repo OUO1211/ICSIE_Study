@@ -2,7 +2,7 @@
 35
 
 特徵多項式（characteristic polynomial）
-定義方陣 $A$ 的特微多項式 $c h a r_A(x)=\operatorname{det}(A-x I)$ ，其中 $I$ 為單位矩陣。
+定義方陣 $A$ 的特徵多項式 $c h a r_A(x)=\operatorname{det}(A-x I)$ ，其中 $I$ 為單位矩陣。
 Note
 （1）有時也把 $\operatorname{char}_A(x)$ 定義成 $\operatorname{det}(x I-A)$ ，而只是與上述有 $(-1)^n$ 倍的差別，不影響特徵根，其中 $A$ 為 $n \times n$ ．
 （2）同理可以定義 $\operatorname{char}_T(x)=\operatorname{det}(T-x I)$ ，其中 $T$ 為 $V$ 上的線性映射，$I$ 為 $V$ 上的單位映射。
@@ -20,7 +20,7 @@ $$
 $$
 （4）若矩陣 $A, B$ 的特徵多項式相同，則有仍可能 $A$ 與 $B$ 不相似．
 例如 $\left[\begin{array}{ll}1 & 0 \\ 0 & 1\end{array}\right]$ 與 $\left[\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right]$ 的特徵式都是 $(1-x)^2$ ，但卻不相似。
-（5）考慮方陣 $A$ 與 $B$ ，則 $A B$ 與 $B A$ 的特徴多項式相同。
+（5）考慮方陣 $A$ 與 $B$ ，則 $A B$ 與 $B A$ 的特徵多項式相同。
 【證明】
 【89中央數學、90彰師數學、92台大數學】
 $$

@@ -6,7 +6,7 @@
 
 代數重數（algebraic multiplicity）與幾何重數（geometric multiplicity）
 
-設 $T \in L(V, V), \lambda$ 為 $T$ 的特微根，
+設 $T \in L(V, V), \lambda$ 為 $T$ 的特徵根，
 
 （1）$\lambda$ 在 $\operatorname{char}_T(x)$ 中的個数稱為 $\lambda$ 的代数重数，又稱稱重数，記做 $m(\lambda)$ ．
 
@@ -28,7 +28,7 @@ Note
 
 （2）計算時常使用： $\operatorname{gm}(\lambda)=\operatorname{dim}(V(\lambda))=\operatorname{dim}(\operatorname{ker}(T-\lambda I))=n-\operatorname{rank}(T-\lambda I)$ ．
 
-（3）對特徴根 0 的時候：$g m(0)=\operatorname{dim}(V(0))=\operatorname{dim}(\operatorname{ker}(T))=n-\operatorname{rank}(T)$ 。
+（3）對特徵根 0 的時候：$g m(0)=\operatorname{dim}(V(0))=\operatorname{dim}(\operatorname{ker}(T))=n-\operatorname{rank}(T)$ 。
 
 （4）考慮 $n$ 維空間 $V$ 上的線性算子 $T$ ，若 $\lambda$ 為 $T$ 的一個特徵根，則 $g m(\lambda) \leq m(\lambda)$ ．
 

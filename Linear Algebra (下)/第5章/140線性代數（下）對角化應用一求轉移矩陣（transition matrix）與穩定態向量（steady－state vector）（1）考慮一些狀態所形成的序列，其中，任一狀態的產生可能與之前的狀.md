@@ -23,6 +23,6 @@ Note
 （b）$A \boldsymbol{p}$ 一為機率向量．
 （c）$A^k$ 亦為 Markov 矩陣。
 【105中興統計】
-（d）$A$ 的特徴根 $\lambda$ 均滿足 $|\lambda| \leq 1$ 。
+（d）$A$ 的特徵根 $\lambda$ 均滿足 $|\lambda| \leq 1$ 。
 
 【97交大應數、101台大數學】

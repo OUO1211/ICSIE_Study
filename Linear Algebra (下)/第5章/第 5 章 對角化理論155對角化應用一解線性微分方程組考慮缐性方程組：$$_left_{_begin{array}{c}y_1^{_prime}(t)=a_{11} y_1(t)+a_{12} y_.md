@@ -50,7 +50,7 @@ $$
 
 解 令 $A=\left[\begin{array}{ll}3 & 1 \\ 1 & 3\end{array}\right], \boldsymbol{u}=\left[\begin{array}{l}u_1(t) \\ u_2(t)\end{array}\right], \frac{d}{d t} \boldsymbol{u}=A \boldsymbol{u}, \boldsymbol{u}(0)=\left[\begin{array}{l}1 \\ 0\end{array}\right]$ ，所以所求 $\boldsymbol{u}=e^{A t} \boldsymbol{u}(0)$ ．
 
-因 $\operatorname{char}_A(x)=(x-4)(x-2)$ ，得特徴根 4，2，
+因 $\operatorname{char}_A(x)=(x-4)(x-2)$ ，得特徵根 4，2，
 
 完成對角化，取 $P=\left[\begin{array}{cc}1 & -1 \\ 1 & 1\end{array}\right]$ ，得 $P^{-1} A P=D=\left[\begin{array}{ll}4 & 0 \\ 0 & 2\end{array}\right]$ ，
 

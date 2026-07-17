@@ -8,7 +8,7 @@ Note
 （2） $\operatorname{cond}_2(A)=\sqrt{\frac{\lambda_{\text {max }}\left(A^H A\right)}{\lambda_{\text {min }}\left(A^H A\right)}}$ ．
 【證明】
 由前頁性質可得：$\|A\|_2=\sqrt{\lambda_{\text {max }}\left(A^H A\right)}$ ，
-又 $\because A^H A$ 為正定，故 $\lambda_{\min }\left(A^H A\right)>0$ ，且因 $A^T A$ 與 $A A^H$ 有相同特徴根，
+又 $\because A^H A$ 為正定，故 $\lambda_{\min }\left(A^H A\right)>0$ ，且因 $A^T A$ 與 $A A^H$ 有相同特徵根，
 $$
 \begin{aligned}
 & \therefore\left\|A^{-1}\right\|_2=\sqrt{\lambda_{\max }\left(\left(A^{-1}\right)^H A^{-1}\right)}=\sqrt{\lambda_{\max }\left(\left(A A^H\right)^{-1}\right)}=\frac{1}{\sqrt{\lambda_{\min }\left(A A^H\right)}}, \\
