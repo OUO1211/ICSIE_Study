@@ -24,6 +24,18 @@ This is an **Obsidian vault** for 資工研 (Computer Science graduate studies).
 - Notes use standard Obsidian Markdown with `[[wikilinks]]` for internal linking
 - The vault language context is mixed Chinese/English (CS graduate studies in Taiwan)
 
+## OCR 品質與原始資料來源
+
+不同科目/冊別的原始轉檔品質差異很大，原子化前務必先抽查：
+
+- **Linear Algebra (上)**（`Linear Algebra (上)/Obsidian_Notes(success version)/線代(上)_Page_XXX.md`）：由 Codex 逐頁視覺辨識轉譯，文字乾淨、繁體字正確、無形似字亂碼，可直接原子化，不需額外校對。
+- **Discrete Math、Linear Algebra (下)**（以及日後任何用 **Mathpix** 產出的原始檔）：Mathpix 對 LaTeX 公式辨識率很高（幾乎不會出錯），但中文辨識明顯較弱，常見：
+    - 簡繁混用（数/結、考虑/考慮）——不影響語意，原子化重寫時會自然修正，不必特別處理。
+    - **形似字誤判，會改變術語意思**（例如：宇集→全集、荤等律→冪等律、缐性→線性、特徴/特微/特傲/特徽/特欲→特徵、雨→兩）——這類必須在原子化前修正，否則會污染正式筆記與雙向連結。
+    - **章節/子標題的亂碼比例遠高於內文**（大標題字體較大/裝飾性，OCR 更容易誤判），例如「第 5 圆 侾角化理流」應為「第 5 章 對角化理論」。
+
+**處理原則**：拿到新章節/新科目的原始檔案時，先抽查幾頁判斷來源品質（而非預設乾淨或髒）。若判斷是 Mathpix 產出且有形似字問題，先用 grep 掃描已知誤判模式（可比對本檔案累積的錯字表）、逐一核對上下文後修正內文與檔名，跑一次全面複查確認無殘留，再進入下方的三階段原子化工作流。若來源已經乾淨（如 (上) 冊），直接原子化即可。
+
 
 # MCP Tools
 - Use the Obsidian MCP server to manage my exam notes.
