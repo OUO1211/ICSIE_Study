@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
+                "file": "Discrete Math (上)/第1章/第1章 邏輯491－3 命題函數與論域相較於之前的語句邏輯（也稱命題邏輯，propositional logic），本節介紹效力更強的邏輯系統：述詞邏輯（predicate logic），也稱一階.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B"
+              "title": "第1章 邏輯491－3 命題函數與論域相較於之前的語句邏輯（也稱命題邏輯，propositional logic），本節介紹效力更強的邏輯系統：述詞邏輯（predicate logic），也稱一階"
             }
           }
         ]
@@ -192,11 +192,17 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第2章/96離散數學（上）集合的運算全集（universal set）$U_$ 代表收集所有元素的集合。考虑 $U$ 中的兩子集 $A 、 B$ ，（1）$A _cap B=_{x _in U _mid x.md",
+    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
+    "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮全集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
+    "Discrete Math (上)/第2章/第 2 章 集合論89冪集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的冪集合，有時記做 $2^A$ 。例如，寫出下列.md",
+    "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
+    "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.bb948891942a",
+    "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
     "Discrete Math (上)/第2章/148壁新臺聖（上）题序箵的性責（1）$_left_{_begin{array}{l}D_n=(n-1)_left(D_{n-1}+D_{n-2}_right), _quad _forall n _g.md",
     "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
     "Discrete Math (上)/第2章/118 離散數學（上）冪集合的性質考慮全集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
     "Discrete Math (上)/第2章/102離散數學（上）集合的運算一卡式積（Cartesian product）考慮集合 $A 、 B$ ，稱 $A _times B=_{(a, b)_ a _in A, b _in B_}$ 為 $A.md",
-    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
     "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
     "Discrete Math (上)/第5章/第 5 章 組合計數 4175－1 排列乘法原理（The rule of product）與加法原理（The rule of sum）如果一事件發生的方法有 $m$ 種，另一事件發生的方法有 $n$.md.tmp.8260.2e4cc35e7ff0",
     "Discrete Math (上)/第7章/第 7 章 遞迴關係式 6417－1 遞迴關係式與求解法本節先介紹遞迴關係式的表達，再了解各種常見遞迴關係式的解法：歸納法、直接代入法、特徵多項式法與生成函數法。對一些比較特殊的，下一小節再介紹轉換法.md",
@@ -212,12 +218,9 @@
     "Discrete Math (上)/第1章/第1章 邏輯491－3 命題函數與論域相較於之前的語句邏輯（也稱命題邏輯，propositional logic），本節介紹效力更強的邏輯系統：述詞邏輯（predicate logic），也稱一階.md",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.862465b5071f",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.5d3598d0d26e",
-    "Discrete Math (上)/第2章/96離散數學（上）集合的運算全集（universal set）$U_$ 代表收集所有元素的集合。考虑 $U$ 中的兩子集 $A 、 B$ ，（1）$A _cap B=_{x _in U _mid x.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為全集合 $U$ 的子.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md.tmp.8260.f1421b5cac27",
     "Discrete Math (上)/第2章/第2章 集合論115對稱差的性質考虑全集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md",
-    "Discrete Math (上)/第2章/第2掌 集合楠115對稱差的性質考虑字集合 $U$ 的子集合 $A, B, C$ ，（1）$A _oplus B=(A _bigcup B)-(A _bigcap B)=(A-B) _bigcup(B.md.tmp.8260.5a7afc0b334c",
-    "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮全集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
     "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha.md",
     "Linear Algebra (下)/第6章/222線性代數（下）6－4 極小多項式方陣的極小多項式（minimal polynomial）考慮方陣 $A$ ，若多項式 $f(x)$ ，滿足：（i）$f(x)$ 的最高次方係数为 1 ，（ii）$.md",
     "Linear Algebra (下)/第6章/214線性代數（下）6－3 喬丹型的應用喬丹型代入多項式（1）考虑多項式 $f(x)$ 與下移型 Jordan block $J_k(_lambda)=_left[_begin{array}{cccc.md",
@@ -225,9 +228,6 @@
     "Linear Algebra (下)/第6章/190線性代數（下）像集鏈定理（Image chain theorem）考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則（1）$_{_boldsymbol{0}_} _subseteq _.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論675－3 對角化的定義、判別與做法可對角化（diagonalizable）的定義（1）考虑向量空間 $V$ 上的缐性算子 $T$ ，若存在 $V$ 的基底 $_beta$ 使得.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論155對角化應用一解線性微分方程組考慮缐性方程組：$$_left_{_begin{array}{c}y_1^{_prime}(t)=a_{11} y_1(t)+a_{12} y_.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
-    "Discrete Math (上)/第7章",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
