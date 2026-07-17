@@ -192,6 +192,7 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第2章/106離散數學（上）集合的運算性質考虑全集合 $U$ 上的子集合 $A, B, C$ ：1．冪等律（idempotent）（1）$A _cup A=A$（2）$A _cap A=A$2．结合律（ass.md",
     "Discrete Math (上)/第1章/第1章 邏輯491－3 命題函數與論域相較於之前的語句邏輯（也稱命題邏輯，propositional logic），本節介紹效力更強的邏輯系統：述詞邏輯（predicate logic），也稱一階.md",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.862465b5071f",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.5d3598d0d26e",
@@ -221,7 +222,6 @@
     "Linear Algebra (下)/第5章/40線性代數（下）用特徵根求 trace 與行列式例題（16_％）If $_lambda_i, i=1,2,3$ are the eigenvalues of $A=_left[_begin{arra.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮宇集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
-    "Discrete Math (上)/第2章/第 2 章 集合論149排容原理的應用三：映成（onto）函數考虑集合 $A 、 B$ ，其中 $_A_=m,_B_=n$ ，且 $m _geq n$ ，則 $A$ 至 $B$ 的映成函数個数為 $_.md",
     "Discrete Math (上)/第7章",
     "Discrete Math (上)/第6章",
     "Discrete Math (上)/第5章",
