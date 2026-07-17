@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第3章/208離散數學（上）偶函數與奇函數（even function and odd function）考虑定義在實数的函数 $f_ R _rightarrow R$ ，若 $_forall x _in R.md",
+                "file": "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "208離散數學（上）偶函數與奇函數（even function and odd function）考虑定義在實数的函数 $f_ R _rightarrow R$ ，若 $_forall x _in R"
+              "title": "212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_"
             }
           }
         ]
@@ -192,7 +192,21 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Discrete Math (上)/第3章/226離散數學（上）3－3 鴿籠原理（The Pigeonhole Principle）若有 $m$ 隻鸽子要放入 $n$ 個鴿籠中，且 $m_n$則至少有一籠放了至少二隻鴿子。【重要】Note又稱.md",
+    "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
+    "Discrete Math (上)/第3章/272離散數學（上）3－4 複雜度分析函數的等級考虑函数 $f, g_ Z^{+} _rightarrow R$ ，（1）若存在 $c _in R^{+}, n_0 _in Z^{+}$，使得對任何.md",
+    "Discrete Math (上)/第3章/258離散數學（上）與因數、倍數相關例題 15從整數 1 到 200 中任挑 101 個数，則其中必有 2 数是互質的。【82 交大資科】【96 清大資應】【99 中山電機】解 把1到200分成 $_.md",
+    "Discrete Math (上)/第3章/286離散數學（上）調和數（Harmonic number）$H(n)=1+_frac{1}{2}+_frac{1}{3}+_ldots+_frac{1}{n}$（1）Show that for al.md",
+    "Discrete Math (上)/第3章/第 3 圆兩203地板函數（Floor function、最大整數函數、下高斯函數）$f(x)=_lfloor x_rfloor_ R _rightarrow Z$ 定義成 $f(x)=n$ ，其中.md",
+    "Discrete Math (上)/第3章/第 3 章 函數 1673－1 函數關係（relation）令 $R$ 為非空集合 $A 、 B$ 的卡式積 $A _times B$ 的一子集，則稱 $R$ 為一種 $A$ 到 $B$ 的二元關係，.md",
+    "Discrete Math (上)/第3章/第 3 章 函數193可逆函數（invertible function）考虑函数 $f_ A _rightarrow B$ 之反關係 $f^{-1}_ B _rightarrow A$ ，其中 $f^.md",
+    "Discrete Math (上)/第3章/第3章 函數263與圖形的應用例題19（10_％）Assume that for any two people $x$ and $y, x$ is a friend of $y$ if and onl.md",
+    "Discrete Math (上)/第3章/第3章 函數249取子集問題－第二型$S=_{1,2, _ldots, n_}, A$ 為 $S$ 之任意子集合，計算 $A$ 中元素的和。則取 $A$ 的方法多於和的可能狀況時，必可取出 2 種不同.md",
+    "Discrete Math (上)/第3章/第3章 函數201$$_Rightarrow y _in f_left(A_1_right) _cap f_left(A_2_right),$$故得 $f_left(A_1 _cap A_2_righ.md",
+    "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
     "Discrete Math (上)/第3章/210離散數學（上）可數集（countable set）、不可數集（uncountable set）（1）若集合 $A _sim N=_{1,2, _ldots_}$ ，則 $A$ 為可列舉的（den.md",
+    "Discrete Math (上)/第3章/230離散數學（上）鴿簐原理之一般化將 $m$ 件物品置於 $n$ 個抽㨢中，一定有某些抽屉中有大於等於 $_left_lceil_frac{m}{n}_right_rceil$ 件；也一定有某些抽屉.md",
+    "Discrete Math (上)/第3章/208離散數學（上）偶函數與奇函數（even function and odd function）考虑定義在實数的函数 $f_ R _rightarrow R$ ，若 $_forall x _in R.md",
     "Discrete Math (上)/第3章/200離散數學（上）性質考慮函數 $f_ A _rightarrow B$ ，且 $A_1, A_2$ 为 $A$ 的兩子集，則（1）若 $A_1 _subseteq A_2$ ，則 $f_left(.md",
     "Discrete Math (上)/第1章/第1章 邏輯491－3 命題函數與論域相較於之前的語句邏輯（也稱命題邏輯，propositional logic），本節介紹效力更強的邏輯系統：述詞邏輯（predicate logic），也稱一階.md",
     "Discrete Math (上)/第2章/第2章 集合論157排容原理的應用四：車多項式（Rook polynomial）此可視為將排容原理視覺化成為表格，而採用多項式的係数搭配完成計算。步骤如下：（1）將題目的條件在 $m _times n.md",
@@ -204,22 +218,9 @@
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為全集合 $U$ 的子.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮全集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
     "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
-    "Discrete Math (上)/第2章/第 2 章 㘳合埝135排容原理的應用一 ：Euler＇s phi function$_phi(n)=_{m _mid 1 _leq m _leq n, _operatorname{gcd}(m,.md",
-    "Discrete Math (上)/第2章/148壁新臺聖（上）题序箵的性責（1）$_left_{_begin{array}{l}D_n=(n-1)_left(D_{n-1}+D_{n-2}_right), _quad _forall n _g.md",
-    "Discrete Math (上)/第2章/116離散數學（上）卡式積的性質考慮字集合 $U$ 的子集合 $A, B, C, D$ ，（1）If $C _neq _varnothing$ and $A _times C=B _times C$.md",
-    "Discrete Math (上)/第2章/118 離散數學（上）冪集合的性質考慮全集合 $U$ 的子集合 $A, B$ ，（1）$P(A _bigcup B) _supseteq P(A) _bigcup P(B)$ ．（2）$P(A _bi.md",
-    "Discrete Math (上)/第2章/106離散數學（上）集合的運算性質考虑全集合 $U$ 上的子集合 $A, B, C$ ：1．冪等律（idempotent）（1）$A _cup A=A$（2）$A _cap A=A$2．结合律（ass.md",
-    "Discrete Math (上)/第2章/102離散數學（上）集合的運算一卡式積（Cartesian product）考慮集合 $A 、 B$ ，稱 $A _times B=_{(a, b)_ a _in A, b _in B_}$ 為 $A.md",
-    "Discrete Math (上)/第2章/96離散數學（上）集合的運算全集（universal set）$U_$ 代表收集所有元素的集合。考虑 $U$ 中的兩子集 $A 、 B$ ，（1）$A _cap B=_{x _in U _mid x.md",
-    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.bb948891942a",
-    "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
-    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
     "Discrete Math (上)/第5章/第 5 章 組合計數 4175－1 排列乘法原理（The rule of product）與加法原理（The rule of sum）如果一事件發生的方法有 $m$ 種，另一事件發生的方法有 $n$.md.tmp.8260.2e4cc35e7ff0",
-    "Discrete Math (上)/第7章/第 7 章 遞迴關係式 6417－1 遞迴關係式與求解法本節先介紹遞迴關係式的表達，再了解各種常見遞迴關係式的解法：歸納法、直接代入法、特徵多項式法與生成函數法。對一些比較特殊的，下一小節再介紹轉換法.md",
-    "Discrete Math (上)/第3章/第 3 章 函數197合成與可逆的重要性質考虑 $f_ A _rightarrow B, _quad g_ B _rightarrow C$ 兩函数，（1）若 $f _circ g$ 為一對一，則 $.md",
-    "Discrete Math (上)/第3章/第3章 函數187合成函數（composite function）設 $f_ A _rightarrow B _vee g_ B _rightarrow C$ ，為兩函数，則$f$ 和 $g$ 的合成函.md",
     "Discrete Math (上)/第3章/第 3 童 函數197合成與可逆的重要性質考虑 $f_ A _rightarrow B, _quad g_ B _rightarrow C$ 雨函数，（1）若 $f _circ g$ 為一對一，則 $.md.tmp.8260.a5b57b6d5648",
     "Discrete Math (上)/第3章/168離散數學（上）函數（function，mapping，transformation）令 $f$ 為非空集合 $A$ 到 $B$ 上的一關係，且滿足：對任意 $A$ 上的元素 $a$ ，均恰唯一存.md.tmp.8260.6ac505c7141e",
     "Discrete Math (上)/第2章/第 2 童 集合调141排容原理的應用二：亂序（錯置、Derangement）排列数字 $1,2, _ldots, n$ ，使對任意 $k, k$ 不在第 $k$ 位，則此排列稱为是一種練席排列，其方.md.tmp.8260.a902dbf060cf",
@@ -227,7 +228,6 @@
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.862465b5071f",
     "Discrete Math (上)/第1章/第 1 会 過昭491－3 命題函數與論域相較於之前的語句趣解（也稱命題趣解，propositional logic），本筋介紹效力更強的遇輯系統：述趼趣䡠（predicate logic），也稱一隋.md.tmp.8260.5d3598d0d26e",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為宇集合 $U$ 的子.md.tmp.8260.f1421b5cac27",
-    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha.md",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
