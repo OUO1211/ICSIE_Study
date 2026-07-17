@@ -36,6 +36,8 @@ This is an **Obsidian vault** for 資工研 (Computer Science graduate studies).
 
 **處理原則**：拿到新章節/新科目的原始檔案時，先抽查幾頁判斷來源品質（而非預設乾淨或髒）。若判斷是 Mathpix 產出且有形似字問題，先用 grep 掃描已知誤判模式（可比對本檔案累積的錯字表）、逐一核對上下文後修正內文與檔名，跑一次全面複查確認無殘留，再進入下方的三階段原子化工作流。若來源已經乾淨（如 (上) 冊），直接原子化即可。
 
+**此後所有 Mathpix 生成的原始檔案，一律預設其中的 LaTeX 公式基本完全正確**，不需逐一驗算公式本身。原子化時，應直接依據數學公式的推導邏輯，重新梳理並重構所有中文說明與步驟銜接（而非逐句校對原文字句），產出結構清晰、專有名詞精確的 Obsidian 原子筆記。
+
 
 # MCP Tools
 - Use the Obsidian MCP server to manage my exam notes.
