@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "Linear Algebra (下)/第五章/4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数"
             }
           }
         ]
@@ -192,6 +192,8 @@
   },
   "active": "34ac4dc78d41eb0d",
   "lastOpenFiles": [
+    "Linear Algebra (下)/第五章/18線性代數（下）求算特徵根$_lambda$ 為算子 $T$ 的特徵根 $_Leftrightarrow _operatorname{det}(T-_lambda I)=0$ ．$_lambda$.md",
+    "CLAUDE.md",
     "Linear Algebra (下)/第五章/第 5 章 對角化理論79（3）⇒（1）$_because V=V_left(_lambda_1_right) _oplus V_left(_lambda_2_right) _oplus _ldots.md",
     "Linear Algebra (下)/第五章/第 5 章 對角化理論675－3 對角化的定義、判別與做法可對角化（diagonalizable）的定義（1）考虑向量空間 $V$ 上的缐性算子 $T$ ，若存在 $V$ 的基底 $_beta$ 使得.md",
     "Linear Algebra (下)/第五章/第 5 章 對角化理論5相似方陣保持的性質若方陣 $A$ 與 $B$ 相似，則（1） $_operatorname{tr}(A)=_operatorname{tr}(B)$ ．【很重要】（2） $_o.md",
@@ -214,10 +216,8 @@
     "Linear Algebra (下)/第五章/40線性代數（下）用特徵根求 trace 與行列式例題（16_％）If $_lambda_i, i=1,2,3$ are the eigenvalues of $A=_left[_begin{arra.md",
     "Linear Algebra (下)/第五章/4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数.md",
     "Linear Algebra (下)/第五章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
-    "Linear Algebra (下)/第五章/18線性代數（下）求算特徵根$_lambda$ 為算子 $T$ 的特徵根 $_Leftrightarrow _operatorname{det}(T-_lambda I)=0$ ．$_lambda$.md",
     "Linear Algebra (下)/第五章/140線性代數（下）對角化應用一求轉移矩陣（transition matrix）與穩定態向量（steady－state vector）（1）考慮一些狀態所形成的序列，其中，任一狀態的產生可能與之前的狀.md",
     "Linear Algebra (下)/第五章/162線性代數（下）Note上述證明過程中，不可以在（＊）中代入 $x=A$ ，使得左式：$(A-A) _operatorname{adj}(A-A)=O$ ，右式成為 $_operatorname{.md",
-    "Linear Algebra (下)/第五章/124線性代數（下）5－5 可對角化矩陣的應用對角矩陣性質整理設 $C=_operatorname{diag}_left(c_1, c_2, _ldots, c_n_right), D=_operat.md",
     "Linear Algebra (下)/第五章",
     "Exam_Notes_20260603_2231.pdf",
     "Linear Algebra/第三章",
