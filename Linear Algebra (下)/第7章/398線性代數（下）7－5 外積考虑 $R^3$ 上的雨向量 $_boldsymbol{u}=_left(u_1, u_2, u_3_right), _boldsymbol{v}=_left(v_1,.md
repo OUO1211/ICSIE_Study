@@ -3,7 +3,7 @@
 
 7－5 外積
 
-考虑 $R^3$ 上的雨向量 $\boldsymbol{u}=\left(u_1, u_2, u_3\right), \boldsymbol{v}=\left(v_1, v_2, v_3\right)$ ，
+考虑 $R^3$ 上的兩向量 $\boldsymbol{u}=\left(u_1, u_2, u_3\right), \boldsymbol{v}=\left(v_1, v_2, v_3\right)$ ，
 定義 $\boldsymbol{u} \times \boldsymbol{v}=\left(\left|\begin{array}{ll}u_2 & u_3 \\ v_2 & v_3\end{array}\right|,\left|\begin{array}{ll}u_3 & u_1 \\ v_3 & v_1\end{array}\right|,\left|\begin{array}{ll}u_1 & u_2 \\ v_1 & v_2\end{array}\right|\right)$ 稱為 $\boldsymbol{u}$ 與 $\boldsymbol{v}$ 的外積。
 Note
 （1）外積只對 $R^3$ 的向量作定義．

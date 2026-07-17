@@ -1,17 +1,17 @@
-第 5 目 斯角化理简
+第 5 章 對角化理論
 161
 
 5－6 Cayley－Hamilton 定理及應用
 
 Cayley－Hamilton 定理
 今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。
-【議明】
+【證明】
 
-【92 恤大數學、100 中風資紏
+【92 成大數學、100 中興資工
 
 設 $f(x)=\operatorname{char}_A(x)=\operatorname{det}(A-x I)=(-x)^n+a_{n-1} x^{n-1}+\ldots+a_1 x+a_0$ ．
-则因 $A-x I$ 的伴隨策陣 $\operatorname{adj}(A-x I)$ 為一 $n$ 隋方陣，
-且也可以表为以 $x$ 为變數的 $(n-1)$ 次的力陣多項式。
+则因 $A-x I$ 的伴隨策陣 $\operatorname{adj}(A-x I)$ 為一 $n$ 階方陣，
+且也可以表为以 $x$ 为變數的 $(n-1)$ 次的方陣多項式。
 故可設 $\operatorname{adj}(A-x I)=A_{n-1} x^{n-1}+A_{n-2} x^{n-2}+\ldots+A_1 x+A_0$ ，其中 $A_{n-1}, A_2, \ldots, A_1, A_0 \in F^{* * *}$ 。
 $$
 \begin{align*}
@@ -20,7 +20,7 @@ $$
 \end{align*}
 $$
 
-比校等式左右各項係數得：
+比較等式左右各項係數得：
 $$
 \left\{\begin{array}{l}
 \left.-A_{n-1}=(-1)^n I \ldots \ldots . . \text { (第 } 1 \text { 式 }\right) \\

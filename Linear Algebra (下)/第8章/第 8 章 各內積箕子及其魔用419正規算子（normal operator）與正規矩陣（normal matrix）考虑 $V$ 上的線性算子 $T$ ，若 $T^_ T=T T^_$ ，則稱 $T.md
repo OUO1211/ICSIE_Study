@@ -1,4 +1,4 @@
-第 8 章 各內積箕子及其魔用
+第 8 章 各內積算子及其應用
 419
 
 正規算子（normal operator）與正規矩陣（normal matrix）
@@ -51,5 +51,5 @@ $$
 （b）若 $A \boldsymbol{x}=\lambda \boldsymbol{x}, \boldsymbol{x} \neq \mathbf{0}$ ，則 $A^H \boldsymbol{x}=\bar{\lambda} \boldsymbol{x}$ 。
 
 【95高師數學】
-（c）厢異特徵根所對向量正交．
+（c）相異特徵根所對向量正交．
 【很重要】

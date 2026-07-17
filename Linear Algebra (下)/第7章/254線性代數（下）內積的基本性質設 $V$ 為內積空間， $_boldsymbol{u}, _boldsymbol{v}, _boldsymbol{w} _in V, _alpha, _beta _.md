@@ -4,7 +4,7 @@
 內積的基本性質
 設 $V$ 為內積空間， $\boldsymbol{u}, \boldsymbol{v}, \boldsymbol{w} \in V, \alpha, \beta \in F, T \in L(V, V)$ ，則
 （1）$\langle\boldsymbol{u}, \alpha \boldsymbol{v}\rangle=\bar{\alpha}\langle\boldsymbol{u}, \boldsymbol{v}\rangle$ ．
-（2）$\langle\boldsymbol{u}, \alpha \boldsymbol{v}+\beta \boldsymbol{w}\rangle=\bar{\alpha}\langle\boldsymbol{u}, \boldsymbol{v}\rangle+\bar{\beta}\langle\boldsymbol{u}, \boldsymbol{w}\rangle$（共軛右缐性）
+（2）$\langle\boldsymbol{u}, \alpha \boldsymbol{v}+\beta \boldsymbol{w}\rangle=\bar{\alpha}\langle\boldsymbol{u}, \boldsymbol{v}\rangle+\bar{\beta}\langle\boldsymbol{u}, \boldsymbol{w}\rangle$（共軛右線性）
 （3）$\langle\boldsymbol{\nu}, \mathbf{0}\rangle=\langle\mathbf{0}, \boldsymbol{\nu}\rangle=0$ ．
 （4）$\langle\boldsymbol{v}, \boldsymbol{v}\rangle=0 \Leftrightarrow \boldsymbol{v}=\mathbf{0}$ ．
 （5）$[\forall v \in V,\langle\boldsymbol{u}, v\rangle=0] \Leftrightarrow \boldsymbol{u}=\mathbf{0}$ ．

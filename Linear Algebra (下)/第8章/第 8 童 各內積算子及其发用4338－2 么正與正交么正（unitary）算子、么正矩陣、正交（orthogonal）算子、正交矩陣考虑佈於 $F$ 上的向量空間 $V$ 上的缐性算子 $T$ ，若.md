@@ -1,10 +1,10 @@
-第 8 童 各內積算子及其发用
+第 8 章 各內積算子及其應用
 433
 
 8－2 么正與正交
 
 么正（unitary）算子、么正矩陣、正交（orthogonal）算子、正交矩陣
-考虑佈於 $F$ 上的向量空間 $V$ 上的缐性算子 $T$ ，若 $T T^*=T * T=I$ ，則
+考虑佈於 $F$ 上的向量空間 $V$ 上的線性算子 $T$ ，若 $T T^*=T * T=I$ ，則
 當 $F=C$ 時，稱 $T$ 為么正算子；當 $F=R$ 時，則稱 $T$ 为正交算子。
 考虑佈於 $F$ 上 $n$ 階方陣 $A$ ，
 當 $F=C$ 時，$A$ 滿足 $A^H A=A A^H=I$ ，則稱 $A$ 為么正矩陣。
@@ -77,7 +77,7 @@ $$
 【98中山通訊類題、97政大資科】
 
 Note
-（1）等覧定義： $\begin{aligned} & A \text { 為么正 } \Leftrightarrow A^{-1}=A^H \\ & A \text { 為正交 } \Leftrightarrow A^{-1}=A^T\end{aligned}$
+（1）等價定義： $\begin{aligned} & A \text { 為么正 } \Leftrightarrow A^{-1}=A^H \\ & A \text { 為正交 } \Leftrightarrow A^{-1}=A^T\end{aligned}$
 （2）等價定義：考慮方陣 $A$ ，則 $A$ 為么正（或正交）⇔ $A$ 的行（列）向量形成單範正交集。
 【證明】
 【99政大應數、103．104中央資工】

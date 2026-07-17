@@ -1,4 +1,4 @@
-第 8 章 內積算子及其魔用
+第 8 章 內積算子及其應用
 531
 
 矩陣長度的性質
@@ -28,7 +28,7 @@ $$
 
 而取 $\boldsymbol{x}=\boldsymbol{e}_k$ 則可使等號成立，$\therefore\|A\|_1=\alpha=\max _{1 \leq j \leq n} \sum_{i=1}^m\left|a_{i j}\right|$ 。
 （2）$\|A\|_2^2=\left(\max _{x \neq 0}\left\{\frac{\|A \boldsymbol{x}\|_2}{\|\boldsymbol{x}\|_2}\right\}\right)^2=\max _{x \neq 0}\left\{\frac{\|A \boldsymbol{x}\|_2^2}{\|\boldsymbol{x}\|_2^2}\right\}$ ，
-又 $\frac{\|A \boldsymbol{x}\|_2^2}{\|\boldsymbol{x}\|_2^2}=\frac{\langle A \boldsymbol{x}, A \boldsymbol{x}\rangle}{\langle\boldsymbol{x}, \boldsymbol{x}\rangle}=\frac{\left\langle A^H A \boldsymbol{x}, \boldsymbol{x}\right\rangle}{\langle\boldsymbol{x}, \boldsymbol{x}\rangle}=\rho(\boldsymbol{x})$（ $A^H A$ 的 Rayleight 商式）
+又 $\frac{\|A \boldsymbol{x}\|_2^2}{\|\boldsymbol{x}\|_2^2}=\frac{\langle A \boldsymbol{x}, A \boldsymbol{x}\rangle}{\langle\boldsymbol{x}, \boldsymbol{x}\rangle}=\frac{\left\langle A^H A \boldsymbol{x}, \boldsymbol{x}\right\rangle}{\langle\boldsymbol{x}, \boldsymbol{x}\rangle}=\rho(\boldsymbol{x})$（ $A^H A$ 的 Rayleigh 商式）
 $$
 \leq \lambda_{\max }\left(A^H A\right),\left(\because A^H A \text { 為 Hermitian }\right)
 $$

@@ -2,7 +2,7 @@
 191
 
 Fitting Lemma
-考虑 $n$ 维向量空間 $V$ 上的缐性算子 $T$ ，則存在一正整数 $k$ 使得 $V=\operatorname{ker}\left(T^k\right) \oplus \operatorname{Im}\left(T^k\right)$ ．
+考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則存在一正整数 $k$ 使得 $V=\operatorname{ker}\left(T^k\right) \oplus \operatorname{Im}\left(T^k\right)$ ．
 【95．103 台大数學、95 高師数學】
 【證明】
 由核集鏈定理知存在正整數 $k$ 使得 $\operatorname{ker}\left(T^k\right)=\operatorname{ker}\left(T^{k+1}\right)=\cdots=\operatorname{ker}\left(T^{2 k}\right)$ ，

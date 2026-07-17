@@ -21,6 +21,6 @@
 再證出 $T_W$ 為冪零算子，
 （for $\boldsymbol{v} \in W=\operatorname{ker}\left(T^k\right), T^k(\boldsymbol{v})=\mathbf{0}, \therefore T_W$ 為冪零算子．）
 再證明 $W$ 為最大冪零區，
-$\binom{\text { 令 } W^{\prime} \text { 亦為 } T \text { 的一個幂零區，即 } T_{W^{\prime}} \text { 亦為幕零算子，設 } \operatorname{index}\left(T_{W^{\prime}}\right)=t,}{\text { 則 } \forall v \in W^{\prime}, T^{\prime}(v)=\mathbf{0}, \therefore v \in \operatorname{ker}\left(T^{\prime}\right) \text { ，但 } \operatorname{ker}\left(T^{\prime}\right) \subseteq \bigcup_{i=1}^{\infty} \operatorname{ker}\left(T^i\right)=W, \therefore v \in W, \therefore W^{\prime} \subseteq W, \text { 得證．}}$
+$\binom{\text { 令 } W^{\prime} \text { 亦為 } T \text { 的一個幂零區，即 } T_{W^{\prime}} \text { 亦為冪零算子，設 } \operatorname{index}\left(T_{W^{\prime}}\right)=t,}{\text { 則 } \forall v \in W^{\prime}, T^{\prime}(v)=\mathbf{0}, \therefore v \in \operatorname{ker}\left(T^{\prime}\right) \text { ，但 } \operatorname{ker}\left(T^{\prime}\right) \subseteq \bigcup_{i=1}^{\infty} \operatorname{ker}\left(T^i\right)=W, \therefore v \in W, \therefore W^{\prime} \subseteq W, \text { 得證．}}$
 最後得 $\operatorname{index}\left(T_W\right)=k$ ：
 $\binom{\because W=\operatorname{ker}\left(T^k\right), \therefore T^k(W)=\{\boldsymbol{0}\}, \text { 即 }\left(T_W\right)^k=O,}{\text { 又因为 } k \text { 为為最小正整數，故得證．}}$

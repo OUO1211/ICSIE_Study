@@ -2,7 +2,7 @@
 線性代數（下）
 
 Rayleigh 法則（Rayleigh principle）
-考虑 Hemitian 矩陣 $A \in C^{n \times n}$ ，且 $\lambda_1 \leq \lambda_2 \leq \ldots \leq \lambda_n$ 為 $A$ 的特徵根，則
+考虑 Hermitian 矩陣 $A \in C^{n \times n}$ ，且 $\lambda_1 \leq \lambda_2 \leq \ldots \leq \lambda_n$ 為 $A$ 的特徵根，則
 （1）$\lambda_1 \leq \rho(\boldsymbol{x}) \leq \lambda_n$ ．
 （2） $\max _{x \neq 0} \rho(\boldsymbol{x})=\lambda_n$ ．
 （3） $\min _{x \neq 0} \rho(\boldsymbol{x})=\lambda_1$ ．

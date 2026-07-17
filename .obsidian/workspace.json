@@ -190,8 +190,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e23dd585893d949",
+  "active": "34ac4dc78d41eb0d",
   "lastOpenFiles": [
+    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第3章/200離散數學（上）性質考慮函數 $f_ A _rightarrow B$ ，且 $A_1, A_2$ 为 $A$ 的兩子集，則（1）若 $A_1 _subseteq A_2$ ，則 $f_left(.md",
     "Discrete Math (上)/第3章/208離散數學（上）偶函數與奇函數（even function and odd function）考虑定義在實数的函数 $f_ R _rightarrow R$ ，若 $_forall x _in R.md",
     "Discrete Math (上)/第3章/210離散數學（上）可數集（countable set）、不可數集（uncountable set）（1）若集合 $A _sim N=_{1,2, _ldots_}$ ，則 $A$ 為可列舉的（den.md",
@@ -217,7 +218,6 @@
     "Discrete Math (上)/第2章/第 2 章 集合論89冪集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的冪集合，有時記做 $2^A$ 。例如，寫出下列.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 1272－2 排容原理（The Principle of Inclusion and Exclusion）令 $A_1, A_2, _ldots, A_n$ 為全集合 $U$ 的子.md",
     "Discrete Math (上)/第2章/第 2 章 集合論 113差集的性質考慮全集 $U$ 的子集合 $A, B, C$ ，（1）$A _subseteq B _Leftrightarrow _bar{B} _subseteq _bar{.md",
-    "Discrete Math (上)/第2章/第 2 章 集合䈒85子集合（subset）考慮集合 $A 、 B$ ，若 $_forall x$ ，if $x _in A$ ，then $x _in B$ ，则稱 $A$ 包含於 $B$（或 $B.md",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.bb948891942a",
     "Discrete Math (上)/第5章/第 5 章 組合計數 4175－1 排列乘法原理（The rule of product）與加法原理（The rule of sum）如果一事件發生的方法有 $m$ 種，另一事件發生的方法有 $n$.md.tmp.8260.2e4cc35e7ff0",

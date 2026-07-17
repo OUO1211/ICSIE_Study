@@ -3,7 +3,7 @@
 7－2 Gram－Schmidt 正交化過程
 
 Gram－Schmidt 正交化過程
-考虑內積向量空間 $V$ 上的缐性獨立集 $S=\left\{\boldsymbol{v}_1, \boldsymbol{v}_2, \ldots, \boldsymbol{v}_n\right\}$ ，令 $\boldsymbol{u}_1=\boldsymbol{v}_1$ ，
+考虑內積向量空間 $V$ 上的線性獨立集 $S=\left\{\boldsymbol{v}_1, \boldsymbol{v}_2, \ldots, \boldsymbol{v}_n\right\}$ ，令 $\boldsymbol{u}_1=\boldsymbol{v}_1$ ，
 $$
 \begin{aligned}
 & \boldsymbol{u}_2=\boldsymbol{v}_2-\frac{\left\langle\boldsymbol{v}_2, \boldsymbol{u}_1\right\rangle}{\left\langle\boldsymbol{u}_1, \boldsymbol{u}_1\right\rangle} \boldsymbol{u}_1, \\
