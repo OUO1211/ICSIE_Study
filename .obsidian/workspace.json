@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (下)/第5章/第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A.md",
+                "file": "Linear Algebra (下)/第6章/198線性代數（下）喬丹區塊（Jordan block）與喬丹型（Jordan form）令 $_lambda$ 為算子 $T$ 的特徵根，則稱 $J_k(_lambda)=_left[_begin{.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A"
+              "title": "198線性代數（下）喬丹區塊（Jordan block）與喬丹型（Jordan form）令 $_lambda$ 為算子 $T$ 的特徵根，則稱 $J_k(_lambda)=_left[_begin{"
             }
           }
         ]
@@ -192,6 +192,18 @@
   },
   "active": "4e23dd585893d949",
   "lastOpenFiles": [
+    "Linear Algebra (下)/第6章/190線性代數（下）像集鏈定理（Image chain theorem）考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則（1）$_{_boldsymbol{0}_} _subseteq _.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論675－3 對角化的定義、判別與做法可對角化（diagonalizable）的定義（1）考虑向量空間 $V$ 上的線性算子 $T$ ，若存在 $V$ 的基底 $_beta$ 使得.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論155對角化應用一解線性微分方程組考慮線性方程組：$$_left_{_begin{array}{c}y_1^{_prime}(t)=a_{11} y_1(t)+a_{12} y_.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論115投影算子與可對角化令 $T$ 為 $n$－維向量空間 $V$ 上的投影算子，則（1）$T$ 的特徵根为 0 或 1 ．【重要】（2）$V(0)=_operatorname{.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論115－2 特徵根與特徵向量特徵根（eigenvalue）、特徵向量（eigenvector）考虑方陣 $A$ ，（1）對純量 $_lambda$ ，若存在非零向量 $_bold.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論111⇐設 $T U=U T$ ，因 $T$ 可對角化，故 $V=V_left(_lambda_1_right) _oplus V_left(_lambda_2_right) _.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論47特徵空間（eigenspace）設 $T _in L(V, V)$ ，純量 $_lambda$ 為 $T$ 的特徵根，則稱 $V(_lambda)=_{_boldsymbol.md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論35特徵多項式（characteristic polynomial）定義方陣 $A$ 的特徵多項式 $c h a r_A(x)=_operatorname{det}(A-x I).md",
+    "Linear Algebra (下)/第5章/第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論5相似方陣保持的性質若方陣 $A$ 與 $B$ 相似，則（1） $_operatorname{tr}(A)=_operatorname{tr}(B)$ ．【很重要】（2） $_o.md",
     "Linear Algebra (下)/第5章/140線性代數（下）對角化應用一求轉移矩陣（transition matrix）與穩定態向量（steady－state vector）（1）考慮一些狀態所形成的序列，其中，任一狀態的產生可能與之前的狀.md",
     "Linear Algebra (下)/第5章/124線性代數（下）5－5 可對角化矩陣的應用對角矩陣性質整理設 $C=_operatorname{diag}_left(c_1, c_2, _ldots, c_n_right), D=_operat.md",
@@ -206,18 +218,6 @@
     "Discrete Math (上)/第7章/716離散數學（上）以 $b_n=_frac{a_n}{n!}$ 代入例題 9求解遞迴式：$_left_{_begin{array}{l}a_n+n a_{n-1}=n!, n _geq 1 _ a.md",
     "Discrete Math (上)/第7章/686離散數學（上）求解遞迴關係式－使用生成函數使用生成函數法解遞迴關係，步驟如下：Step 1：變換 index 使成為 $c_n a_n+c_{n-1} a_{n-1}+_ldots+c_{n-k.md",
     "Discrete Math (上)/第7章/678離散數學（上）求解遞迴關係式－特徵多項式（非齊次，$f(n)$ 為混合函數）例題 11求解遞迴式：$_left_{_begin{array}{l}a_0=1, a_1=19 _ 3, _ a_.md",
-    "Discrete Math (上)/第7章/668離散數學（上）求解遞迴關係式－特徵多項式（非齊次）考慮 $k$ 階常係數線性非齊次遞迴式：$a_n+c_1 a_{n-1}+_ldots+c_k a_{n-k}=f(n)$ ，其中，$n, k.md",
-    "Discrete Math (上)/第7章/652離散數學（上）求解遞迴關係式－直接代入法某些簡單的遞迴關係式直接遞迴代入幾項後，或許可得出明顯的規律性，但此法是眾多解法中最直觀的想法，也是同學一定要具備的解題技巧。例題求解䖑迴關係式：（1）$.md",
-    "Discrete Math (上)/38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）.md",
-    "Discrete Math (上)/24 離散數學（上）關於 $p _rightarrow q$（1）$p _rightarrow q$ 的反命題（inverse）為 $_sim p _rightarrow _sim q$ 。（2）$p.md",
-    "Discrete Math (上)/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命題 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論125指數矩陣 $e^A$定義 $e^A=_sum_{i=0}^{_infty} _frac{A^i}{i!}=I+_frac{A}{1}+_frac{A^2}{2!}+_fra.md",
-    "Linear Algebra (下)/第5章/76線性代數（下）代數重數（algebraic multiplicity）與幾何重數（geometric multiplicity）設 $T _in L(V, V), _lambda$ 為 $T$ 的.md",
-    "Linear Algebra (下)/第5章/110線性代數（下）同步對角化（simultaneously diagonalizable）（1）考虑 $V$ 上的算子 $T, U$ ，若存在 $V$ 的基底 $_beta$ 使得 $[T]_be.md",
-    "Linear Algebra (下)/第5章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
-    "Linear Algebra (下)/第5章/4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
