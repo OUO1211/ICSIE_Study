@@ -11,10 +11,14 @@
             "id": "4e23dd585893d949",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "CLAUDE"
             }
           }
         ]
@@ -186,8 +190,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e23dd585893d949",
+  "active": "34ac4dc78d41eb0d",
   "lastOpenFiles": [
+    "Exam_Notes_20260603_2231.pdf",
     "未命名.md",
     "Linear Algebra/第三章/秩與線性系統.md",
     "Linear Algebra/第三章/線性組合與生成空間.md",
@@ -214,7 +219,6 @@
     "Linear Algebra/第二章/解空間與解的結構.md",
     "Linear Algebra/第二章/行列式進階性質.md",
     "Linear Algebra/第二章/行列式的列行運算性質.md",
-    "Linear Algebra/第二章/行列式定義.md",
     "Linear Algebra/第二章",
     "Linear Algebra/第一章",
     "Linear Algebra",
