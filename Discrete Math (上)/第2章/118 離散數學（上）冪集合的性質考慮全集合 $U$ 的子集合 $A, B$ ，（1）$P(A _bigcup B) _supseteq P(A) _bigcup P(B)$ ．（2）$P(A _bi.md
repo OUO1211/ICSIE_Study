@@ -2,9 +2,9 @@
 
 
 
-幕集合的性質
+冪集合的性質
 
-考慮宇集合 $U$ 的子集合 $A, B$ ，
+考慮全集合 $U$ 的子集合 $A, B$ ，
 
 （1）$P(A \bigcup B) \supseteq P(A) \bigcup P(B)$ ．
 

@@ -6,7 +6,7 @@
 
 
 
-令 $A_1, A_2, \ldots, A_n$ 為宇集合 $U$ 的子集合，則對任何 $t, 1 \leq t \leq n$ ，
+令 $A_1, A_2, \ldots, A_n$ 為全集合 $U$ 的子集合，則對任何 $t, 1 \leq t \leq n$ ，
 
 $$
 

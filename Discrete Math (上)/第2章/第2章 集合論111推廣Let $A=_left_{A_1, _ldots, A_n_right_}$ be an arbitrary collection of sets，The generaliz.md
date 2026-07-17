@@ -22,7 +22,7 @@ $$
 
 $$
 
-（2）例如：考慮宇集合為實數集，指標集為正實數集，對任意正實數 $r$ ，定義 $A_r=[-r, r]$ ，則 $\bigcup_{i \in I} A_i=R ; \bigcap_{i \in I} A_i=\{0\}$ 。
+（2）例如：考慮全集合為實數集，指標集為正實數集，對任意正實數 $r$ ，定義 $A_r=[-r, r]$ ，則 $\bigcup_{i \in I} A_i=R ; \bigcap_{i \in I} A_i=\{0\}$ 。
 
 （3）笛摩根定理的一般化 ：（1）$\overline{\bigcup_{i=1}^n A_i}=\bigcap_{i=1}^n \overline{A_i}$ ；（2）$\overline{\bigcap_{i=1}^n A_i}=\bigcup_{i=1}^n \overline{A_i}$ 。
 

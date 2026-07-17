@@ -6,9 +6,9 @@
 
 集合的運算
 
-宇集（universal set）$U:$ 代表收集所有元素的集合。
+全集（universal set）$U:$ 代表收集所有元素的集合。
 
-考虑 $U$ 中的雨子集 $A 、 B$ ，
+考虑 $U$ 中的兩子集 $A 、 B$ ，
 
 （1）$A \cap B=\{x \in U \mid x \in A$ 且 $x \in B\}$ ，稱為集合 $A$ 和集合 $B$ 的交集（intersection）。
 
