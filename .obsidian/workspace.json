@@ -6,7 +6,7 @@
       {
         "id": "fd3a24edcd4ecad1",
         "type": "tabs",
-        "dimension": 27.476780185758514,
+        "dimension": 30.263157894736842,
         "children": [
           {
             "id": "081ab4aca71e39e2",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第1章/可逆矩陣.md",
+                "file": "Linear Algebra (上)/第2章/特殊矩陣的行列式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "可逆矩陣"
+              "title": "特殊矩陣的行列式"
             },
             "group": "8f6f463939c66f1e"
           }
@@ -28,7 +28,7 @@
       {
         "id": "10e4878591d342d2",
         "type": "tabs",
-        "dimension": 72.52321981424149,
+        "dimension": 69.73684210526315,
         "children": [
           {
             "id": "d1e6493f42641699",
@@ -36,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Linear Algebra (上)/第1章/可逆矩陣.md",
+                "file": "Linear Algebra (上)/第2章/特殊矩陣的行列式.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.9999999999999999,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "可逆矩陣 的關聯圖"
+              "title": "特殊矩陣的行列式 的關聯圖"
             },
             "group": "8f6f463939c66f1e"
           }
@@ -240,8 +240,9 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Linear Algebra (上)/第1章/三角矩陣.md",
     "Linear Algebra (上)/第2章/Schur補矩陣.md",
+    "Linear Algebra (上)/第1章/可逆矩陣.md",
+    "Linear Algebra (上)/第1章/三角矩陣.md",
     "Linear Algebra (下)/第7章/268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds.md",
     "Linear Algebra (下)/第7章/266線性代數（下）向量的夾角若非零向量 $_boldsymbol{u}, _boldsymbol{v}$ 的夾角为 $_theta _in[0, _pi]$ ，則 $_cos _theta=_fra.md",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理冪零（nilpotent）與指標（index）（1）對線性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md",
@@ -265,7 +266,6 @@
     "Linear Algebra (下)/第5章/第 5 章 對角化理論47特徵空間（eigenspace）設 $T _in L(V, V)$ ，純量 $_lambda$ 為 $T$ 的特徵根，則稱 $V(_lambda)=_{_boldsymbol.md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論35特徵多項式（characteristic polynomial）定義方陣 $A$ 的特徵多項式 $c h a r_A(x)=_operatorname{det}(A-x I).md",
     "Linear Algebra (下)/第5章/第 5 章 對角化理論35－1 方陣的相似方陣的相似（similar）考虑方陣 $A, B$ ，若存在可逆矩陣 $P$ 滿足 $B=P^{-1} A P$ ，則稱 $A$ 與 $B$ 相似，記作 $A.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論5相似方陣保持的性質若方陣 $A$ 與 $B$ 相似，則（1） $_operatorname{tr}(A)=_operatorname{tr}(B)$ ．【很重要】（2） $_o.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
