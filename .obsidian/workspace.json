@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第3章/直和.md",
+                "file": "Linear Algebra (上)/第3章/基底三大定理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "直和"
+              "title": "基底三大定理"
             },
             "group": "8f6f463939c66f1e"
           }
@@ -36,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Linear Algebra (上)/第3章/直和.md",
+                "file": "Linear Algebra (上)/第3章/基底三大定理.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.9999999999999981,
+                  "scale": 0.9999999999999974,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "直和 的關聯圖"
+              "title": "基底三大定理 的關聯圖"
             },
             "group": "8f6f463939c66f1e"
           }
@@ -239,6 +239,10 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第3章/秩與線性系統.md",
+    "Linear Algebra (上)/第3章/矩陣的秩.md",
+    "Linear Algebra (上)/第3章/座標與基底變換.md",
+    "Linear Algebra (上)/第3章/直和.md",
     "Linear Algebra (上)/第3章/和空間維度公式.md",
     "Linear Algebra (上)/第3章/向量空間定義.md",
     "Linear Algebra (上)/第2章/線性方程組與行列式(MOC).md",
@@ -261,10 +265,6 @@
     "Linear Algebra (下)/第5章/68線性代數（下）$$_Leftrightarrow A _boldsymbol{v}_i=_lambda_i _boldsymbol{v}_i, _forall i=1,2, _ldots, n,$.md",
     "Linear Algebra (下)/第5章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
     "Linear Algebra (下)/第5章/18線性代數（下）求算特徵根$_lambda$ 為算子 $T$ 的特徵根 $_Leftrightarrow _operatorname{det}(T-_lambda I)=0$ ．$_lambda$.md",
-    "Linear Algebra (下)/第5章/78線性代數（下）可對角化的充要條件設 $T _in L(V, V), _operatorname{dim}(V)=n, _lambda_1, _lambda_2, _ldots, _lambda_r.md",
-    "Linear Algebra (下)/第5章/76線性代數（下）代數重數（algebraic multiplicity）與幾何重數（geometric multiplicity）設 $T _in L(V, V), _lambda$ 為 $T$ 的.md",
-    "Linear Algebra (下)/第7章/248線性代數（下）$$_begin{aligned}& R^{2 _times 1},_left[_begin{array}{l}1 _2_end{array}_right],_left[_be.md",
-    "Linear Algebra (上)/第2章/小行列式與餘因子.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
