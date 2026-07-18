@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (下)/第5章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
+                "file": "Discrete Math (上)/第1章/38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+"
+              "title": "38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）"
             },
             "group": "8f6f463939c66f1e"
           }
@@ -36,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Linear Algebra (下)/第5章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
+                "file": "Discrete Math (上)/第1章/38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -59,12 +59,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.401982897776099,
+                  "scale": 1.4019828977760986,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+ 的關聯圖"
+              "title": "38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion） 的關聯圖"
             },
             "group": "8f6f463939c66f1e"
           }
@@ -239,8 +239,22 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Discrete Math (上)/第1章/50離散數學（上）翻譯運用述詞（predicate）、量詞（quantifier）、適當的論域，及邏輯連接詞完成翻譯。（1）論域為所有你學校的學生，$C(x)_ x$ 有一台電腦，$F(x, y)_.md",
+    "Discrete Math (上)/第1章/38離散數學（上）論證（argument）由一组命題 $P_1, P_2, _ldots, P_n$（稱為前提 premises），通過一些規則，得到另一命題 $Q$（稱為结論 conclusion）.md",
+    "Discrete Math (上)/第1章/第 1 章 羁輯 27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _v.md",
+    "Discrete Math (上)/第1章/24離散數學（上）關於 $p _rightarrow q$（1）$p _rightarrow q$ 的反命題（inverse）為 $_sim p _rightarrow _sim q$ 。（2）$p.md",
+    "Discrete Math (上)/第1章/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命題 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
+    "Discrete Math (上)/第2章/106離散數學（上）集合的運算性質考虑全集合 $U$ 上的子集合 $A, B, C$ ：1．冪等律（idempotent）（1）$A _cup A=A$（2）$A _cap A=A$2．结合律（ass.md",
+    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
+    "Linear Algebra (上)/第1章/三角矩陣.md",
+    "Linear Algebra (下)/第5章/96線性代數（下）做對角化的步驟（1）對 $V$ 上的算子 $T$ ，依序求出特徵式、特徵根、特徵空間，取各特徵空間上的基底，$_beta_1, _ldots, _beta_k$ ，則取基底 $_be.md",
+    "Linear Algebra (下)/第5章/40線性代數（下）用特徵根求 trace 與行列式例題（16_％）If $_lambda_i, i=1,2,3$ are the eigenvalues of $A=_left[_begin{arra.md",
+    "Linear Algebra (下)/第5章/68線性代數（下）$$_Leftrightarrow A _boldsymbol{v}_i=_lambda_i _boldsymbol{v}_i, _forall i=1,2, _ldots, n,$.md",
+    "Linear Algebra (下)/第5章/36線性代數（下）特徵多項式展開考虑 $n$ 階方陣 $A$ ，則 $_operatorname{char}_A(x)=(-x)^n+_operatorname{tr}_1(A)(-x)^{n-1}+.md",
     "Linear Algebra (下)/第5章/18線性代數（下）求算特徵根$_lambda$ 為算子 $T$ 的特徵根 $_Leftrightarrow _operatorname{det}(T-_lambda I)=0$ ．$_lambda$.md",
     "Linear Algebra (下)/第5章/4 線性代數（下）相似方陣的運算結果若方陣 $A$ 與 $B$ 相似，則（1）$A^T _sim B^T$ ．【105 中興資科、109 中央資工】（2）$A^k _sim B^k$ ，對任意正整数.md",
+    "Linear Algebra (下)/第5章/78線性代數（下）可對角化的充要條件設 $T _in L(V, V), _operatorname{dim}(V)=n, _lambda_1, _lambda_2, _ldots, _lambda_r.md",
+    "Linear Algebra (下)/第5章/76線性代數（下）代數重數（algebraic multiplicity）與幾何重數（geometric multiplicity）設 $T _in L(V, V), _lambda$ 為 $T$ 的.md",
     "Linear Algebra (下)/第7章/248線性代數（下）$$_begin{aligned}& R^{2 _times 1},_left[_begin{array}{l}1 _2_end{array}_right],_left[_be.md",
     "Linear Algebra (上)/第2章/古典伴隨矩陣.md",
     "Linear Algebra (上)/第2章/小行列式與餘因子.md",
@@ -248,23 +262,9 @@
     "Linear Algebra (上)/第2章/特殊矩陣的行列式.md",
     "Linear Algebra (上)/第2章/Schur補矩陣.md",
     "Linear Algebra (上)/第1章/可逆矩陣.md",
-    "Linear Algebra (上)/第1章/三角矩陣.md",
     "Linear Algebra (下)/第7章/268線性代數（下）其他常見定義長度的方式考虑向量 $_boldsymbol{x}=_left(x_1, x_2, _ldots, x_n_right)$ ：（1） 1 －norm：$_bolds.md",
     "Linear Algebra (下)/第7章/266線性代數（下）向量的夾角若非零向量 $_boldsymbol{u}, _boldsymbol{v}$ 的夾角为 $_theta _in[0, _pi]$ ，則 $_cos _theta=_fra.md",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理冪零（nilpotent）與指標（index）（1）對線性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md",
-    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用191Fitting Lemma考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則存在一正整数 $k$ 使得 $V=_operatorname{ker.md",
-    "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用189核集鏈定理（Kernel chain theorem）考慮 $n$ 維向量空間 $V$ 上的線性算子 $T$ ，則（1）$_{_mathbf{0}_} _.md",
-    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用199形成喬丹型的步驟（1）將矩陣 $A _in F^{n _times n}$ 的特徵多項式分解求根，為方便說明，設 $_operatorname{cha.md",
-    "Linear Algebra (下)/第6章/222線性代數（下）6－4 極小多項式方陣的極小多項式（minimal polynomial）考慮方陣 $A$ ，若多項式 $f(x)$ ，滿足：（i）$f(x)$ 的最高次方係数为 1 ，（ii）$.md",
-    "Linear Algebra (下)/第6章/第 6 章 Jordan form 及其應用205找可逆矩陣 $Q$ 使 $Q^{-1} A Q=J_A$設 $A$ 有特徵多項式 $_operatorname{char}_A(_lambda)=(_.md",
-    "Linear Algebra (下)/第6章/214線性代數（下）6－3 喬丹型的應用喬丹型代入多項式（1）考虑多項式 $f(x)$ 與下移型 Jordan block $J_k(_lambda)=_left[_begin{array}{cccc.md",
-    "Linear Algebra (下)/第6章/210線性代數（下）相似與喬丹型若 $J_A$ 為 $A$ 的 Jordan form，$J_B$ 為 $B$ 的 Jordan form，則$A$ 與 $B$ 相似 $_Leftrightarrow.md",
-    "Linear Algebra (下)/第6章/198線性代數（下）喬丹區塊（Jordan block）與喬丹型（Jordan form）令 $_lambda$ 為算子 $T$ 的特徵根，則稱 $J_k(_lambda)=_left[_begin{.md",
-    "Linear Algebra (下)/第6章/190線性代數（下）像集鏈定理（Image chain theorem）考虑 $n$ 维向量空間 $V$ 上的線性算子 $T$ ，則（1）$_{_boldsymbol{0}_} _subseteq _.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論1615－6 Cayley－Hamilton 定理及應用Cayley－Hamilton 定理今 $f$ 为方降 $A$ 的特徵多項式，则 $f(A)=O$ 。【證明】【92 恤大.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論675－3 對角化的定義、判別與做法可對角化（diagonalizable）的定義（1）考虑向量空間 $V$ 上的線性算子 $T$ ，若存在 $V$ 的基底 $_beta$ 使得.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論155對角化應用一解線性微分方程組考慮線性方程組：$$_left_{_begin{array}{c}y_1^{_prime}(t)=a_{11} y_1(t)+a_{12} y_.md",
-    "Linear Algebra (下)/第5章/第 5 章 對角化理論137對角化應用－求極限 $_lim A^n$考虑方陣所形成的序列 $A_1, A_2, _ldots$ ，若 $_lim _{k _rightarrow _infty}_lef.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
