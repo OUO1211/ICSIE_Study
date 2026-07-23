@@ -2,7 +2,7 @@
 subject: Discrete Mathematics
 status: finished
 ---
-
+	
 # 建立真值表與 wff（合式公式）
 
 ## 定義
