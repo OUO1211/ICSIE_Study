@@ -29,7 +29,8 @@
       "Bash(ls -la \"/c/Users/USER/.claude/projects/c--Users-USER-Documents-ICSIE-Study/\" 2>&1 | head -20)",
       "Read(//c/Users/USER/.claude/projects/c--Users-USER-Documents-ICSIE-Study//**)",
       "Bash(rm -f \"/c/Users/USER/.claude/projects/c--Users-USER-Documents-ICSIE-Study/memory/ocr_quality_by_source_tool.md\" \"/c/Users/USER/.claude/projects/c--Users-USER-Documents-ICSIE-Study/memory/MEMORY.md\")",
-      "Read(//c/Users/USER/.claude/projects/c--Users-USER-Documents-ICSIE-Study/memory//**)"
+      "Read(//c/Users/USER/.claude/projects/c--Users-USER-Documents-ICSIE-Study/memory//**)",
+      "Bash(awk '{print $NF}')"
     ],
     "additionalDirectories": [
       "c:\\Users\\USER\\Documents\\ICSIE_Study\\Linear Algebra (下)"

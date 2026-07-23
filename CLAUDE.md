@@ -202,12 +202,7 @@ This is an **Obsidian vault** for 資工研 (Computer Science graduate studies).
 - 範例：在 `Dijkstra演算法.md` 中，必須強制註記：`「⚠️ 警告：若圖中存在負邊（Negative Weights），此演算法會直接失效。」`
 - 範例：在 `平面圖.md` 中，必須強制註記：`「⚠️ 限制：尤拉公式 v - e + f = 2 僅在『連通平面圖』下成立。」`
 
-### 第三階段：動態痛覺補丁 (Runtime Hotfix)
+#
 
-每個離散原子筆記的最下方，必須固定保留以下欄位，供後續刷林偉或黃子嘉例題/題庫踩雷時，手工回填個人的 Runtime Error：
-
-```markdown
-# 實戰 Bug 補丁（Runtime Hotfix）
-- [ ] （刷題卡住或粗心時，由使用者手動回填此處，例如：! 注意這題不可空箱，要用排容而非 H）
 
 
