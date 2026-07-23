@@ -35,7 +35,11 @@
       "Bash(rm -f '22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命题 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md')",
       "Bash(rm -f '24 離散數學（上）關於 $p _rightarrow q$（1）$p _rightarrow q$ 的反命題（inverse）為 $_sim p _rightarrow _sim q$ 。（2）$p.md')",
       "Bash(rm -f '24離散數學（上）關於 $p _rightarrow q$（1）$p _rightarrow q$ 的反命題（inverse）為 $_sim p _rightarrow _sim q$ 。（2）$p.md')",
-      "Bash(rm -f '36離散數學（上）邏輯藴含（logically imply）若命題 $P\\(p, q, _ldots\\)$ 為真時，必得命题 $Q\\(p, q, _ldots\\)$ 為真，則稱 $P\\(p, q, _ldots.md')"
+      "Bash(rm -f '36離散數學（上）邏輯藴含（logically imply）若命題 $P\\(p, q, _ldots\\)$ 為真時，必得命题 $Q\\(p, q, _ldots\\)$ 為真，則稱 $P\\(p, q, _ldots.md')",
+      "Read(//c/Users/USER/.claude/**)",
+      "Bash(find \"c:/Users/USER/.claude\" -maxdepth 2 -iname \"*.md\" 2>/dev/null | grep -i claude)",
+      "Bash(find \"c:/Users/USER\" -maxdepth 1 -iname \"CLAUDE.md\" -o -iname \".claude.md\" 2>/dev/null *)",
+      "Read(//c/Users/USER/**)"
     ],
     "additionalDirectories": [
       "c:\\Users\\USER\\Documents\\ICSIE_Study\\Linear Algebra (下)"

@@ -27,7 +27,7 @@ $$\sim \;>\; \wedge \;>\; \vee \;>\; \rightarrow \;>\; \leftrightarrow$$
 
 給定含 $n$ 個變數的公式，真值表需列出 $2^n$ 列。除逐列展開外，亦可用**反例分析法**：假設結論為假，反推各前提須滿足的條件，若導出矛盾則公式為永真式。
 
-## 經典考題
+### 範例：永真式判定的兩種方法
 
 **例題【105台科資工】** 請判別 $[(p \vee r) \wedge(p \rightarrow q) \wedge(r \rightarrow q)] \rightarrow q$ 的真假。
 
@@ -54,11 +54,3 @@ $$
 
 若存在反例，須使 $q=0$。為使前提 $p \rightarrow q$ 與 $r \rightarrow q$ 皆為真（$q=0$ 時，唯有 $p=0, r=0$ 才能使 $p\to q$、$r\to q$ 為真），故須 $p=0, r=0$。但此時 $(p \vee r) = 0$，使整個括號 $[(p \vee r) \wedge(p \rightarrow q) \wedge(r \rightarrow q)]$ 必為假，矛盾（前提假時 $\to q$ 本身即真，不構成反例）。故不存在反例，原式為永真式。
 
-## 多選題防線 (Corner Cases)
-
-- ⚠️ 運算優先順序常考選擇題：括號 > $\sim$ > $\wedge$ > $\vee$ > $\rightarrow$ > $\leftrightarrow$，缺一個等級都會判錯結合方式。
-- ⚠️ 「反例分析法」的核心技巧：先假設結論為假，反推每個前提「必須」的真值，若推出矛盾（某個子式無法同時滿足），代表該反例不存在 ⇒ 公式為永真式。此法在變數數 $\geq 4$ 時比硬列真值表快很多。
-- ⚠️ wff 規則是**歸納定義**（inductive definition），單一命題變數本身就是最小的 wff，不能漏掉規則 (1)。
-
-# 實戰 Bug 補丁（Runtime Hotfix）
-- [ ]
