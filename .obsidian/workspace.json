@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
+                "file": "Discrete Math (上)/第1章/第 1 章 羁輯 27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _v.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "述詞邏輯的翻譯"
+              "title": "第 1 章 羁輯 27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _v"
             }
           }
         ]
@@ -192,6 +192,8 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Discrete Math (上)/第1章/述詞邏輯推論規則.md",
+    "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
     "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
     "Discrete Math (上)/第1章/命題函數與論域.md",
@@ -216,8 +218,6 @@
     "Discrete Math (上)/第1章/第 1 章 羁輯 27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _v.md",
     "Discrete Math (上)/第1章/24離散數學（上）關於 $p _rightarrow q$（1）$p _rightarrow q$ 的反命題（inverse）為 $_sim p _rightarrow _sim q$ 。（2）$p.md",
     "Discrete Math (上)/第1章/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命題 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
-    "Discrete Math (上)/第2章/106離散數學（上）集合的運算性質考虑全集合 $U$ 上的子集合 $A, B, C$ ：1．冪等律（idempotent）（1）$A _cup A=A$（2）$A _cap A=A$2．结合律（ass.md",
-    "Discrete Math (上)/第2章/92離散數學（上）子集合個數（1）$n$ 個相異元素的集合有 $_binom{n}{k}$ 個 $k$ 元子集（ $k$－subset）。例如，$A=_{1,2,3,4_}$ 的 2 元子集為：$_{.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
