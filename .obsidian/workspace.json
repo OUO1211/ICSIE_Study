@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第1章/建立真值表與wff.md",
+                "file": "Discrete Math (上)/第1章/完全算子集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "建立真值表與wff"
+              "title": "完全算子集"
             }
           }
         ]
@@ -192,6 +192,7 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
     "Discrete Math (上)/第1章/述詞邏輯推論規則.md",
     "Discrete Math (上)/第1章/等價證明常用性質.md",
@@ -206,7 +207,6 @@
     "Discrete Math (上)/第1章/完全算子集.md.tmp.7220.6cc69abee2e1",
     "Discrete Math (上)/第1章/命題函數與論域.md.tmp.7220.9615ec2a3174",
     "Discrete Math (上)/第1章/第 1 章 羁輯 27下列為完成等價證明時，常被使用的性質：1．分配律（distributive）（1）$p _vee(q _wedge r) _equiv(p _vee q) _wedge(p _v.md",
-    "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命题 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
     "Linear Algebra (上)/第3章/基底三大定理.md",
     "Linear Algebra (上)/第3章/秩與線性系統.md",
