@@ -43,11 +43,3 @@ $$
 
 由表可見：$(p\to q)$、$(\sim q\to\sim p)$、$(\sim p\vee q)$ 三欄完全相同（原命題 ≡ 反言命題 ≡ Or-form）；而 $(\sim p\to\sim q)$（反命題）與 $(q\to p)$（逆命題）兩欄相同但與原命題**不同**（逆命題 ≡ 反命題，這兩者互為反言命題關係，但都不等於原命題）。
 
-## 多選題防線 (Corner Cases)
-
-- ⚠️ 唯一與原命題 $p\to q$ **恆等價**的變體是**反言命題（contrapositive）** $\sim q\to\sim p$；反命題（inverse）與逆命題（converse）都**不**與原命題等價（但兩者互相等價）。
-- ⚠️ 名詞容易混淆：inverse＝反命題（否定 $p,q$）、converse＝逆命題（交換 $p,q$）、contrapositive＝反言命題（同時否定並交換）。考題常故意用中英夾雜混淆這三者。
-- ⚠️ $p\to q \equiv \sim p\vee q$ 是把「條件句」化成「析取式（or-form）」的關鍵恆等式，是後續[[完全算子集]]與否定條件句（$\sim(p\to q)\equiv p\wedge\sim q$）推導的基礎。
-
-# 實戰 Bug 補丁（Runtime Hotfix）
-- [ ]
