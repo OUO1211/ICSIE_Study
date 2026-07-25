@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第3章/矩陣的秩.md",
+                "file": "Linear Algebra (下)/第7章/314線性代數（下）歐式空間下求正交投影的方式考虑 $R^{m _times 1}$ 的一子空間 $W, _boldsymbol{b}$ 為 $R^{m _times 1}$ 的某一向量，若 $W=C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "矩陣的秩"
+              "title": "314線性代數（下）歐式空間下求正交投影的方式考虑 $R^{m _times 1}$ 的一子空間 $W, _boldsymbol{b}$ 為 $R^{m _times 1}$ 的某一向量，若 $W=C"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "可逆",
+                "query": "行獨立",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +74,12 @@
               "title": "書籤"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 213.5,
-    "collapsed": true
+    "width": 213.5
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -193,6 +193,8 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第3章/線性獨立與相依.md",
+    "Linear Algebra (上)/第3章/矩陣的秩.md",
     "Linear Algebra (上)/第3章/和空間維度公式.md",
     "Linear Algebra (上)/第3章/直和.md",
     "Discrete Math (上)/第1章/命題函數與論域.md",
@@ -213,7 +215,6 @@
     "Discrete Math (上)/第1章/22離散數學（上）1－2 邏輯等價與邏輯蘊含邏輯等價（logically equivalent）若命题 $P 、 Q$ 之真假值相同，則稱 $P$ 與 $Q$ 為等價，記做 $P _equiv Q$.md",
     "Linear Algebra (上)/第3章/基底三大定理.md",
     "Linear Algebra (上)/第3章/秩與線性系統.md",
-    "Linear Algebra (上)/第3章/矩陣的秩.md",
     "Linear Algebra (上)/第3章/座標與基底變換.md",
     "Linear Algebra (上)/第3章/向量空間定義.md",
     "Linear Algebra (上)/第2章/線性方程組與行列式(MOC).md",
@@ -221,7 +222,6 @@
     "Linear Algebra (上)/第2章/齊次方程組與零空間.md",
     "Linear Algebra (上)/第2章/塊狀矩陣行列式進階.md",
     "Linear Algebra (上)/第2章/克拉瑪法則.md",
-    "Linear Algebra (上)/第2章/古典伴隨矩陣.md",
     "Linear Algebra (下)/第8章/第 8 章 各內積算子及其應用431鋅對稱矩陣的性質令 $A$ 為 $n$ 階實斜對稱矩陣，則（1）$A$ 為正規矩陣。（2）$A$ 的相異特徵根所對的特徵向量必正交．（3）$A$ 的特徵根都是 0.md.tmp.8260.ee1109356e4c",
     "Linear Algebra (下)/第6章/第6章 Jordan form 及其應用1876－1 循環分解定理물蠋零（nilpotent）與指標（index）（1）對缐性算子 $T$ ，若存在正整数 $k$ 使得 $T^k=O$ ，則稱 $T$.md.tmp.8260.30f18a65189c",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
