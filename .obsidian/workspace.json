@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structure/第一章/MasterTheorem主定理.md",
+                "file": "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MasterTheorem主定理"
+              "title": "遞迴時間函數求解法代入法UnrollingMethod"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 261.5
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -192,15 +192,17 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Data Structure/第一章/Ackermann函數.md",
-    "Data Structure/第一章/選擇排序與二分搜尋法.md",
     "Data Structure/第一章/遞迴Recursion基礎與範例分類.md",
+    "Data Structure/第一章/選擇排序與二分搜尋法.md",
+    "Data Structure/第一章/Ackermann函數.md",
+    "Data Structure/第一章/MasterTheorem主定理.md",
+    "Data Structure/_begin{itemize}_item[2] 資料結構（含精選試題）Data Structure_end{itemize}_section_{1－1 Overview：System Life Cyc.md",
+    "Data Structure/第一章/基本概念.md",
     "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
     "Data Structure/第一章/漸近符號O-Omega-Theta.md",
     "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
     "Data Structure/第一章/費氏數列Fibonacci遞迴.md",
     "Data Structure/第一章/排列組合遞迴生成Permutations.md",
-    "Data Structure/第一章/基本概念.md",
     "Data Structure/第一章/時間複雜度計算方法FrequencyCount.md",
     "Data Structure/第一章/效能分析與空間複雜度SpaceComplexity.md",
     "Data Structure/第一章/抽象資料型態ADT.md",
@@ -216,8 +218,6 @@
     "Discrete Math (上)/第1章/命題函數與論域.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
     "Discrete Math (上)/第1章/建立真值表與wff.md",
-    "Discrete Math (上)/第1章/完全算子集.md",
-    "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
     "Discrete Math (上)/第1章/述詞邏輯推論規則.md.tmp.7220.d709271e06b6",
     "Discrete Math (上)/第1章/完全算子集.md.tmp.7220.6cc69abee2e1",
     "Discrete Math (上)/第1章/命題函數與論域.md.tmp.7220.9615ec2a3174",
