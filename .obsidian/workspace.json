@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
+                "file": "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "階乘與二項式係數遞迴Factorial-Binomial"
+              "title": "稀疏多項式的陣列表示法與相加"
             }
           }
         ]
@@ -190,21 +190,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "081ab4aca71e39e2",
+  "active": "34ac4dc78d41eb0d",
   "lastOpenFiles": [
+    "Data Structure/第二章/矩陣轉置TransposeMatrix.md",
+    "Data Structure/第二章/串列與陣列基礎List-Array.md",
+    "Data Structure/第二章/多維陣列位址計算N維陣列.md",
+    "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
+    "Data Structure/第二章/二維陣列位址計算RowColumnMajor.md",
+    "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
     "Data Structure/第一章/漸近符號O-Omega-Theta.md",
     "Data Structure/第一章/Ackermann函數.md",
-    "Data Structure/第二章/二維陣列位址計算RowColumnMajor.md",
     "Data Structure/第一章/選擇排序與二分搜尋法.md",
     "Data Structure/第一章/遞迴Recursion基礎與範例分類.md",
     "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
-    "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
     "Data Structure/第一章/效能分析與空間複雜度SpaceComplexity.md",
     "Data Structure/第一章/時間複雜度計算方法FrequencyCount.md",
     "Data Structure/第一章/基本概念.md",
     "Data Structure/第一章/排列組合遞迴生成Permutations.md",
     "Data Structure/第一章/費氏數列Fibonacci遞迴.md",
-    "Data Structure/第二章/串列與陣列基礎List-Array.md",
     "Data Structure/第二章/串列與陣列基礎List-Array.md.tmp.15932.ae6e48199522",
     "Data Structure/第二章",
     "Data Structure/第一章/MasterTheorem主定理.md",
@@ -217,9 +220,6 @@
     "Linear Algebra (上)/第3章/線性獨立與相依.md",
     "Linear Algebra (上)/Obsidian_Notes(success version)/線代(上)_Page_325.md",
     "Linear Algebra (下)/第7章/314線性代數（下）歐式空間下求正交投影的方式考虑 $R^{m _times 1}$ 的一子空間 $W, _boldsymbol{b}$ 為 $R^{m _times 1}$ 的某一向量，若 $W=C.md",
-    "Linear Algebra (上)/第3章/和空間維度公式.md",
-    "Linear Algebra (上)/第3章/直和.md",
-    "Discrete Math (上)/第1章/命題函數與論域.md",
     "Discrete Math (上)/第1章/述詞邏輯推論規則.md.tmp.7220.d709271e06b6",
     "Discrete Math (上)/第1章/完全算子集.md.tmp.7220.6cc69abee2e1",
     "Discrete Math (上)/第1章/命題函數與論域.md.tmp.7220.9615ec2a3174",
