@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
+                "file": "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "遞迴時間函數求解法代入法UnrollingMethod"
+              "title": "階乘與二項式係數遞迴Factorial-Binomial"
             }
           }
         ]
@@ -192,19 +192,23 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Data Structure/第一章/遞迴Recursion基礎與範例分類.md",
-    "Data Structure/第一章/選擇排序與二分搜尋法.md",
+    "Data Structure/第一章/漸近符號O-Omega-Theta.md",
     "Data Structure/第一章/Ackermann函數.md",
+    "Data Structure/第二章/二維陣列位址計算RowColumnMajor.md",
+    "Data Structure/第一章/選擇排序與二分搜尋法.md",
+    "Data Structure/第一章/遞迴Recursion基礎與範例分類.md",
+    "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
+    "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
+    "Data Structure/第一章/效能分析與空間複雜度SpaceComplexity.md",
+    "Data Structure/第一章/時間複雜度計算方法FrequencyCount.md",
+    "Data Structure/第一章/基本概念.md",
+    "Data Structure/第一章/排列組合遞迴生成Permutations.md",
+    "Data Structure/第一章/費氏數列Fibonacci遞迴.md",
+    "Data Structure/第二章/串列與陣列基礎List-Array.md",
+    "Data Structure/第二章/串列與陣列基礎List-Array.md.tmp.15932.ae6e48199522",
+    "Data Structure/第二章",
     "Data Structure/第一章/MasterTheorem主定理.md",
     "Data Structure/_begin{itemize}_item[2] 資料結構（含精選試題）Data Structure_end{itemize}_section_{1－1 Overview：System Life Cyc.md",
-    "Data Structure/第一章/基本概念.md",
-    "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
-    "Data Structure/第一章/漸近符號O-Omega-Theta.md",
-    "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
-    "Data Structure/第一章/費氏數列Fibonacci遞迴.md",
-    "Data Structure/第一章/排列組合遞迴生成Permutations.md",
-    "Data Structure/第一章/時間複雜度計算方法FrequencyCount.md",
-    "Data Structure/第一章/效能分析與空間複雜度SpaceComplexity.md",
     "Data Structure/第一章/抽象資料型態ADT.md",
     "Data Structure/第一章/函數成長率比較GrowthRateComparison.md",
     "Linear Algebra (上)/第3章/秩與線性系統.md",
@@ -216,8 +220,6 @@
     "Linear Algebra (上)/第3章/和空間維度公式.md",
     "Linear Algebra (上)/第3章/直和.md",
     "Discrete Math (上)/第1章/命題函數與論域.md",
-    "Discrete Math (上)/第1章/命題與真值表.md",
-    "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/述詞邏輯推論規則.md.tmp.7220.d709271e06b6",
     "Discrete Math (上)/第1章/完全算子集.md.tmp.7220.6cc69abee2e1",
     "Discrete Math (上)/第1章/命題函數與論域.md.tmp.7220.9615ec2a3174",
@@ -226,8 +228,6 @@
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.1d7873717dc3",
     "Discrete Math (上)/第2章/第 2 章 集合論89幕集合（power set）給定集合 $A$ ，稱 $P(A)=_{X _mid X _subseteq A_}$ ，為 $A$ 的余集合，有時記做 $2^A$ 。例如，寫出下列.md.tmp.8260.bb948891942a",
     "Discrete Math (上)/第5章/第 5 章 組合計數 4175－1 排列乘法原理（The rule of product）與加法原理（The rule of sum）如果一事件發生的方法有 $m$ 種，另一事件發生的方法有 $n$.md.tmp.8260.2e4cc35e7ff0",
-    "Discrete Math (上)/第3章/第 3 童 函數197合成與可逆的重要性質考虑 $f_ A _rightarrow B, _quad g_ B _rightarrow C$ 雨函数，（1）若 $f _circ g$ 為一對一，則 $.md.tmp.8260.a5b57b6d5648",
-    "Discrete Math (上)/第3章/168離散數學（上）函數（function，mapping，transformation）令 $f$ 為非空集合 $A$ 到 $B$ 上的一關係，且滿足：對任意 $A$ 上的元素 $a$ ，均恰唯一存.md.tmp.8260.6ac505c7141e",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
