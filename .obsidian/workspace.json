@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structure/第二章/頻帶矩陣BandMatrix.md",
+                "file": "Data Structure/第二章/三角矩陣與對稱矩陣壓縮儲存.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "頻帶矩陣BandMatrix"
+              "title": "三角矩陣與對稱矩陣壓縮儲存"
             }
           }
         ]
@@ -192,10 +192,10 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
-    "Data Structure/第二章/矩陣轉置TransposeMatrix.md",
-    "Data Structure/第二章/串列與陣列基礎List-Array.md",
     "Data Structure/第二章/多維陣列位址計算N維陣列.md",
+    "Data Structure/第二章/串列與陣列基礎List-Array.md",
+    "Data Structure/第二章/矩陣轉置TransposeMatrix.md",
+    "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
     "Data Structure/第二章/頻帶矩陣BandMatrix.md",
     "Data Structure/第二章/三角矩陣與對稱矩陣壓縮儲存.md",
     "Data Structure/第二章/二維陣列位址計算RowColumnMajor.md",
