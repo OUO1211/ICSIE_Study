@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structure/第二章/三角矩陣與對稱矩陣壓縮儲存.md",
+                "file": "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三角矩陣與對稱矩陣壓縮儲存"
+              "title": "稀疏多項式的陣列表示法與相加"
             }
           }
         ]
@@ -194,29 +194,29 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Data Structure/第二章/二維陣列位址計算RowColumnMajor.md",
-    "Data Structure/第二章/多維陣列位址計算N維陣列.md",
-    "Data Structure/第二章/串列與陣列基礎List-Array.md",
-    "Data Structure/第二章/矩陣轉置TransposeMatrix.md",
-    "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
-    "Data Structure/第二章/頻帶矩陣BandMatrix.md",
     "Data Structure/第二章/三角矩陣與對稱矩陣壓縮儲存.md",
-    "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
-    "Data Structure/第一章/漸近符號O-Omega-Theta.md",
+    "Data Structure/第二章/矩陣轉置TransposeMatrix.md",
+    "Data Structure/第二章/多維陣列位址計算N維陣列.md",
+    "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
+    "Data Structure/第一章/MasterTheorem主定理.md",
     "Data Structure/第一章/Ackermann函數.md",
     "Data Structure/第一章/選擇排序與二分搜尋法.md",
+    "Data Structure/第一章/漸近符號O-Omega-Theta.md",
+    "Data Structure/第一章/費氏數列Fibonacci遞迴.md",
+    "Data Structure/第一章/抽象資料型態ADT.md",
+    "Data Structure/第二章/二維陣列位址計算RowColumnMajor.md",
+    "Data Structure/第二章/串列與陣列基礎List-Array.md",
+    "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
+    "Data Structure/第二章/頻帶矩陣BandMatrix.md",
+    "Data Structure/第一章/階乘與二項式係數遞迴Factorial-Binomial.md",
     "Data Structure/第一章/遞迴Recursion基礎與範例分類.md",
-    "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
     "Data Structure/第一章/效能分析與空間複雜度SpaceComplexity.md",
     "Data Structure/第一章/時間複雜度計算方法FrequencyCount.md",
     "Data Structure/第一章/基本概念.md",
     "Data Structure/第一章/排列組合遞迴生成Permutations.md",
-    "Data Structure/第一章/費氏數列Fibonacci遞迴.md",
     "Data Structure/第二章/串列與陣列基礎List-Array.md.tmp.15932.ae6e48199522",
     "Data Structure/第二章",
-    "Data Structure/第一章/MasterTheorem主定理.md",
     "Data Structure/_begin{itemize}_item[2] 資料結構（含精選試題）Data Structure_end{itemize}_section_{1－1 Overview：System Life Cyc.md",
-    "Data Structure/第一章/抽象資料型態ADT.md",
     "Data Structure/第一章/函數成長率比較GrowthRateComparison.md",
     "Linear Algebra (上)/第3章/秩與線性系統.md",
     "Linear Algebra (上)/第1章/秩Rank.md",
