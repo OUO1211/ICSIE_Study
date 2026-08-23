@@ -6723,6 +6723,14 @@ var CLI_BACKENDS = {
     resumeFlag: "resume --last",
     resumeIsSubcommand: true,
   },
+  grok: {
+    label: "Grok Build",
+    binary: "grok",
+    pathHints: ["~/.grok/bin"],
+    yoloFlag: "--always-approve",
+    resumeFlag: "--continue",
+    resumeIsSubcommand: false,
+  },
   opencode: {
     label: "OpenCode",
     binary: "opencode",
@@ -6731,12 +6739,12 @@ var CLI_BACKENDS = {
     resumeFlag: "--continue",
     resumeIsSubcommand: false,
   },
-  gemini: {
-    label: "Gemini CLI",
-    binary: "gemini",
-    pathHints: [],
-    yoloFlag: "--approval-mode=yolo",
-    resumeFlag: "--resume",
+  antigravity: {
+    label: "Antigravity CLI",
+    binary: "agy",
+    pathHints: ["~/.local/bin"],
+    yoloFlag: "--dangerously-skip-permissions",
+    resumeFlag: "--continue",
     resumeIsSubcommand: false,
   },
   kimi: {
@@ -6772,6 +6780,31 @@ var CLI_BACKENDS = {
     resumeIsSubcommand: false,
   },
 };
+// Providers that were replaced by a successor CLI. A saved selection is remapped
+// on load so it doesn't silently fall back to Claude Code via getBackendKey().
+var RENAMED_BACKENDS = {
+  gemini: "antigravity",
+};
+function findCliBinary(binary, pathStr, extraDirs) {
+  const dirs = [];
+  if (pathStr) dirs.push(...pathStr.split(path.delimiter));
+  for (const dir of extraDirs || []) {
+    if (dir && !dirs.includes(dir)) dirs.unshift(dir);
+  }
+  const names = process.platform === "win32"
+    ? [binary, `${binary}.exe`, `${binary}.cmd`, `${binary}.bat`]
+    : [binary];
+  for (const dir of dirs) {
+    if (!dir) continue;
+    for (const name of names) {
+      try {
+        const candidate = path.join(dir, name);
+        if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) return candidate;
+      } catch (_) {}
+    }
+  }
+  return null;
+}
 var TerminalView = class extends import_obsidian.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
@@ -6801,16 +6834,26 @@ var TerminalView = class extends import_obsidian.ItemView {
     this.workingDir = null;
     // YOLO mode (--dangerously-skip-permissions)
     this.yoloMode = false;
+    // Per-tab CLI provider override. null = follow the default in settings.
+    this.backendKey = null;
+    // The provider this tab actually launched with, pinned at startShell().
+    this.activeBackendKey = null;
+  }
+  getBackendKey() {
+    const key = this.backendKey || this.plugin.pluginData.cliBackend || "claude";
+    return CLI_BACKENDS[key] ? key : "claude";
   }
   getBackend() {
-    const key = this.plugin.pluginData.cliBackend || "claude";
-    return CLI_BACKENDS[key] || CLI_BACKENDS.claude;
+    return CLI_BACKENDS[this.getBackendKey()];
   }
   getViewType() {
     return VIEW_TYPE;
   }
   getDisplayText() {
-    return "Claude";
+    // activeBackendKey is pinned when the shell starts, so changing the default
+    // later doesn't relabel a tab that's still running the old provider.
+    const key = this.activeBackendKey || this.getBackendKey();
+    return CLI_BACKENDS[key].label;
   }
   getIcon() {
     return "bot";
@@ -6827,8 +6870,12 @@ var TerminalView = class extends import_obsidian.ItemView {
     if (state?.continueSession) {
       this.continueSession = state.continueSession;
     }
+    if (state?.backendKey) {
+      const key = RENAMED_BACKENDS[state.backendKey] || state.backendKey;
+      if (CLI_BACKENDS[key]) this.backendKey = key;
+    }
     // If shell already started, restart with new settings
-    if (this.proc && (state?.workingDir || state?.yoloMode || state?.continueSession)) {
+    if (this.proc && (state?.workingDir || state?.yoloMode || state?.continueSession || state?.backendKey)) {
       this.startShell(this.workingDir, this.yoloMode, this.continueSession);
     }
   }
@@ -6836,6 +6883,8 @@ var TerminalView = class extends import_obsidian.ItemView {
     const state = {};
     if (this.workingDir) state.workingDir = this.workingDir;
     if (this.yoloMode) state.yoloMode = this.yoloMode;
+    // Persisted so a one-off provider tab comes back as that provider on restore
+    if (this.backendKey) state.backendKey = this.backendKey;
     // Don't persist continueSession — it's a one-time action
     return state;
   }
@@ -6850,6 +6899,10 @@ var TerminalView = class extends import_obsidian.ItemView {
       this.app.workspace.onLayoutReady(() => {
         setTimeout(() => {
           try {
+            // The leaf can be closed inside the defer window. dispose() already
+            // ran, so re-entering onOpen() would flip _isDisposed back to false
+            // and start a shell on a detached view — an orphan PTY nothing reaps.
+            if (this._isDisposed) return;
             this.onOpen();
           } catch (err) {
             console.error("[Claude Sidebar] Deferred terminal init failed:", err);
@@ -7245,13 +7298,25 @@ var TerminalView = class extends import_obsidian.ItemView {
     fs.writeFileSync(tempPath, buffer);
     return tempPath;
   }
+  applyFontSize(size) {
+    if (!this.term) return;
+    const next = this.plugin.normalizeFontSize(size);
+    if (this.term.options.fontSize === next) return;
+    this.term.options.fontSize = next;
+    // fit() recalcs cols/rows for the new cell size; onResize notifies the PTY.
+    if (this._fitInProgress) {
+      this._pendingResize = true;
+    } else {
+      this.fit();
+    }
+  }
   initTerminal() {
     if (!this.termHost)
       return;
     this.term = new import_xterm.Terminal({
       cursorBlink: true,
       copyOnSelect: true,
-      fontSize: 13,
+      fontSize: this.plugin.getFontSize(),
       fontFamily: "Menlo, Monaco, 'Cascadia Mono', 'Cascadia Code', Consolas, 'Courier New', 'Microsoft YaHei', 'SimHei', 'PingFang SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', monospace",
       theme: this.getThemeColors(),
       scrollback: 10000,
@@ -7308,6 +7373,41 @@ var TerminalView = class extends import_obsidian.ItemView {
             offset += sp + 1;
             candidate = candidate.slice(sp + 1);
           }
+        }
+        callback(links.length ? links : void 0);
+      }
+    });
+    this.term.registerLinkProvider?.({
+      provideLinks: (y, callback) => {
+        const line = this.term?.buffer.active.getLine(y - 1);
+        if (!line) return callback(void 0);
+        const text = line.translateToString(true);
+        const links = [];
+        // Match http(s) URLs. Surrounding quotes (ASCII or curly) do not prevent a
+        // match — the scheme anchor starts inside them. Trailing closers/punctuation
+        // are trimmed after the match so wiki-style paths with parens still work.
+        const reUrl = /https?:\/\/[^\s\x00-\x1f<>]+/g;
+        let m;
+        while ((m = reUrl.exec(text)) !== null) {
+          let url = m[0];
+          // Strip trailing sentence punctuation
+          url = url.replace(/[.,;:!?]+$/u, "");
+          // Strip trailing quotes / brackets / braces / backticks (not parens —
+          // parens are handled below so wiki Foo_(bar) stays intact)
+          url = url.replace(/["'\]\}>`\u201d\u2019\u00bb]+$/u, "");
+          // Peel trailing ')' only while still unbalanced
+          while (url.endsWith(")") && (url.match(/\(/g) || []).length < (url.match(/\)/g) || []).length) {
+            url = url.slice(0, -1);
+          }
+          if (!/^https?:\/\/.+/.test(url)) continue;
+          links.push({
+            text: url,
+            range: { start: { x: m.index + 1, y }, end: { x: m.index + url.length, y } },
+            activate: () => {
+              try { require("electron").shell.openExternal(url); }
+              catch (_) { window.open(url, "_blank"); }
+            }
+          });
         }
         callback(links.length ? links : void 0);
       }
@@ -7771,6 +7871,7 @@ var TerminalView = class extends import_obsidian.ItemView {
     const rows = this.term?.rows || 24;
     const isWindows = process.platform === "win32";
     const shell = this.plugin.resolveShell().binary;
+    const shellKind = this.plugin.resolveShell().kind;
     // PTY scripts embedded as base64 for Obsidian plugin directory compatibility
     // See terminal_pty.py and terminal_win.py for readable source. Rebuild with: ./build.sh
     const PTY_SCRIPT_B64 = "IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJQVFkgd3JhcHBlciB3aXRoIHJlc2l6ZSBzdXBwb3J0IGZvciBPYnNpZGlhbiB0ZXJtaW5hbCBwbHVnaW4uIiIiCmltcG9ydCBvcwppbXBvcnQgc3lzCmltcG9ydCBwdHkKaW1wb3J0IHN0cnVjdAppbXBvcnQgZmNudGwKaW1wb3J0IHRlcm1pb3MKaW1wb3J0IHNlbGVjdAppbXBvcnQgc2lnbmFsCmltcG9ydCB0aW1lCgojIEdsb2JhbCB0byB0cmFjayBjaGlsZCBQSUQgKGFsc28gdGhlIHByb2Nlc3MgZ3JvdXAgSUQpIGZvciBzaWduYWwgaGFuZGxlcgpjaGlsZF9waWQgPSBOb25lCgpkZWYga2lsbF9wcm9jZXNzX2dyb3VwKHBnaWQsIHNpZyk6CiAgICAiIiJLaWxsIGFuIGVudGlyZSBwcm9jZXNzIGdyb3VwLiIiIgogICAgdHJ5OgogICAgICAgIG9zLmtpbGxwZyhwZ2lkLCBzaWcpCiAgICBleGNlcHQgKFByb2Nlc3NMb29rdXBFcnJvciwgUGVybWlzc2lvbkVycm9yLCBPU0Vycm9yKToKICAgICAgICBwYXNzCgpkZWYgY2xlYW51cF9jaGlsZChzaWdudW0sIGZyYW1lKToKICAgICIiIktpbGwgdGhlIGVudGlyZSBwcm9jZXNzIGdyb3VwIHdoZW4gd2UgcmVjZWl2ZSBhIHNpZ25hbC4iIiIKICAgIGdsb2JhbCBjaGlsZF9waWQKICAgIGlmIGNoaWxkX3BpZDoKICAgICAgICAjIEtpbGwgZW50aXJlIHByb2Nlc3MgZ3JvdXAgKGNoaWxkIGlzIGdyb3VwIGxlYWRlcikKICAgICAgICBraWxsX3Byb2Nlc3NfZ3JvdXAoY2hpbGRfcGlkLCBzaWduYWwuU0lHVEVSTSkKICAgICAgICAjIEdpdmUgcHJvY2Vzc2VzIGEgbW9tZW50IHRvIGV4aXQgZ3JhY2VmdWxseQogICAgICAgIGZvciBfIGluIHJhbmdlKDEwKToKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgcGlkLCBfID0gb3Mud2FpdHBpZCgtY2hpbGRfcGlkLCBvcy5XTk9IQU5HKQogICAgICAgICAgICAgICAgaWYgcGlkICE9IDA6CiAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgZXhjZXB0IENoaWxkUHJvY2Vzc0Vycm9yOgogICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgdGltZS5zbGVlcCgwLjEpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgIyBGb3JjZSBraWxsIHRoZSBlbnRpcmUgZ3JvdXAgaWYgc3RpbGwgcnVubmluZwogICAgICAgICAgICBraWxsX3Byb2Nlc3NfZ3JvdXAoY2hpbGRfcGlkLCBzaWduYWwuU0lHS0lMTCkKICAgIHN5cy5leGl0KDApCgpkZWYgc2V0X3NpemUoZmQsIGNvbHMsIHJvd3MpOgogICAgIiIiU2V0IHRoZSBQVFkgd2luZG93IHNpemUuIiIiCiAgICB3aW5zaXplID0gc3RydWN0LnBhY2soJ0hISEgnLCByb3dzLCBjb2xzLCAwLCAwKQogICAgZmNudGwuaW9jdGwoZmQsIHRlcm1pb3MuVElPQ1NXSU5TWiwgd2luc2l6ZSkKCmRlZiBtYWluKCk6CiAgICBnbG9iYWwgY2hpbGRfcGlkCgogICAgIyBQYXJzZSBhcmdzOiB0ZXJtaW5hbF9wdHkucHkgW2NvbHNdIFtyb3dzXSBbc2hlbGxdIFtzaGVsbF9hcmdzLi4uXQogICAgaWYgbGVuKHN5cy5hcmd2KSA8IDQ6CiAgICAgICAgcHJpbnQoZiJVc2FnZToge3N5cy5hcmd2WzBdfSBjb2xzIHJvd3Mgc2hlbGwgW2FyZ3MuLi5dIiwgZmlsZT1zeXMuc3RkZXJyKQogICAgICAgIHN5cy5leGl0KDEpCgogICAgY29scyA9IGludChzeXMuYXJndlsxXSkKICAgIHJvd3MgPSBpbnQoc3lzLmFyZ3ZbMl0pCiAgICBzaGVsbCA9IHN5cy5hcmd2WzNdCiAgICBzaGVsbF9hcmdzID0gc3lzLmFyZ3ZbMzpdICAjIEluY2x1ZGUgc2hlbGwgYXMgYXJndlswXQoKICAgICMgT24gTGludXgsIGFzayB0aGUga2VybmVsIHRvIHNlbmQgdXMgU0lHSFVQIGlmIG91ciBwYXJlbnQgZGllcy4KICAgICMgQ2F0Y2hlcyBwYXRocyB3aGVyZSB0aGUgcGx1Z2luJ3MgdGFiLWNsb3NlIGhhbmRsZXIgZG9lc24ndCBmaXJlCiAgICAjIGFuZCB3ZSdkIG90aGVyd2lzZSBiZSBvcnBoYW5lZCB0byBpbml0IGhvbGRpbmcgYSBsaXZlIFBUWSB0cmVlLgogICAgaWYgc3lzLnBsYXRmb3JtLnN0YXJ0c3dpdGgoJ2xpbnV4Jyk6CiAgICAgICAgdHJ5OgogICAgICAgICAgICBpbXBvcnQgY3R5cGVzCiAgICAgICAgICAgIFBSX1NFVF9QREVBVEhTSUcgPSAxCiAgICAgICAgICAgIGxpYmMgPSBjdHlwZXMuQ0RMTCgnbGliYy5zby42JywgdXNlX2Vycm5vPVRydWUpCiAgICAgICAgICAgIGxpYmMucHJjdGwoUFJfU0VUX1BERUFUSFNJRywgc2lnbmFsLlNJR0hVUCwgMCwgMCwgMCkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICBwYXNzCgogICAgIyBSZWdpc3RlciBzaWduYWwgaGFuZGxlcnMgZm9yIGNsZWFudXAgQkVGT1JFIGZvcmsgdG8gYXZvaWQgcmFjZSBjb25kaXRpb24KICAgIHNpZ25hbC5zaWduYWwoc2lnbmFsLlNJR1RFUk0sIGNsZWFudXBfY2hpbGQpCiAgICBzaWduYWwuc2lnbmFsKHNpZ25hbC5TSUdJTlQsIGNsZWFudXBfY2hpbGQpCiAgICBzaWduYWwuc2lnbmFsKHNpZ25hbC5TSUdIVVAsIGNsZWFudXBfY2hpbGQpCgogICAgcGlkLCBmZCA9IHB0eS5mb3JrKCkKICAgIGNoaWxkX3BpZCA9IHBpZCAgIyBTdG9yZSBmb3Igc2lnbmFsIGhhbmRsZXIKCiAgICBpZiBwaWQgPT0gMDoKICAgICAgICAjIENoaWxkIHByb2Nlc3MgLSBhbHJlYWR5IGluIGl0cyBvd24gcHJvY2VzcyBncm91cCB2aWEgcHR5LmZvcmsoKS9zZXRzaWQoKQogICAgICAgIG9zLmV4ZWN2cChzaGVsbCwgc2hlbGxfYXJncykKICAgICAgICBzeXMuZXhpdCgxKQoKICAgICMgUGFyZW50IHByb2Nlc3MKCiAgICAjIFNldCBpbml0aWFsIHNpemUKICAgIHNldF9zaXplKGZkLCBjb2xzLCByb3dzKQoKICAgIHN0ZGluX2ZkID0gc3lzLnN0ZGluLmZpbGVubygpCgogICAgIyBNYWtlIHN0ZGluIG5vbi1ibG9ja2luZwogICAgb2xkX2ZsYWdzID0gZmNudGwuZmNudGwoc3RkaW5fZmQsIGZjbnRsLkZfR0VURkwpCiAgICBmY250bC5mY250bChzdGRpbl9mZCwgZmNudGwuRl9TRVRGTCwgb2xkX2ZsYWdzIHwgb3MuT19OT05CTE9DSykKCiAgICBydW5uaW5nID0gVHJ1ZQogICAgdHJ5OgogICAgICAgIHdoaWxlIHJ1bm5pbmc6CiAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgIHJsaXN0LCBfLCBfID0gc2VsZWN0LnNlbGVjdChbZmQsIHN0ZGluX2ZkXSwgW10sIFtdLCAwLjA1KQogICAgICAgICAgICBleGNlcHQgc2VsZWN0LmVycm9yOgogICAgICAgICAgICAgICAgYnJlYWsKCiAgICAgICAgICAgIGZvciByZWFkeV9mZCBpbiBybGlzdDoKICAgICAgICAgICAgICAgIGlmIHJlYWR5X2ZkID09IGZkOgogICAgICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICAgICAgZGF0YSA9IG9zLnJlYWQoZmQsIDE2Mzg0KQogICAgICAgICAgICAgICAgICAgICAgICBpZiBub3QgZGF0YToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJ1bm5pbmcgPSBGYWxzZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAgICAgb3Mud3JpdGUoc3lzLnN0ZG91dC5maWxlbm8oKSwgZGF0YSkKICAgICAgICAgICAgICAgICAgICAgICAgc3lzLnN0ZG91dC5mbHVzaCgpCiAgICAgICAgICAgICAgICAgICAgZXhjZXB0IE9TRXJyb3I6CiAgICAgICAgICAgICAgICAgICAgICAgIHJ1bm5pbmcgPSBGYWxzZQogICAgICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICAgICAgZWxpZiByZWFkeV9mZCA9PSBzdGRpbl9mZDoKICAgICAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICAgICAgICAgIGRhdGEgPSBvcy5yZWFkKHN0ZGluX2ZkLCAxNjM4NCkKICAgICAgICAgICAgICAgICAgICAgICAgaWYgbm90IGRhdGE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHN0ZGluIGNsb3NlZCAtIHBsdWdpbiB0ZXJtaW5hdGVkCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBydW5uaW5nID0gRmFsc2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGRhdGE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIENoZWNrIGZvciByZXNpemUgZXNjYXBlIHNlcXVlbmNlIGFueXdoZXJlIGluIGRhdGE6IFx4MWJdUkVTSVpFO2NvbHM7cm93c1x4MDcKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdoaWxlIGInXHgxYl1SRVNJWkU7JyBpbiBkYXRhOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0YXJ0ID0gZGF0YS5pbmRleChiJ1x4MWJdUkVTSVpFOycpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbmQgPSBkYXRhLmluZGV4KGInXHgwNycsIHN0YXJ0KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXNpemVfZGF0YSA9IGRhdGFbc3RhcnQrOTplbmRdLmRlY29kZSgpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGMsIHIgPSByZXNpemVfZGF0YS5zcGxpdCgnOycpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNldF9zaXplKGZkLCBpbnQoYyksIGludChyKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBSZW1vdmUgdGhlIHJlc2l6ZSBjb21tYW5kIGZyb20gZGF0YQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkYXRhID0gZGF0YVs6c3RhcnRdICsgZGF0YVtlbmQrMTpdCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZXhjZXB0IChWYWx1ZUVycm9yLCBJbmRleEVycm9yKToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIGRhdGE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb3Mud3JpdGUoZmQsIGRhdGEpCiAgICAgICAgICAgICAgICAgICAgZXhjZXB0IE9TRXJyb3I6CiAgICAgICAgICAgICAgICAgICAgICAgIHJ1bm5pbmcgPSBGYWxzZQogICAgICAgICAgICAgICAgICAgICAgICBicmVhawoKICAgICAgICAgICAgIyBDaGVjayBpZiBjaGlsZCBleGl0ZWQKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgd3BpZCwgc3RhdHVzID0gb3Mud2FpdHBpZChwaWQsIG9zLldOT0hBTkcpCiAgICAgICAgICAgICAgICBpZiB3cGlkID09IHBpZDoKICAgICAgICAgICAgICAgICAgICBzeXMuZXhpdChvcy53YWl0c3RhdHVzX3RvX2V4aXRjb2RlKHN0YXR1cykpCiAgICAgICAgICAgIGV4Y2VwdCBDaGlsZFByb2Nlc3NFcnJvcjoKICAgICAgICAgICAgICAgIGJyZWFrCiAgICBmaW5hbGx5OgogICAgICAgIGZjbnRsLmZjbnRsKHN0ZGluX2ZkLCBmY250bC5GX1NFVEZMLCBvbGRfZmxhZ3MpCiAgICAgICAgIyBFbnN1cmUgZW50aXJlIHByb2Nlc3MgZ3JvdXAgaXMgdGVybWluYXRlZCB3aGVuIHdlIGV4aXQKICAgICAgICBpZiBjaGlsZF9waWQ6CiAgICAgICAgICAgIGtpbGxfcHJvY2Vzc19ncm91cChjaGlsZF9waWQsIHNpZ25hbC5TSUdURVJNKQogICAgICAgICAgICBmb3IgXyBpbiByYW5nZSgxMCk6CiAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICAgICAgd3BpZCwgXyA9IG9zLndhaXRwaWQoLWNoaWxkX3BpZCwgb3MuV05PSEFORykKICAgICAgICAgICAgICAgICAgICBpZiB3cGlkICE9IDA6CiAgICAgICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgICAgICBleGNlcHQgQ2hpbGRQcm9jZXNzRXJyb3I6CiAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMC4xKQogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAga2lsbF9wcm9jZXNzX2dyb3VwKGNoaWxkX3BpZCwgc2lnbmFsLlNJR0tJTEwpCgppZiBfX25hbWVfXyA9PSAnX19tYWluX18nOgogICAgbWFpbigpCg==";
@@ -7812,8 +7913,9 @@ var TerminalView = class extends import_obsidian.ItemView {
         cmd = "python";
       }
     }
-    const backend = this.getBackend();
-    const backendKey = this.plugin.pluginData.cliBackend || "claude";
+    const backendKey = this.getBackendKey();
+    const backend = CLI_BACKENDS[backendKey];
+    this.activeBackendKey = backendKey;
     let cliCmd = backend.binary;
     if (yoloMode && backend.yoloFlag) cliCmd += " " + backend.yoloFlag;
     const flagsByProvider = this.plugin.pluginData.flagsByProvider || {};
@@ -7829,15 +7931,11 @@ var TerminalView = class extends import_obsidian.ItemView {
         cliCmd += " " + backend.resumeFlag;
       }
     }
-    const shellCmd = continueSession
-      ? `${cliCmd} || ${baseCmd} || true; exec $SHELL -i`
-      : `${cliCmd} || true; exec $SHELL -i`;
-    let args = isWindows
-      ? [ptyPath, String(cols), String(rows), shell]
-      : [ptyPath, String(cols), String(rows), shell, "-lc", shellCmd];
 
     // Get PATH from user's login shell (GUI apps don't inherit shell config)
     let shellEnv = { ...process.env, TERM: "xterm-256color", COLORTERM: "truecolor" };
+    const homeDir = process.env.HOME || process.env.USERPROFILE || "";
+    const pathHints = (backend.pathHints || []).map(p => p.replace("~", homeDir));
     if (!isWindows) {
       try {
         const shellOutput = (0, import_child_process.execSync)(
@@ -7854,8 +7952,6 @@ var TerminalView = class extends import_obsidian.ItemView {
         console.warn('[Claude Sidebar] PATH detection timed out — falling back to system PATH. If tools are missing, check your shell startup time.');
       }
       // Ensure backend-specific paths are available
-      const homeDir = process.env.HOME || '';
-      const pathHints = (backend.pathHints || []).map(p => p.replace('~', homeDir));
       for (const hint of pathHints) {
         if (hint && shellEnv.PATH && !shellEnv.PATH.includes(hint)) {
           shellEnv.PATH = `${hint}:${shellEnv.PATH}`;
@@ -7875,6 +7971,24 @@ var TerminalView = class extends import_obsidian.ItemView {
       const val = trimmed.slice(eq + 1).trim();
       if (key) shellEnv[key] = val;
     }
+
+    // WSL's PATH is inside the distro. A Windows filesystem probe would skip
+    // launch for a CLI that is installed in Linux.
+    const cliFound = shellKind === "wsl" || !!findCliBinary(backend.binary, shellEnv.PATH, pathHints);
+    if (!cliFound) {
+      this.term?.writeln("");
+      this.term?.writeln(`${backend.label} isn't installed or isn't on PATH.`);
+      this.term?.writeln(`Install ${backend.label}, then fully quit and reopen Obsidian.`);
+      this.term?.writeln("");
+    }
+    const shellCmd = !cliFound
+      ? `exec $SHELL -i`
+      : continueSession
+        ? `${cliCmd} || ${baseCmd} || true; exec $SHELL -i`
+        : `${cliCmd} || true; exec $SHELL -i`;
+    let args = isWindows
+      ? [ptyPath, String(cols), String(rows), shell]
+      : [ptyPath, String(cols), String(rows), shell, "-lc", shellCmd];
 
     this.proc = (0, import_child_process.spawn)(cmd, args, {
       cwd,
@@ -7951,7 +8065,7 @@ var TerminalView = class extends import_obsidian.ItemView {
     }, 500);
     this.term?.focus();
     // Windows still needs auto-launch since we can't use exec there
-    if (isWindows) {
+    if (isWindows && cliFound) {
       setTimeout(() => {
         if (this.proc && !this.proc.killed) {
           let winCmd = backend.binary;
@@ -8067,11 +8181,14 @@ var TerminalView = class extends import_obsidian.ItemView {
     this.fitAddon = null;
   }
 };
+// mode "default": change the saved default provider, then open a tab with it.
+// mode "once":    open a tab with the chosen provider and leave the default alone.
 var CliProviderSwitchModal = class extends import_obsidian.SuggestModal {
-  constructor(app, plugin) {
+  constructor(app, plugin, mode = "default") {
     super(app);
     this.plugin = plugin;
-    this.setPlaceholder("Switch CLI provider…");
+    this.mode = mode;
+    this.setPlaceholder(mode === "once" ? "Open a tab with…" : "Switch default CLI provider…");
   }
   getSuggestions(query) {
     const q = query.toLowerCase();
@@ -8081,12 +8198,20 @@ var CliProviderSwitchModal = class extends import_obsidian.SuggestModal {
       .filter(({ backend }) => backend.label.toLowerCase().includes(q) || backend.binary.toLowerCase().includes(q));
   }
   renderSuggestion(item, el) {
-    el.createEl("div", { text: item.backend.label + (item.isCurrent ? "  (current)" : "") });
+    const suffix = item.isCurrent ? (this.mode === "once" ? "  (default)" : "  (current)") : "";
+    el.createEl("div", { text: item.backend.label + suffix });
     el.createEl("small", { text: item.backend.binary, cls: "vault-terminal-suggest-binary" });
   }
   async onChooseSuggestion(item) {
+    if (this.mode === "once") {
+      // Pass the key explicitly even when it matches the default, so the tab
+      // keeps running that provider if the default changes later.
+      this.plugin.createNewTab(null, false, false, item.key);
+      return;
+    }
     this.plugin.pluginData.cliBackend = item.key;
     await this.plugin.saveData(this.plugin.pluginData);
+    this.plugin.refreshRibbonTooltip();
     this.plugin.createNewTab();
   }
 };
@@ -8111,13 +8236,14 @@ var ClaudeSidebarSettingsTab = class extends import_obsidian.PluginSettingTab {
         drop.onChange(async (value) => {
           this.plugin.pluginData.cliBackend = value;
           await this.plugin.saveData(this.plugin.pluginData);
+          this.plugin.refreshRibbonTooltip();
           this.display();
         });
       });
     if (process.platform === "win32") {
       new import_obsidian.Setting(containerEl)
         .setName("Shell")
-        .setDesc("wsl.exe runs Claude inside WSL and translates vault paths to Linux paths via wslpath. cmd.exe runs Claude on Windows natively.")
+        .setDesc("wsl.exe runs the CLI inside WSL and translates vault paths to Linux paths via wslpath. cmd.exe runs it on Windows natively.")
         .addDropdown(drop => {
           drop.addOption("cmd", "cmd.exe");
           drop.addOption("wsl", "wsl.exe (WSL)");
@@ -8178,6 +8304,27 @@ var ClaudeSidebarSettingsTab = class extends import_obsidian.PluginSettingTab {
         setTimeout(grow, 0);
       });
     envSetting.settingEl.addClass("claude-sidebar-env-setting");
+    new import_obsidian.Setting(containerEl)
+      .setName("Terminal font size")
+      .setDesc("Size of the terminal text in pixels (6–32). Default is 13. Applies to open tabs immediately.")
+      .addText(text => {
+        text.inputEl.type = "number";
+        text.inputEl.min = "6";
+        text.inputEl.max = "32";
+        text.inputEl.step = "1";
+        text.inputEl.style.width = "4.5em";
+        text
+          .setPlaceholder("13")
+          .setValue(String(this.plugin.getFontSize()))
+          .onChange(async (value) => {
+            const n = parseInt(value, 10);
+            // Ignore empty/partial while typing; only save valid in-range values.
+            if (!Number.isFinite(n) || n < 6 || n > 32) return;
+            this.plugin.pluginData.fontSize = n;
+            await this.plugin.saveData(this.plugin.pluginData);
+            this.plugin.applyFontSizeToOpenTerminals(n);
+          });
+      });
   }
 };
 var VaultTerminalPlugin = class extends import_obsidian.Plugin {
@@ -8186,14 +8333,38 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     this.lastRibbonClick = 0;
     this.pluginData = {};
   }
+  // Soft floor/ceiling so values can't go absurd. Floor is 6; ceiling is just
+  // a stop for runaway spinner clicks — not a hard product limit.
+  normalizeFontSize(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return 13;
+    return Math.min(32, Math.max(6, Math.round(n)));
+  }
+  getFontSize() {
+    return this.normalizeFontSize(this.pluginData.fontSize ?? 13);
+  }
+  applyFontSizeToOpenTerminals(size) {
+    const next = this.normalizeFontSize(size);
+    for (const view of this._trackedTerminalViews || []) {
+      try { view.applyFontSize?.(next); } catch (_) {}
+    }
+  }
   async onload() {
     this.registerView(VIEW_TYPE, (leaf) => new TerminalView(leaf, this));
     this._trackedTerminalViews = new Set();
     this.pluginData = await this.loadData() || {};
+    if (this.pluginData.fontSize != null) {
+      this.pluginData.fontSize = this.normalizeFontSize(this.pluginData.fontSize);
+    }
     if (this.pluginData.additionalFlags && !this.pluginData.flagsByProvider) {
       const key = this.pluginData.cliBackend || "claude";
       this.pluginData.flagsByProvider = { [key]: this.pluginData.additionalFlags };
       delete this.pluginData.additionalFlags;
+      await this.saveData(this.pluginData);
+    }
+    const renamedBackend = RENAMED_BACKENDS[this.pluginData.cliBackend];
+    if (renamedBackend) {
+      this.pluginData.cliBackend = renamedBackend;
       await this.saveData(this.pluginData);
     }
     this.lastActiveTerminalLeaf = null;
@@ -8229,17 +8400,18 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
         }
       })
     );
-    const ribbonIcon = this.addRibbonIcon("bot", "New Claude Tab", () => {
+    const ribbonIcon = this.addRibbonIcon("bot", `New ${this.getDefaultBackend().label} Tab`, () => {
       const now = Date.now();
       if (now - this.lastRibbonClick < 1500) return; // 1.5s throttle to prevent accidental double-clicks
       this.lastRibbonClick = now;
       this.createNewTab();
     });
+    this.ribbonIcon = ribbonIcon;
     // Right-click context menu
     ribbonIcon.addEventListener("contextmenu", (e) => {
       e.preventDefault();
       const menu = new import_obsidian.Menu();
-      const activeBackend = CLI_BACKENDS[this.pluginData.cliBackend || "claude"];
+      const activeBackend = this.getDefaultBackend();
       if (activeBackend.yoloFlag) {
         menu.addItem((item) => {
           item.setTitle("Open in YOLO mode")
@@ -8286,24 +8458,29 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     });
     this.addCommand({
       id: "open-claude",
-      name: "Open Claude Code",
+      name: "Open terminal",
       callback: () => this.activateView()
     });
     this.addCommand({
       id: "switch-cli-provider",
-      name: "Switch CLI provider…",
-      callback: () => new CliProviderSwitchModal(this.app, this).open()
+      name: "Switch default CLI provider…",
+      callback: () => new CliProviderSwitchModal(this.app, this, "default").open()
+    });
+    this.addCommand({
+      id: "new-tab-with-cli-provider",
+      name: "New agent tab (other CLI)…",
+      callback: () => new CliProviderSwitchModal(this.app, this, "once").open()
     });
     this.addCommand({
       id: "new-claude-tab",
-      name: "New Claude Tab",
+      name: "New agent tab",
       callback: () => this.createNewTab()
     });
     this.addCommand({
       id: "new-claude-tab-yolo",
-      name: "New Tab (YOLO mode)",
+      name: "New agent tab (YOLO mode)",
       checkCallback: (checking) => {
-        const backend = CLI_BACKENDS[this.pluginData.cliBackend || "claude"];
+        const backend = this.getDefaultBackend();
         if (!backend?.yoloFlag) return false;
         if (!checking) this.createNewTab(null, true);
         return true;
@@ -8311,7 +8488,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     });
     this.addCommand({
       id: "close-claude-tab",
-      name: "Close Claude Tab",
+      name: "Close agent tab",
       checkCallback: (checking) => {
         const view = this.app.workspace.getActiveViewOfType(TerminalView);
         if (view) {
@@ -8323,12 +8500,12 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     });
     this.addCommand({
       id: "toggle-claude-focus",
-      name: "Toggle Focus: Editor ↔ Claude",
+      name: "Toggle Focus: Editor ↔ Agent",
       callback: () => this.toggleFocus()
     });
     this.addCommand({
       id: "send-file-to-claude",
-      name: "Send File Path to Claude",
+      name: "Send file path to agent",
       checkCallback: (checking) => {
         const file = this.app.workspace.getActiveFile();
         if (!file) return false;
@@ -8342,7 +8519,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     });
     this.addCommand({
       id: "send-selection-to-claude",
-      name: "Send Selection to Claude",
+      name: "Send selection to agent",
       checkCallback: (checking) => {
         const editor = this.app.workspace.activeEditor?.editor;
         if (!editor) return false;
@@ -8360,7 +8537,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
 
     this.addCommand({
       id: "run-claude-from-folder",
-      name: "Run Claude from this folder",
+      name: "Run agent from this folder",
       callback: () => {
         const file = this.app.workspace.getActiveFile();
         let dir = null;
@@ -8376,7 +8553,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
       id: "resume-claude",
       name: "Resume last conversation",
       checkCallback: (checking) => {
-        const backend = CLI_BACKENDS[this.pluginData.cliBackend || "claude"];
+        const backend = this.getDefaultBackend();
         if (!backend?.resumeFlag) return false;
         if (!checking) {
           const lastCwd = this.pluginData.lastCwd || null;
@@ -8390,20 +8567,20 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     this.registerEvent(
       this.app.workspace.on('file-menu', (menu, file, source) => {
         if (file instanceof import_obsidian.TFolder) {
+          const folderBackend = this.getDefaultBackend();
           menu.addItem(item =>
             item
-              .setTitle('Open Claude here')
+              .setTitle(`Open ${folderBackend.label} here`)
               .setIcon('bot')
               .onClick(() => {
                 const absolutePath = this.app.vault.adapter.getFullPath(file.path);
                 this.createNewTab(absolutePath);
               })
           );
-          const folderBackend = CLI_BACKENDS[this.pluginData.cliBackend || "claude"];
           if (folderBackend.yoloFlag) {
             menu.addItem(item =>
               item
-                .setTitle('Open Claude here (YOLO)')
+                .setTitle(`Open ${folderBackend.label} here (YOLO)`)
                 .setIcon('zap')
                 .onClick(() => {
                   const absolutePath = this.app.vault.adapter.getFullPath(file.path);
@@ -8414,7 +8591,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
         } else if (file instanceof import_obsidian.TFile) {
           menu.addItem(item =>
             item
-              .setTitle('Send file path to Claude')
+              .setTitle(`Send file path to ${this.getDefaultBackend().label}`)
               .setIcon('bot')
               .onClick(() => {
                 const absolutePath = `"${this.getPath(this.getVaultPath() + '/' + file.path)}" `;
@@ -8431,7 +8608,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
         if (selection) {
           menu.addItem(item =>
             item
-              .setTitle('Send selection to Claude')
+              .setTitle(`Send selection to ${this.getDefaultBackend().label}`)
               .setIcon('bot')
               .onClick(() => {
                 const enriched = this.buildSelectionContext(editor, selection);
@@ -8524,7 +8701,16 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
     }
     await this.createNewTab();
   }
-  async createNewTab(workingDir = null, yoloMode = false, continueSession = false) {
+  getDefaultBackend() {
+    return CLI_BACKENDS[this.pluginData.cliBackend] || CLI_BACKENDS.claude;
+  }
+  // Labels built at display time (ribbon, context menus) name the actual
+  // provider. Command names can't — they're registered once at load — so those
+  // stay provider-neutral rather than re-registering on every settings change.
+  refreshRibbonTooltip() {
+    this.ribbonIcon?.setAttribute("aria-label", `New ${this.getDefaultBackend().label} Tab`);
+  }
+  async createNewTab(workingDir = null, yoloMode = false, continueSession = false, backendKey = null) {
     if (!this.layoutReady) return;
     const leaf = this.app.workspace.getRightLeaf(false);
     if (leaf) {
@@ -8532,6 +8718,7 @@ var VaultTerminalPlugin = class extends import_obsidian.Plugin {
       if (workingDir) state.workingDir = workingDir;
       if (yoloMode) state.yoloMode = yoloMode;
       if (continueSession) state.continueSession = continueSession;
+      if (backendKey) state.backendKey = backendKey;
       await leaf.setViewState({
         type: VIEW_TYPE,
         active: true,
