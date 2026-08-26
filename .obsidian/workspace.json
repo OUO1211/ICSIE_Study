@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第3章/直和.md",
+                "file": "Linear Algebra (上)/第4章/一對一與映成的判別.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "直和"
+              "title": "一對一與映成的判別"
             }
           }
         ]
@@ -194,6 +194,7 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第3章/直和.md",
     "Linear Algebra (上)/第3章/座標與基底變換.md",
     "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
     "CLAUDE.md.tmp.9316.91daf3b7da6b",
@@ -229,7 +230,6 @@
     "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
     "Data Structure/第一章/MasterTheorem主定理.md",
     "Data Structure/第一章/Ackermann函數.md",
-    "Data Structure/第一章/選擇排序與二分搜尋法.md",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
