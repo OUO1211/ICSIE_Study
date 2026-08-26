@@ -176,6 +176,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "claude-sidebar:New Claude Code Tab": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
@@ -188,7 +189,6 @@
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian42-brat:BRAT": false,
       "terminal:Open terminal": false,
-      "claude-sidebar:New Claude Tab": false,
       "obsidian-git:Open Git source control": false
     }
   },
