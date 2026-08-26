@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第4章/線性映射定義與判別.md",
+                "file": "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線性映射定義與判別"
+              "title": "線性映射與保相依保獨立保生成"
             }
           }
         ]
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5,
-    "collapsed": true
+    "width": 261.5
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -195,8 +194,18 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
+    "Linear Algebra (上)/第4章/線性算子的行列式與跡數.md",
+    "Linear Algebra (上)/第4章/冪等算子與冪等矩陣.md",
+    "Linear Algebra (上)/第4章/T平方的核空間與值域.md",
+    "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md",
+    "Linear Algebra (上)/第4章/線性映射的合成.md",
+    "Linear Algebra (上)/第4章/換底變換公式.md",
+    "Linear Algebra (上)/第4章/特殊線性映射-投影與斜投影.md",
+    "Linear Algebra (上)/第4章/向量空間的同構.md",
+    "Linear Algebra (上)/第4章/求核空間與值域方法.md",
+    "Linear Algebra (上)/第4章/座標變換公式.md",
     "Linear Algebra (上)/第4章/線性映射定義與判別.md",
+    "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
     "Linear Algebra (上)/第4章/一對一與映成的判別.md",
     "Linear Algebra (上)/第3章/直和.md",
     "Linear Algebra (上)/第3章/座標與基底變換.md",
@@ -204,33 +213,23 @@
     "Linear Algebra (上)/第4章/線性映射(MOC).md",
     "Linear Algebra (上)/第4章/線性映射(MOC).md.tmp.9316.66c36137df16",
     "Linear Algebra (上)/第4章/可逆的線性映射.md",
-    "Linear Algebra (上)/第4章/線性映射的合成.md",
     "Linear Algebra (上)/第4章/線性映射的合成.md.tmp.9316.f3d2899d5291",
-    "Linear Algebra (上)/第4章/線性算子的行列式與跡數.md",
     "Linear Algebra (上)/第4章/線性算子的行列式與跡數.md.tmp.9316.e6864ed96cf5",
-    "Linear Algebra (上)/第4章/換底變換公式.md",
     "Linear Algebra (上)/第4章/換底變換公式.md.tmp.9316.1d5076535ff9",
-    "Linear Algebra (上)/第4章/座標變換公式.md",
     "Linear Algebra (上)/第4章/座標變換公式.md.tmp.9316.4972f566e8d6",
     "Linear Algebra (上)/第4章/線性映射的矩陣表示.md",
     "Linear Algebra (上)/第4章/線性映射的矩陣表示.md.tmp.9316.d55044817a85",
     "Linear Algebra (上)/第4章/不變子空間.md",
     "Linear Algebra (上)/第4章/不變子空間.md.tmp.9316.5e10d959f7fd",
-    "Linear Algebra (上)/第4章/向量空間的同構.md",
     "Linear Algebra (上)/第4章/向量空間的同構.md.tmp.9316.c0fe04d10534",
-    "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md",
     "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md.tmp.9316.19a996adb2c3",
     "Linear Algebra (上)/第4章/特殊線性映射-旋轉與鏡射.md",
-    "Linear Algebra (上)/第4章/特殊線性映射-投影與斜投影.md",
     "Linear Algebra (上)/第4章/核空間與值域定義.md",
-    "Linear Algebra (上)/第4章/求核空間與值域方法.md",
     "Data Structure/第二章/稀疏多項式的陣列表示法與相加.md",
     "Data Structure/第二章/三角矩陣與對稱矩陣壓縮儲存.md",
     "Data Structure/第二章/矩陣轉置TransposeMatrix.md",
     "Data Structure/第二章/多維陣列位址計算N維陣列.md",
     "Data Structure/第一章/遞迴時間函數求解法代入法UnrollingMethod.md",
-    "Data Structure/第一章/MasterTheorem主定理.md",
-    "Data Structure/第一章/Ackermann函數.md",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
