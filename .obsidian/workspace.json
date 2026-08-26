@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第4章/一對一與映成的判別.md",
+                "file": "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "一對一與映成的判別"
+              "title": "線性映射的存在性與唯一性"
             }
           }
         ]
@@ -194,9 +194,10 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第4章/一對一與映成的判別.md",
+    "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
     "Linear Algebra (上)/第3章/直和.md",
     "Linear Algebra (上)/第3章/座標與基底變換.md",
-    "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
     "CLAUDE.md.tmp.9316.91daf3b7da6b",
     "Linear Algebra (上)/第4章/線性映射(MOC).md",
     "Linear Algebra (上)/第4章/線性映射(MOC).md.tmp.9316.66c36137df16",
@@ -217,7 +218,6 @@
     "Linear Algebra (上)/第4章/向量空間的同構.md.tmp.9316.c0fe04d10534",
     "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md",
     "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md.tmp.9316.19a996adb2c3",
-    "Linear Algebra (上)/第4章/一對一與映成的判別.md",
     "Linear Algebra (上)/第4章/線性映射定義與判別.md",
     "Linear Algebra (上)/第4章/特殊線性映射-旋轉與鏡射.md",
     "Linear Algebra (上)/第4章/特殊線性映射-投影與斜投影.md",
