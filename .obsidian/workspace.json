@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第4章/線性映射的合成.md",
+                "file": "Linear Algebra (上)/第4章/T平方的核空間與值域.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "線性映射的合成"
+              "title": "T平方的核空間與值域"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 261.5,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -194,6 +195,10 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第4章/冪等算子與冪等矩陣.md",
+    "Linear Algebra (上)/第4章/線性算子的行列式與跡數.md",
+    "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md",
+    "Linear Algebra (上)/第4章/線性映射的合成.md",
     "Linear Algebra (上)/第4章/線性映射定義與判別.md",
     "Linear Algebra (上)/第4章/向量空間的同構.md",
     "Linear Algebra (上)/第4章/求核空間與值域方法.md",
@@ -203,10 +208,6 @@
     "Linear Algebra (上)/第4章/T平方的核空間與值域.md",
     "Linear Algebra (上)/第3章/四大基本子空間.md",
     "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
-    "Linear Algebra (上)/第4章/線性映射與保相依保獨立保生成.md",
-    "Linear Algebra (上)/第4章/線性算子的行列式與跡數.md",
-    "Linear Algebra (上)/第4章/冪等算子與冪等矩陣.md",
-    "Linear Algebra (上)/第4章/線性映射的合成.md",
     "Linear Algebra (上)/第4章/換底變換公式.md",
     "Linear Algebra (上)/第4章/一對一與映成的判別.md",
     "Linear Algebra (上)/第3章/直和.md",
