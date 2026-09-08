@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "第一章/純量乘法.md",
+                "file": "Linear Algebra (上)/第1章/RREF簡化列梯陣.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "純量乘法 的反向連結"
+              "title": "反向連結"
             }
           },
           {
