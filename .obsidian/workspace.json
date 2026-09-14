@@ -11,14 +11,12 @@
             "id": "081ab4aca71e39e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Discrete Math (上)/第1章/p→q的相關命題.md",
-                "mode": "source",
-                "source": false
+                "file": "pdf_imgs/p1.png"
               },
-              "icon": "lucide-file",
-              "title": "p→q的相關命題"
+              "icon": "lucide-image",
+              "title": "p1"
             }
           }
         ]
@@ -194,16 +192,17 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Discrete Math (上)/第1章/邏輯蘊含.md",
-    "Discrete Math (上)/第1章/邏輯等價.md",
-    "Discrete Math (上)/第1章/論證與推論規則.md",
-    "Discrete Math (上)/第1章/等價證明常用性質.md",
-    "Discrete Math (上)/第1章/述詞邏輯推論規則.md",
-    "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
     "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
     "Discrete Math (上)/第1章/命題函數與論域.md",
     "Discrete Math (上)/第1章/完全算子集.md",
+    "Discrete Math (上)/第1章/p→q的相關命題.md",
+    "Discrete Math (上)/第1章/邏輯蘊含.md",
+    "Discrete Math (上)/第1章/邏輯等價.md",
+    "Discrete Math (上)/第1章/論證與推論規則.md",
+    "Discrete Math (上)/第1章/述詞邏輯推論規則.md",
+    "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
+    "Discrete Math (上)/第1章/等價證明常用性質.md",
     "Discrete Math (上)/第1章/邏輯(MOC).md",
     "Linear Algebra (上)/第1章/RREF簡化列梯陣.md",
     "Linear Algebra (上)/第1章/分塊矩陣的反矩陣.md",
@@ -219,7 +218,6 @@
     "Linear Algebra (上)/第4章/特殊線性映射-投影與斜投影.md",
     "Linear Algebra (上)/第4章/核空間與值域定義.md",
     "Linear Algebra (上)/第3章/四大基本子空間.md",
-    "Linear Algebra (上)/第4章/線性映射的存在性與唯一性.md",
     "CLAUDE.md.tmp.9316.91daf3b7da6b",
     "Linear Algebra (上)/第4章/線性映射(MOC).md.tmp.9316.66c36137df16",
     "Linear Algebra (上)/第4章/線性映射的合成.md.tmp.9316.f3d2899d5291",
