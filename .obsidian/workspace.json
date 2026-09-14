@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第1章/命題函數與論域.md",
+                "file": "Discrete Math (上)/第1章/建立真值表與wff.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "命題函數與論域"
+              "title": "建立真值表與wff"
             }
           }
         ]
@@ -195,8 +195,9 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Discrete Math (上)/第1章/完全算子集.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
+    "Discrete Math (上)/第1章/命題函數與論域.md",
+    "Discrete Math (上)/第1章/完全算子集.md",
     "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/邏輯等價.md",
     "Discrete Math (上)/第1章/邏輯(MOC).md",
@@ -204,7 +205,6 @@
     "Discrete Math (上)/第1章/等價證明常用性質.md",
     "Discrete Math (上)/第1章/述詞邏輯推論規則.md",
     "Discrete Math (上)/第1章/述詞邏輯的翻譯.md",
-    "Discrete Math (上)/第1章/命題函數與論域.md",
     "Linear Algebra (上)/第1章/RREF簡化列梯陣.md",
     "Linear Algebra (上)/第1章/分塊矩陣的反矩陣.md",
     "Linear Algebra (上)/第4章/T平方的核空間與值域.md",
