@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第1章/命題與真值表.md",
+                "file": "Discrete Math (上)/第1章/完全算子集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "命題與真值表"
+              "title": "完全算子集"
             }
           }
         ]
@@ -195,8 +195,8 @@
   },
   "active": "081ab4aca71e39e2",
   "lastOpenFiles": [
-    "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
+    "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/完全算子集.md",
     "Discrete Math (上)/第1章/邏輯等價.md",
     "Discrete Math (上)/第1章/邏輯(MOC).md",
