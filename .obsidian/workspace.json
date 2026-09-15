@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fd3a24edcd4ecad1",
+        "id": "861a04697d69ba56",
         "type": "tabs",
         "children": [
           {
-            "id": "081ab4aca71e39e2",
+            "id": "839119c4a46e9c21",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "pdf_imgs/p1.png"
-              },
-              "icon": "lucide-image",
-              "title": "p1"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新分頁"
             }
           }
         ]
@@ -190,7 +188,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "081ab4aca71e39e2",
+  "active": "34ac4dc78d41eb0d",
   "lastOpenFiles": [
     "Discrete Math (上)/第1章/建立真值表與wff.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
