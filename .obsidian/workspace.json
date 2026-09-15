@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "861a04697d69ba56",
+        "id": "0c665947cdb39ecd",
         "type": "tabs",
         "children": [
           {
-            "id": "839119c4a46e9c21",
+            "id": "33f11a8f3a438bfe",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Discrete Math (上)/第1章/邏輯蘊含.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "邏輯蘊含"
             }
           }
         ]
@@ -199,8 +203,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd596c1eb6afec25",
+  "active": "33f11a8f3a438bfe",
   "lastOpenFiles": [
+    "未命名.md",
     "未命名/未命名",
     "未命名",
     "Discrete Math (上)/第1章/建立真值表與wff.md",
@@ -236,7 +241,6 @@
     "Linear Algebra (上)/第4章/座標變換公式.md.tmp.9316.4972f566e8d6",
     "Linear Algebra (上)/第4章/線性映射的矩陣表示.md.tmp.9316.d55044817a85",
     "Linear Algebra (上)/第4章/不變子空間.md.tmp.9316.5e10d959f7fd",
-    "Linear Algebra (上)/第4章/向量空間的同構.md.tmp.9316.c0fe04d10534",
     "pdf_imgs/p141.png",
     "pdf_imgs/p138.png",
     "pdf_imgs/p133.png",
