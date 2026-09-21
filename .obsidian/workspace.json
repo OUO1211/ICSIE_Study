@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 261.5,
+    "collapsed": true
   },
   "right": {
     "id": "3005e8f0b77f3987",
@@ -198,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34ac4dc78d41eb0d",
+  "active": "429ce5fc0bdeb60b",
   "lastOpenFiles": [
     "Discrete Math (上)/第1章/邏輯蘊含.md",
     "未命名.md",
