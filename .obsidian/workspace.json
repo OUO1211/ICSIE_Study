@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第2章/高斯-喬登消去法.md",
+                "file": "Linear Algebra (上)/第2章/塊狀矩陣行列式進階.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "高斯-喬登消去法"
+              "title": "塊狀矩陣行列式進階"
             },
             "group": "d8aaa11734af4f55"
           }
@@ -34,7 +34,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Linear Algebra (上)/第2章/高斯-喬登消去法.md",
+                "file": "Linear Algebra (上)/第2章/塊狀矩陣行列式進階.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "高斯-喬登消去法 的關聯圖"
+              "title": "塊狀矩陣行列式進階 的關聯圖"
             },
             "group": "d8aaa11734af4f55"
           }
@@ -250,6 +250,11 @@
   },
   "active": "429ce5fc0bdeb60b",
   "lastOpenFiles": [
+    "Linear Algebra (上)/第2章/基本變數與自由變數.md",
+    "Linear Algebra (上)/第2章/高斯消去法.md",
+    "Linear Algebra (上)/第1章/RREF簡化列梯陣.md",
+    "Linear Algebra (上)/第2章/高斯-喬登消去法.md",
+    "Linear Algebra (上)/第3章/直和.md",
     "Linear Algebra (上)/第2章/特殊矩陣的行列式.md",
     "Linear Algebra (上)/第2章/奇異與非奇異矩陣.md",
     "Linear Algebra (上)/第2章/克拉瑪法則.md",
@@ -271,11 +276,6 @@
     "Discrete Math (上)/第2章/集合運算律.md",
     "Discrete Math (上)/第2章/集合基本運算.md",
     "Discrete Math (上)/第2章/排容原理.md",
-    "Discrete Math (上)/第2章/差集與對稱差.md",
-    "Discrete Math (上)/第2章/映成函數與不空箱分配.md",
-    "Discrete Math (上)/第2章/卡氏積性質.md",
-    "Discrete Math (上)/第2章/卡氏積.md",
-    "Discrete Math (上)/第1章/命題函數與論域.md",
     "未命名/未命名",
     "未命名",
     "CLAUDE.md.tmp.9316.91daf3b7da6b",

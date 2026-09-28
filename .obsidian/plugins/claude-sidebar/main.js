@@ -7342,6 +7342,36 @@ var TerminalView = class extends import_obsidian.ItemView {
     fs.writeFileSync(tempPath, buffer);
     return tempPath;
   }
+  // Save an image to a temp file and type its quoted path into the agent's input.
+  // Shared by every paste entry point so images always land the same way.
+  async insertImageBlob(blob) {
+    try {
+      const imagePath = await this.saveImageToTemp(blob);
+      // Insert the path into the terminal input (quoted for paths with spaces)
+      if (this.proc && !this.proc.killed) {
+        this.proc.stdin?.write(`"${this.plugin.getPath(imagePath)}" `);
+      }
+    } catch (err) {
+      this.term?.writeln(`\r\n[Image paste error: ${err.message}]`);
+    }
+  }
+  // Last-resort image source, returns true if an image was pasted. On Wayland the
+  // clipboard is proxied through xdg-desktop-portal, which can drop or re-label image
+  // mime types, so the DOM `paste` event may carry no image/* item at all. The system
+  // clipboard still reports the image, so ask it directly.
+  async pasteImageFromClipboard() {
+    try {
+      const clipboard = require("electron").clipboard;
+      const format = clipboard.availableFormats().find((f) => f.startsWith("image/"));
+      if (!format) return false;
+      const data = clipboard.readBuffer(format);
+      if (!data || data.length === 0) return false;
+      await this.insertImageBlob(new Blob([data], { type: format }));
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
   applyFontSize(size) {
     if (!this.term) return;
     const next = this.plugin.normalizeFontSize(size);
@@ -7462,25 +7492,19 @@ var TerminalView = class extends import_obsidian.ItemView {
       // Only handle if terminal has focus
       if (!this.containerEl.contains(document.activeElement)) return;
       const items = e.clipboardData?.items;
-      if (!items) return;
-      for (const item of items) {
+      for (const item of items || []) {
         if (item.type.startsWith("image/")) {
           e.preventDefault();
           e.stopPropagation();
           const blob = item.getAsFile();
-          if (blob) {
-            try {
-              const imagePath = await this.saveImageToTemp(blob);
-              // Insert the path into the terminal input (quoted for paths with spaces)
-              if (this.proc && !this.proc.killed) {
-                this.proc.stdin?.write(`"${this.plugin.getPath(imagePath)}" `);
-              }
-            } catch (err) {
-              this.term?.writeln(`\r\n[Image paste error: ${err.message}]`);
-            }
-          }
+          if (blob) await this.insertImageBlob(blob);
           return;
         }
+      }
+      // No image in the event data (typical on Wayland) - ask the system clipboard.
+      if (await this.pasteImageFromClipboard()) {
+        e.preventDefault();
+        e.stopPropagation();
       }
     };
     document.addEventListener("paste", this.imagePasteHandler, true);
@@ -7558,6 +7582,7 @@ var TerminalView = class extends import_obsidian.ItemView {
         try { text = require("electron").clipboard.readText() || ""; }
         catch (_) { text = (await navigator.clipboard?.readText?.().catch(() => "")) || ""; }
         if (text) this.term?.paste(text);
+        else await this.pasteImageFromClipboard();
       }));
       menu.showAtMouseEvent(e);
     };
@@ -7674,7 +7699,14 @@ var TerminalView = class extends import_obsidian.ItemView {
           if (text) {
             this.term.paste(text);
           } else {
-            navigator.clipboard?.readText?.().then((t) => { if (t) this.term.paste(t); }).catch(() => {});
+            // No text, so the clipboard may hold an image. preventDefault() above suppresses
+            // the `paste` event, so imagePasteHandler never runs - read the image from the
+            // system clipboard instead, which is the only image source on Wayland.
+            this.pasteImageFromClipboard().then((pasted) => {
+              if (!pasted) {
+                navigator.clipboard?.readText?.().then((t) => { if (t) this.term.paste(t); }).catch(() => {});
+              }
+            });
           }
           return false;
         }
