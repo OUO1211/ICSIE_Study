@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第3章/可逆函數.md",
+                "file": "Discrete Math (上)/第3章/函數個數計數.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "可逆函數"
+              "title": "函數個數計數"
             }
           }
         ]
@@ -206,6 +206,8 @@
   },
   "active": "429ce5fc0bdeb60b",
   "lastOpenFiles": [
+    "Discrete Math (上)/第3章/函數的像與逆像.md",
+    "Discrete Math (上)/第3章/可逆函數.md",
     "Discrete Math (上)/第3章/二元關係與函數.md",
     "Discrete Math (上)/第1章/命題與真值表.md",
     "Discrete Math (上)/第1章/完全算子集.md",
@@ -219,12 +221,10 @@
     "Discrete Math (上)/第3章/合成函數.md",
     "Discrete Math (上)/第3章/可數集的封閉性.md",
     "Discrete Math (上)/第3章/可數性與基數.md",
-    "Discrete Math (上)/第3章/可逆函數.md",
     "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
     "Discrete Math (上)/第3章/調和數的漸近成長.md",
     "Discrete Math (上)/第3章/常用漸近成長率.md",
     "Discrete Math (上)/第3章/奇函數與偶函數.md",
-    "Discrete Math (上)/第3章/函數的像與逆像.md",
     "Discrete Math (上)/第3章/單射、滿射與雙射.md",
     "Discrete Math (上)/第3章/函數與鴿籠原理(MOC).md",
     "Discrete Math (上)/第3章/226離散數學（上）3－3 鴿籠原理（The Pigeonhole Principle）若有 $m$ 隻鸽子要放入 $n$ 個鴿籠中，且 $m_n$則至少有一籠放了至少二隻鴿子。【重要】Note又稱.md",
