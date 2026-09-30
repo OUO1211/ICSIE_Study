@@ -13,58 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra (上)/第2章/塊狀矩陣行列式進階.md",
+                "file": "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "塊狀矩陣行列式進階"
-            },
-            "group": "d8aaa11734af4f55"
-          }
-        ]
-      },
-      {
-        "id": "ce37ea309e41dd47",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8b29994df06006a0",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Linear Algebra (上)/第2章/塊狀矩陣行列式進階.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 2,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1.3613103827491067,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "塊狀矩陣行列式進階 的關聯圖"
-            },
-            "group": "d8aaa11734af4f55"
+              "title": "252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘"
+            }
           }
         ]
       }
@@ -250,6 +205,14 @@
   },
   "active": "429ce5fc0bdeb60b",
   "lastOpenFiles": [
+    "Discrete Math (上)/第3章/226離散數學（上）3－3 鴿籠原理（The Pigeonhole Principle）若有 $m$ 隻鸽子要放入 $n$ 個鴿籠中，且 $m_n$則至少有一籠放了至少二隻鴿子。【重要】Note又稱.md",
+    "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
+    "Discrete Math (上)/第3章/210離散數學（上）可數集（countable set）、不可數集（uncountable set）（1）若集合 $A _sim N=_{1,2, _ldots_}$ ，則 $A$ 為可列舉的（den.md",
+    "Discrete Math (上)/第3章/168離散數學（上）函數（function，mapping，transformation）令 $f$ 為非空集合 $A$ 到 $B$ 上的一關係，且滿足：對任意 $A$ 上的元素 $a$ ，均恰唯一存.md",
+    "Discrete Math (上)/第3章/180離散數學（上）計算函數個數考虑集合 $A 、 B$ ，函数 $f_ A _rightarrow B$ ，其中 $_A_=m,_B_=n$ ，則（1）有 $n^m$ 種不同的 $f$ 。（2）若.md",
+    "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
+    "Discrete Math (上)/第3章/第 3 章 函數193可逆函數（invertible function）考虑函数 $f_ A _rightarrow B$ 之反關係 $f^{-1}_ B _rightarrow A$ ，其中 $f^.md",
+    "Linear Algebra (上)/第2章/塊狀矩陣行列式進階.md",
     "Linear Algebra (上)/第2章/基本變數與自由變數.md",
     "Linear Algebra (上)/第2章/高斯消去法.md",
     "Linear Algebra (上)/第1章/RREF簡化列梯陣.md",
@@ -268,14 +231,6 @@
     "Linear Algebra (上)/第1章/矩陣(MOC).md",
     "Linear Algebra (上)/第1章/列行展開與分解.md",
     "Linear Algebra (上)/第1章/可逆矩陣.md",
-    "Linear Algebra (上)/第1章/分塊矩陣的反矩陣.md",
-    "Linear Algebra (上)/第1章/三角矩陣.md",
-    "Discrete Math (上)/第2章/Euler φ 函數.md",
-    "Discrete Math (上)/第2章/集合論(MOC).md",
-    "Discrete Math (上)/第2章/集合與元素.md",
-    "Discrete Math (上)/第2章/集合運算律.md",
-    "Discrete Math (上)/第2章/集合基本運算.md",
-    "Discrete Math (上)/第2章/排容原理.md",
     "未命名/未命名",
     "未命名",
     "CLAUDE.md.tmp.9316.91daf3b7da6b",
