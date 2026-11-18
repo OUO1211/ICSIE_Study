@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "17077ab0d67e62ff",
+    "id": "15324a4001032cd3",
     "type": "split",
     "children": [
       {
-        "id": "50a177694b39fb6d",
+        "id": "5a36de4e961dbaa1",
         "type": "tabs",
         "children": [
           {
-            "id": "429ce5fc0bdeb60b",
+            "id": "10b756b9708ac1c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第3章/可數集的封閉性.md",
+                "file": "Discrete Math (上)/第2章/Euler φ 函數.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "可數集的封閉性"
+              "title": "Euler φ 函數"
             }
           }
         ]
@@ -27,22 +27,22 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "72e5445c23e5605f",
+    "id": "6c375c384beb43aa",
     "type": "split",
     "children": [
       {
-        "id": "2b4a5beed68872e1",
+        "id": "9af9b029e2fc4ae7",
         "type": "tabs",
         "children": [
           {
-            "id": "34ac4dc78d41eb0d",
+            "id": "a54cf305591cd986",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
                 "autoReveal": false,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
@@ -50,7 +50,7 @@
             }
           },
           {
-            "id": "cd596c1eb6afec25",
+            "id": "a916486bc0895801",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,11 +67,14 @@
             }
           },
           {
-            "id": "315cb16359c9ca62",
+            "id": "c6a0fd7d7a3b95d1",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "書籤"
             }
@@ -80,24 +83,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "3005e8f0b77f3987",
+    "id": "e81379f6b19f3a02",
     "type": "split",
     "children": [
       {
-        "id": "3ec877d16f2407b0",
+        "id": "4f773af09d11eebf",
         "type": "tabs",
         "children": [
           {
-            "id": "e80ca74e439129ae",
+            "id": "166faf76d6458108",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linear Algebra (上)/第1章/RREF簡化列梯陣.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,21 +112,20 @@
             }
           },
           {
-            "id": "4b075db0c03b1726",
+            "id": "3ba85f4075c53154",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ICSIE_Study.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ICSIE_Study 的對外連結"
+              "title": "對外連結"
             }
           },
           {
-            "id": "8c3e8a8c24a7f41b",
+            "id": "ba9aec495d4b41cd",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,7 +140,7 @@
             }
           },
           {
-            "id": "ce105d7507bbe917",
+            "id": "64fd6c665930502b",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -149,110 +149,51 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-ghost",
-              "title": "all-properties"
+              "icon": "lucide-archive",
+              "title": "所有屬性"
             }
           },
           {
-            "id": "09407a309cd2a1fe",
+            "id": "720bea859aa43631",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "ICSIE_Study.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ICSIE_Study 的大綱"
-            }
-          },
-          {
-            "id": "55dbdb119da6638c",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "大綱"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 244.8074951171875,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "claude-sidebar:New Claude Code Tab": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
       "daily-notes:開啟今天的每日筆記": false,
       "templates:插入模板": false,
       "command-palette:開啟命令面板": false,
-      "bases:建立新的 base": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian42-brat:BRAT": false,
-      "terminal:Open terminal": false,
-      "obsidian-git:Open Git source control": false
+      "bases:建立新的 base": false
     }
   },
-  "active": "429ce5fc0bdeb60b",
+  "active": "10b756b9708ac1c5",
   "lastOpenFiles": [
-    "Discrete Math (上)/第3章/可數性與基數.md",
-    "Discrete Math (上)/第3章/函數個數計數.md",
-    "Discrete Math (上)/第3章/函數的像與逆像.md",
-    "Discrete Math (上)/第3章/可逆函數.md",
-    "Discrete Math (上)/第3章/二元關係與函數.md",
-    "Discrete Math (上)/第1章/命題與真值表.md",
-    "Discrete Math (上)/第1章/完全算子集.md",
-    "Discrete Math (上)/第1章/命題函數與論域.md",
-    "Discrete Math (上)/第3章/對角線法與不可數集.md",
-    "Discrete Math (上)/第3章/漸近符號 Big-O、Omega、Theta.md",
+    "Discrete Math (上)/第4章/316離散數學（上）似是而非的歸納法例題What is wrong with the following proof that＂all people are the same size＂？We pur.md",
+    "Discrete Math (上)/第5章/424離散數學（上）排列（permutation）從 $n$ 件相異物，不允許重覆，取 $r$ 件排列的方法數為$$n _times(n-1) _times(n-2) _times _ldots _t.md",
     "Discrete Math (上)/第3章/鴿籠原理的建模策略.md",
     "Discrete Math (上)/第3章/鴿籠原理.md",
-    "Discrete Math (上)/第3章/地板函數與天花板函數.md",
-    "Discrete Math (上)/第3章/合成函數.md",
-    "Discrete Math (上)/第3章/可數集的封閉性.md",
-    "Discrete Math (上)/第3章/252離散數學（上）整除問題例題12任意 $n+1$ 個整数，必有兩数相減被 $n$ 整除。解 因為任意整數除以 $n$ 之後的餘數只有 $n$ 種可能，所以任 $n+1$ 個相異整數中，必有兩數同餘.md",
+    "Discrete Math (上)/第3章/對角線法與不可數集.md",
     "Discrete Math (上)/第3章/調和數的漸近成長.md",
-    "Discrete Math (上)/第3章/常用漸近成長率.md",
     "Discrete Math (上)/第3章/奇函數與偶函數.md",
-    "Discrete Math (上)/第3章/單射、滿射與雙射.md",
-    "Discrete Math (上)/第3章/函數與鴿籠原理(MOC).md",
-    "Discrete Math (上)/第3章/226離散數學（上）3－3 鴿籠原理（The Pigeonhole Principle）若有 $m$ 隻鸽子要放入 $n$ 個鴿籠中，且 $m_n$則至少有一籠放了至少二隻鴿子。【重要】Note又稱.md",
-    "Discrete Math (上)/第3章/212離散數學（上）則很明顯 $_bigcup_{i _in N} A_i _sim N _times N _sim N$ ，所以 $_bigcup_{i _in N} A_i$ 為可數集。而若 $_.md",
-    "Discrete Math (上)/第3章/210離散數學（上）可數集（countable set）、不可數集（uncountable set）（1）若集合 $A _sim N=_{1,2, _ldots_}$ ，則 $A$ 為可列舉的（den.md",
-    "Discrete Math (上)/第3章/168離散數學（上）函數（function，mapping，transformation）令 $f$ 為非空集合 $A$ 到 $B$ 上的一關係，且滿足：對任意 $A$ 上的元素 $a$ ，均恰唯一存.md",
-    "Discrete Math (上)/第3章/180離散數學（上）計算函數個數考虑集合 $A 、 B$ ，函数 $f_ A _rightarrow B$ ，其中 $_A_=m,_B_=n$ ，則（1）有 $n^m$ 種不同的 $f$ 。（2）若.md",
-    "未命名/未命名",
-    "未命名",
-    "CLAUDE.md.tmp.9316.91daf3b7da6b",
-    "Linear Algebra (上)/第4章/線性映射(MOC).md.tmp.9316.66c36137df16",
-    "Linear Algebra (上)/第4章/線性映射的合成.md.tmp.9316.f3d2899d5291",
-    "Linear Algebra (上)/第4章/線性算子的行列式與跡數.md.tmp.9316.e6864ed96cf5",
-    "Linear Algebra (上)/第4章/換底變換公式.md.tmp.9316.1d5076535ff9",
-    "Linear Algebra (上)/第4章/座標變換公式.md.tmp.9316.4972f566e8d6",
-    "Linear Algebra (上)/第4章/線性映射的矩陣表示.md.tmp.9316.d55044817a85",
-    "Linear Algebra (上)/第4章/不變子空間.md.tmp.9316.5e10d959f7fd",
-    "pdf_imgs/p141.png",
-    "pdf_imgs/p138.png",
-    "pdf_imgs/p133.png",
-    "pdf_imgs/p130.png",
-    "pdf_imgs/p129.png",
-    "pdf_imgs/p115.png",
-    "pdf_imgs/p110.png",
-    "pdf_imgs/p102.png",
-    "pdf_imgs/p196.png",
-    "pdf_imgs/p190.png",
-    "未命名 1.canvas",
-    "未命名.canvas"
+    "Discrete Math (上)/第3章/可逆函數.md"
   ]
 }
