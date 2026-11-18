@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math (上)/第2章/Euler φ 函數.md",
+                "file": "Discrete Math (上)/第6章/一般生成函數.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Euler φ 函數"
+              "title": "一般生成函數"
             }
           }
         ]
@@ -187,13 +187,31 @@
   },
   "active": "10b756b9708ac1c5",
   "lastOpenFiles": [
-    "Discrete Math (上)/第4章/316離散數學（上）似是而非的歸納法例題What is wrong with the following proof that＂all people are the same size＂？We pur.md",
-    "Discrete Math (上)/第5章/424離散數學（上）排列（permutation）從 $n$ 件相異物，不允許重覆，取 $r$ 件排列的方法數為$$n _times(n-1) _times(n-2) _times _ldots _t.md",
-    "Discrete Math (上)/第3章/鴿籠原理的建模策略.md",
-    "Discrete Math (上)/第3章/鴿籠原理.md",
-    "Discrete Math (上)/第3章/對角線法與不可數集.md",
-    "Discrete Math (上)/第3章/調和數的漸近成長.md",
-    "Discrete Math (上)/第3章/奇函數與偶函數.md",
-    "Discrete Math (上)/第3章/可逆函數.md"
+    "Discrete Math (上)/第6章/生成函數(MOC).md",
+    "Discrete Math (上)/第6章/生成函數的運算與係數擷取.md",
+    "Discrete Math (上)/第6章/生成函數與整數解計數.md",
+    "Discrete Math (上)/第6章/指數生成函數.md",
+    "Discrete Math (上)/第6章/整數分割與Ferrers圖.md",
+    "Discrete Math (上)/第4章/中國剩餘定理.md",
+    "Discrete Math (上)/第4章/反證法與逆否命題.md",
+    "Discrete Math (上)/第4章/因數函數與完全數.md",
+    "Discrete Math (上)/第4章/398離散數學（上）4－3 質數質數（prime）考虑大於 1 的正整数 $p$ ，若 $p$ 只有 1 與 $p$ 本身為其正因数，則稱 $p$ 為質数。所有大於 1 的非質数稱為合成数（compo.md",
+    "Discrete Math (上)/第4章/412離散數學（上）如何尋找、判斷質數（1）愛拉託斯篩法（Eratosthenes sieve）：即以是否為 2 的倍數、 3 的倍數、 5 的倍數 $_$過濾。（2）$n$ 為一合成數.md",
+    "Discrete Math (上)/第4章/最大公因數與最小公倍數.md",
+    "Discrete Math (上)/第4章/數學歸納法與良序原理.md",
+    "Discrete Math (上)/第4章/數學歸納法與數論(MOC).md",
+    "Discrete Math (上)/第4章/模反元素與同餘方程.md",
+    "Discrete Math (上)/第4章/模同餘與運算規則.md",
+    "Discrete Math (上)/第4章/模冪運算與歐拉費馬定理.md",
+    "Discrete Math (上)/第4章/歐幾里得算法.md",
+    "Discrete Math (上)/第4章/線性丟番圖方程.md",
+    "Discrete Math (上)/第4章/質數與質因數分解.md",
+    "Discrete Math (上)/第4章/整除與除法算法.md",
+    "Discrete Math (上)/第4章/RSA加密原理.md",
+    "Discrete Math (上)/第4章/第4章 數學歸納法與數論377模同餘下高次指數 $a^k _bmod n$ 的運算 ：（1）模指數運算：依序求出 $a^2 _bmod n, a^4 _bmod n, a^8 _bmod n, a^{.md",
+    "Discrete Math (上)/第6章/指數生成函數的組合模型.md",
+    "Discrete Math (上)/第4章/第4章 數學歸納法與數論345最大公因數表現定理（Bézout 定理）對任意正整数 $a, b$ ，其最大公因数必存在且唯一，且 $a, b$ 的最大公因数一定可以表達成 $a, b$ 的線性組合，即.md",
+    "Discrete Math (上)/第6章/一般生成函數.md",
+    "Discrete Math (上)/第4章/第4章 數學歸納法與數論313先觀察出規律性後，再以歸納法證明例題 4Show that $1(1!)+2(2!)+_ldots+n(n!)$ can be expressed as differen.md"
   ]
 }
